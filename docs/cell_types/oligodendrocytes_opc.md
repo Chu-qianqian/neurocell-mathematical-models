@@ -1,5 +1,5 @@
-# 少突胶质细胞与 OPC
+# Oligodendrocytes and OPCs
 
-当前种子是少突胶质细胞分化动力学。它不等于完整髓鞘模型，也不覆盖 OPC 增殖、迁移、成熟、轴突选择、g-ratio、节段长度、脱髓鞘/再髓鞘化或代谢支持。
+The current seed covers oligodendrocyte differentiation dynamics. It is not a complete myelination model and does not cover OPC proliferation, migration, maturation, axon selection, g-ratio, internode length, demyelination/remyelination, or metabolic support.
 
-后续筛选必须明确模型是否直接表示细胞/谱系状态，还是仅在神经电缆方程中改变髓鞘参数；两类条目需分开统计。
+Screening must state whether a source directly represents cellular/lineage states or only changes myelinated-cable parameters; these categories are counted separately.

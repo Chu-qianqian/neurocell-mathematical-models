@@ -1,31 +1,31 @@
-# 方法学与证据规则
+# Methodology and evidence rules
 
-## 检索设计
+## Search design
 
-核心检索使用细胞类型同义词与 `mathematical model`、`computational model`、`differential equation`、`calcium dynamics`、`myelination`、`inflammation`、`neurovascular coupling` 等术语组合。目标来源包括 PubMed、Europe PMC、Crossref、OpenAlex、Semantic Scholar、ModelDB、BioModels 与有明确许可证的代码仓库。
+Core searches combine cell-type synonyms with terms such as `mathematical model`, `computational model`, `differential equation`, `calcium dynamics`, `myelination`, `inflammation`, and `neurovascular coupling`. Target sources include PubMed, Europe PMC, Crossref, OpenAlex, Semantic Scholar, ModelDB, BioModels, and code repositories with explicit licenses.
 
-每次正式检索须保存：数据库、完整查询式、检索日期、返回数、去重规则、标题/摘要/全文筛选数以及排除原因。现阶段的 Crossref 定向检索只用于确认少量候选的书目元数据；它不是覆盖全部数据库的系统检索，故不报告 PRISMA 数量。
+Each formal search must preserve the database, full query, date, result count, deduplication rule, title/abstract/full-text screening counts, and exclusion reasons. The current Crossref queries only verified metadata for a small number of candidates; they are not a database-comprehensive search and do not justify PRISMA counts.
 
-## 证据状态
+## Evidence states
 
-| 字段 | 可以声明的内容 | 不能声明的内容 |
+| State | What it may claim | What it must not claim |
 | --- | --- | --- |
-| `verified` | DOI 与题名/作者/年份/期刊已与权威元数据一致 | 方程、参数、代码或生物学验证已完成 |
-| `partially verified` | 已检查来源的一部分，例如摘要或元数据 | 正文方程已核验 |
-| `not verified` | 尚不能确认 | 任何推断 |
-| `full text unavailable` | 未取得可合法检查的全文/方法材料 | 没有方程或模型不存在 |
-| `license unclear` | 外部代码许可证未确认 | 可以复制或再分发 |
-| `parameters incomplete` | 公开来源未给出足够参数 | 模型不可用或无效 |
+| `verified` | DOI and title/authors/year/venue agree with authoritative metadata | Equation, parameter, code, or biological validation is complete |
+| `partially verified` | One part of a source, such as metadata or abstract, was checked | Full-text equations were verified |
+| `not verified` | The information cannot yet be confirmed | Any inferred detail |
+| `full text unavailable` | No lawfully reviewable full text or methods material was obtained | No equation or model exists |
+| `license unclear` | An external-code license was not confirmed | The code may be copied or redistributed |
+| `parameters incomplete` | Public source material lacks sufficient parameters | The model is invalid or unusable |
 
-## 方程提取门槛
+## Equation-extraction gate
 
-在模型行标记为 `extracted` 前，需记录：来源页码/章节/公式编号、状态变量、参数与单位、输入输出、初始/边界条件、求解方式、假设、适用范围和局限性。第二位审阅者或可复现脚本应再检查符号与维度。仓库中的概念性 LaTeX 式仅用于说明模型家族，不替代原文转录。
+Before a model row is marked `extracted`, it must record source page/section/equation location, state variables, parameters and units, inputs/outputs, initial/boundary conditions, numerical method, assumptions, scope, and limitations. A second reviewer or reproducible script should check notation and dimensional consistency. Conceptual LaTeX on this repository explains model families only; it does not replace source transcription.
 
-## 质量分层
+## Quality tiers
 
-- **A**：原始或经典模型来源；
-- **B**：有较强应用/验证证据的模型；
-- **C**：在既有模型上加入耦合、空间、随机性或疾病机制；
-- **D**：探索性、预印本或参数/验证不足的来源。
+- **A:** original or classic model source;
+- **B:** model with substantial application or validation evidence;
+- **C:** extension adding coupling, space, stochasticity, or disease mechanism;
+- **D:** exploratory source, preprint, or source with incomplete parameters/validation.
 
-该分层不使用伪造的影响因子或固定引用次数。若将来加入动态引用指标，必须记录来源和查询日期。
+This tiering does not use fabricated impact factors or fixed citation counts. Any future dynamic citation metric must state its source and query date.

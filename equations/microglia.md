@@ -1,9 +1,9 @@
-# 小胶质细胞：概念性方程地图
+# Microglia: conceptual equation map
 
-群体或状态模型可把处于不同状态的细胞数量写成：
+A population or state model can express the amount of cells in each state as:
 
 $$\frac{dM_i}{dt}=\sum_{j\ne i}q_{ji}(S)M_j-\sum_{j\ne i}q_{ij}(S)M_i+P_i-D_i,$$
 
-其中 $M_i$ 是状态 $i$ 的细胞量，$q_{ij}(S)$ 是受信号 $S$ 调节的状态转换率，$P_i$ 与 $D_i$ 为增殖/补充与损失项。此类模型可描述炎症反馈或组织尺度变化，但不等价于单个细胞的分子机制。
+where $M_i$ is the amount of cells in state $i$, $q_{ij}(S)$ is a signal-dependent transition rate, and $P_i$ and $D_i$ are proliferation/recruitment and loss terms. Such a model can describe inflammatory feedback or tissue-scale change, but it is not equivalent to a molecular mechanism for one cell.
 
-使用 M1/M2 时，状态数仅是该来源的建模简化；应明确其并非唯一或完整的小胶质细胞生物学分类。
+When M1/M2 is used, the number of states is only a source-specific modelling simplification; it is not the sole or complete biological classification of microglia.

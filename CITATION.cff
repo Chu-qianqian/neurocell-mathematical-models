@@ -1,7 +1,7 @@
 cff-version: 1.2.0
-message: "如果使用本图谱，请引用本仓库版本并同时引用相应的原始模型论文。"
+message: "If you use this atlas, cite this repository version and the relevant original model paper."
 title: "Neurocell Mathematical Models"
-abstract: "一个可追溯、版权合规的神经系统细胞数学与计算模型图谱。"
+abstract: "A traceable, copyright-compliant atlas of mathematical and computational models for nervous-system cells."
 type: dataset
 license: CC-BY-4.0
 repository-code: "https://github.com/Chu-qianqian/neurocell-mathematical-models"

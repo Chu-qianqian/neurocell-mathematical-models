@@ -1,5 +1,5 @@
-# 行为准则
+# Code of Conduct
 
-本项目遵循包容、尊重和以证据为中心的协作原则。欢迎不同学科背景的贡献者；不得进行骚扰、歧视、人身攻击或将未经核验的学术信息包装为事实。
+This project follows inclusive, respectful, evidence-centred collaboration. Contributors from all disciplines are welcome. Harassment, discrimination, personal attacks, and presenting unverified scholarly claims as facts are not acceptable.
 
-讨论应聚焦模型来源、证据和可复现性。涉及版权、署名、实验或临床含义的争议，请在 issue 或 pull request 中陈述可核验依据。维护者可移除违反此准则的内容。
+Discussion should focus on model provenance, evidence, and reproducibility. For disputes involving copyright, attribution, experimental claims, or clinical implications, state auditable evidence in an issue or pull request. Maintainers may remove content that violates this code.

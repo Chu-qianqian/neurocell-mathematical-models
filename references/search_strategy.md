@@ -1,22 +1,22 @@
-# 检索策略与筛选协议
+# Search strategy and screening protocol
 
-**协议版本：** 0.2
+**Protocol version:** 0.2
 
-**种子检索日期：** 2026-07-22
+**Seed-search date:** 2026-07-22
 
-**目的：** 识别神经系统细胞的数学/计算模型；该核心版不是已完成的系统综述或临床证据综合。
+**Purpose:** identify mathematical and computational models for nervous-system cells. This core release is not a completed systematic review or clinical evidence synthesis.
 
-## 数据库与使用顺序
+## Databases and use order
 
-1. Crossref：核对 DOI、题名、作者、年份和期刊；
-2. PubMed / Europe PMC：发现生物医学原始文献与可合法阅读的全文；
-3. OpenAlex / Semantic Scholar：辅助发现引用链，动态指标必须标注来源和日期；
-4. ModelDB、BioModels、Open Source Brain 与 GitHub：只用于寻找模型/代码位置，外部代码需另行核验许可证；
-5. bioRxiv、medRxiv、arXiv：补充预印本，不替代同行评议证据。
+1. Crossref: verify DOI, title, authors, year, and venue.
+2. PubMed / Europe PMC: discover biomedical primary literature and lawfully readable full text.
+3. OpenAlex / Semantic Scholar: assist citation chaining; any dynamic metric must state its source and query date.
+4. ModelDB, BioModels, Open Source Brain, and GitHub: locate models/code only; external-code licenses require separate verification.
+5. bioRxiv, medRxiv, and arXiv: supplement preprints, not peer-reviewed evidence.
 
-## 概念组与查询模板
+## Concept groups and query templates
 
-每个数据库保存完整查询式、日期、结果数、去重规则、筛选决定与永久链接。基础模板为：
+For every database, retain the full query, date, result count, deduplication rule, screening decision, and persistent link. The general template is:
 
 ```text
 (cell-type synonym) AND ("mathematical model" OR "computational model"
@@ -24,7 +24,7 @@ OR "differential equation" OR ODE OR PDE OR stochastic)
 AND (process synonym)
 ```
 
-| 范围 | 优先查询示例 |
+| Scope | Priority query example |
 | --- | --- |
 | Neuron | `(neuron OR neuronal) AND ("mathematical model" OR ODE OR "conductance-based")` |
 | Astrocyte | `(astrocyte OR astroglia) AND (calcium OR Ca2+ OR IP3) AND (model OR equations)` |
@@ -33,15 +33,15 @@ AND (process synonym)
 | Schwann cell | `("Schwann cell") AND (myelination OR regeneration OR "Wallerian degeneration") AND (model OR simulation)` |
 | Neurovascular cells | `(pericyte OR "brain endothelial" OR "neurovascular unit") AND (model OR equations)` |
 
-## 筛选规则
+## Screening rules
 
-1. 先按 DOI、规范化题名和年份去重；
-2. 标题/摘要初筛剔除明显无数学模型的论文；
-3. 书目以 Crossref、PubMed 或出版社页核对；
-4. 只有在可合法检查的正文、方法、补充材料、模型数据库或代码中确证方程/算法存在时，才升级方程证据；
-5. 模型实现和许可证核查是独立步骤；“公开网页”不等于可复用代码；
-6. 无法确认时保留 `not verified`、`full text unavailable`、`license unclear` 或 `parameters incomplete`，不凭猜测填补。
+1. Deduplicate by DOI, then normalised title and year.
+2. Use title/abstract screening to exclude papers that clearly lack a mathematical model.
+3. Verify bibliography against Crossref, PubMed, or a publisher page.
+4. Upgrade equation evidence only when lawfully reviewable full text, methods, supplement, model database, or code confirms the equation/algorithm.
+5. Treat implementation and license checking as independent steps; a public webpage is not reusable code.
+6. Preserve `not verified`, `full text unavailable`, `license unclear`, and `parameters incomplete` when needed; do not fill gaps by inference.
 
-## 当前种子轮的边界
+## Boundary of the current seed round
 
-当前轮仅完成 6 条核心记录的 Crossref 书目核对，并为 5 个经典候选建立了筛选队列。它没有进行多数据库穷尽检索，也未报告 PRISMA 计数；任何“覆盖全面”的陈述均应等后续正式检索日志完成后再作出。
+The current round only verified Crossref bibliography for six core records and placed five classic candidates in a screening queue. It did not run an exhaustive multi-database search and does not report PRISMA counts. Any claim of comprehensive coverage must wait until the formal search log is complete.

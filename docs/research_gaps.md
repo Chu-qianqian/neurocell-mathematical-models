@@ -1,22 +1,22 @@
-# 研究空白与扩展优先级
+# Research gaps and expansion priorities
 
-## 证据充分度
+## Evidence maturity
 
-神经元模型家族最成熟，既有离子通道、脉冲、区室与电缆框架，也有广泛的模拟器生态。星形胶质细胞的 Ca²⁺/IP3、胞外 K⁺、递质与神经血管耦合模型跨尺度差异很大，不能用单一 Li–Rinzel 或 De Young–Keizer 家族概括。小胶质细胞、少突胶质/OPC 和 Schwann cell 的条目更容易落在群体、损伤、再生或髓鞘功能层面；需要避免把这些模型误标为完整的细胞本体模型。
+Neuronal model families are the most mature, with ion-channel, spiking, compartmental, and cable frameworks plus broad simulator ecosystems. Astrocytic Ca²⁺/IP3, extracellular K⁺, transmitter, and neurovascular-coupling models differ greatly across scales and cannot be reduced to a single Li–Rinzel or De Young–Keizer family. Microglial, oligodendrocyte/OPC, and Schwann-cell records often sit at population, injury, regeneration, or myelin-function levels; they must not be mislabelled as complete cell-intrinsic models.
 
-## 当前关键缺口
+## Current key gaps
 
-1. 核心记录尚未有逐式位置、单位与独立转录检查；
-2. 微胶质模型不应把 M1/M2 二分法作为唯一现代分类；使用该框架的来源必须单独说明其适用限制；
-3. 少突胶质/OPC 模型需区分细胞谱系/分化方程与仅改变髓鞘电缆参数的工作；
-4. Schwann cell 专属、方程明确且参数公开的模型可能相对稀少，需从周围神经损伤、Wallerian degeneration、再生与组织工程中系统筛选；
-5. 室管膜、放射状胶质、神经干细胞、周细胞及脑血管内皮尚未形成合格的核心条目；
-6. 代码来源、许可证和实验验证仍需逐条审计，不能由“公开访问”推出可复用。
+1. Core records do not yet contain source equation locations, units, or independent transcription checks.
+2. Microglial models should not use M1/M2 dichotomy as the only modern framework; sources using it must record its scope and limitations.
+3. Oligodendrocyte/OPC records must distinguish lineage/differentiation equations from work that only changes myelinated-cable parameters.
+4. Explicit, parameterised Schwann-cell models may be relatively sparse and require systematic screening of peripheral-nerve injury, Wallerian degeneration, regeneration, and tissue-engineering literature.
+5. Ependymal, radial-glia, neural-stem-cell, pericyte, and brain-endothelial records have not reached the core-record gate.
+6. Code provenance, licenses, and experimental validation require record-level auditing; public access alone does not confer reuse rights.
 
-## 平台建议
+## Platform guidance
 
-Brian2 适合原创的神经元放电、突触和简化耦合示例；NEURON 更适合区室、电缆与传导问题；空间 Ca²⁺、扩散和血管/组织问题通常需要 PDE、有限元或反应扩散工具；细胞迁移、吞噬或谱系状态转换可能更适合 agent-based、状态转移或混合模型。所有实现都应标为“原创近似/教学实现”或“已验证复现”，不得混用。
+Brian2 is suitable for original neuron-spiking, synaptic, and simplified coupled examples. NEURON is more suitable for compartmental, cable, and conduction questions. Spatial Ca²⁺, diffusion, and vascular/tissue problems usually require PDE, finite-element, or reaction-diffusion tools. Cell migration, phagocytosis, or lineage-state transitions may fit agent-based, state-transition, or hybrid models. Every implementation must be labelled either as an original approximation/teaching implementation or a validated reproduction.
 
-## 下一步
+## Next priority
 
-优先为现有 6 条记录取得可合法检查的方程位置与变量定义；然后以记录好的查询式分别扩展神经元、星形胶质、微胶质、少突胶质/OPC 与 Schwann cell。只有证据达到门槛的候选才进入核心目录。
+Obtain lawfully reviewable equation locations and variable definitions for the six existing records first. Then expand neurons, astrocytes, microglia, oligodendrocytes/OPCs, and Schwann cells with the recorded queries. Only candidates meeting the evidence gate may enter the core catalogue.

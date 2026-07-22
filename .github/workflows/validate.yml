@@ -21,3 +21,4 @@ jobs:
       - run: git diff --exit-code -- models/model_catalog.json models/model_catalog.yaml
       - run: python scripts/validate_references.py
       - run: python scripts/validate_links.py
+      - run: python scripts/validate_language.py

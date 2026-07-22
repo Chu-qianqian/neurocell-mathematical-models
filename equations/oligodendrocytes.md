@@ -1,9 +1,9 @@
-# 少突胶质细胞与 OPC：概念性方程地图
+# Oligodendrocytes and OPCs: conceptual equation map
 
-谱系/分化模型可抽象为多个细胞状态的转换：
+A lineage/differentiation model can abstract transitions among cell states as:
 
 $$\frac{d\mathbf{n}}{dt}=\mathbf{A}(S)\mathbf{n}+\mathbf{p}(S)-\mathbf{d}(S),$$
 
-其中 $\mathbf{n}$ 为 OPC、分化中与成熟少突胶质细胞等状态的数量或密度，$\mathbf{A}$ 为受信号 $S$ 调节的转换矩阵。空间迁移时可加入扩散或趋化项。
+where $\mathbf{n}$ is the abundance or density of states such as OPCs, differentiating cells, and mature oligodendrocytes, while $\mathbf{A}$ is a signal-dependent transition matrix. Spatial migration may add diffusion or chemotaxis terms.
 
-髓鞘对传导的模型也可能仅修改电缆参数，例如膜电容/电阻；这类项不自动表示少突胶质细胞状态或髓鞘形成机制。
+Myelin-conduction models may instead only alter cable parameters such as membrane capacitance or resistance. Such terms do not automatically represent oligodendrocyte state or myelination mechanism.

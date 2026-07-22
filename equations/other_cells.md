@@ -1,3 +1,3 @@
-# 其他细胞：概念性方程地图
+# Other cells: conceptual equation map
 
-室管膜、放射状胶质、神经干细胞、周细胞和脑血管内皮可涉及流体/纤毛输运、谱系状态、血管张力、内皮通透性和反应扩散。形式可能是 ODE、PDE、有限元、状态转换或混合系统。当前没有足以进入核心目录的条目；本页不把通用方程误作该细胞已有成熟模型的证据。
+Ependymal cells, radial glia, neural stem cells, pericytes, and brain endothelial cells may involve fluid/ciliary transport, lineage states, vascular tone, endothelial permeability, or reaction-diffusion. Relevant formalisms may include ODEs, PDEs, finite elements, state transitions, or hybrid systems. There is no qualifying core record yet; this page does not treat generic equations as evidence that a mature model already exists for each cell.

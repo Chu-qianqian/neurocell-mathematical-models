@@ -1,27 +1,27 @@
-# 范围、分类与使用边界
+# Scope, classification, and use boundaries
 
-## 图谱回答什么
+## What the atlas answers
 
-图谱的基本单位是“一个可定位来源支持的模型记录”，而不是某种细胞的百科条目。每条记录必须说明它模拟的是细胞本体、某一功能、细胞群体、跨细胞耦合，还是只通过参数间接表示该细胞。
+The unit of this atlas is a model record supported by a traceable source, not an encyclopaedia entry for a cell type. Each record must state whether it models a cell intrinsically, one cellular function, a cell population, a multicellular coupling, or only an indirect parameterisation.
 
-| 分类 | 含义 | 例子 | 不能据此推断 |
+| Classification | Meaning | Example | What it does not establish |
 | --- | --- | --- | --- |
-| `cell_intrinsic` | 细胞自身状态变量被显式建模 | 膜电位、胞内 Ca²⁺ | 覆盖细胞全部生理 |
-| `cell_function` | 只建模一个功能模块 | IP3 受体 Ca²⁺ 动力学 | 完整细胞模型 |
-| `cell_population` | 细胞数量或状态分布的动力学 | 炎症中的小胶质细胞群体 | 单细胞机制已解析 |
-| `coupled_multicellular` | 至少两类单元通过明确项耦合 | neuron–astrocyte 网络 | 任一单元可独立验证 |
-| `indirect_parameterization` | 细胞只被折入参数 | 电缆模型的髓鞘参数 | 已建立少突胶质细胞模型 |
+| `cell_intrinsic` | State variables explicitly model the cell itself | Membrane potential or intracellular Ca²⁺ | Coverage of all cell physiology |
+| `cell_function` | Models one functional module | IP3-receptor Ca²⁺ dynamics | A complete cell model |
+| `cell_population` | Dynamics of cell number or state distribution | Microglial populations during inflammation | Resolved single-cell mechanism |
+| `coupled_multicellular` | At least two unit types are explicitly coupled | A neuron–astrocyte network | Independent validation of every unit |
+| `indirect_parameterization` | A cell is folded into a parameter | Myelin parameters in a cable model | An oligodendrocyte model |
 
-## 统一标签
+## Controlled tags
 
-**数学形式**：ODE、PDE、SDE、DDE、reaction-diffusion、Markov、Boolean、agent-based、conductance-based、compartmental、cable、population、metabolic、finite-element、hybrid、multiscale。
+**Mathematical forms:** ODE, PDE, SDE, DDE, reaction-diffusion, Markov, Boolean, agent-based, conductance-based, compartmental, cable, population, metabolic, finite-element, hybrid, and multiscale.
 
-**生物尺度**：分子、信号通路、亚细胞、单细胞、细胞群体、多细胞网络、组织、脑区、系统级。
+**Biological scales:** molecular, signalling pathway, subcellular, single cell, cell population, multicellular network, tissue, brain region, and system level.
 
-**功能标签**：电活动、钙信号、离子稳态、递质释放/摄取、代谢、炎症、迁移、吞噬、分化、增殖、髓鞘形成、传导、血流调节、细胞间通信、疾病进展。
+**Functional tags:** electrical activity, calcium signalling, ion homeostasis, transmitter release/uptake, metabolism, inflammation, migration, phagocytosis, differentiation, proliferation, myelination, conduction, vascular regulation, intercellular communication, and disease progression.
 
-## 当前覆盖与不足
+## Current coverage and limitations
 
-当前核心表是一个经过书目核验的起点，不是系统综述的完成声明。神经元和星形胶质细胞有成熟的经典模型家族；小胶质、少突胶质/OPC 和 Schwann cell 的“细胞专属、方程明确、参数可追溯”的记录仍需逐条筛选。室管膜、放射状胶质、神经干细胞、周细胞和脑血管内皮细胞尚无合格核心记录。
+The core table is a bibliographically verified starting point, not a completed systematic review. Neuronal and astrocytic modelling have mature model families. For microglia, oligodendrocytes/OPCs, and Schwann cells, cell-specific records with explicit equations and traceable parameters still need record-level screening. There are no eligible core records yet for ependymal cells, radial glia, neural stem cells, pericytes, or brain endothelial cells.
 
-模型的数学层级不可混同：Hodgkin–Huxley 描述膜电位和通道门控；简化 IP3–Ca²⁺ 系统描述特定信号模块；包含髓鞘参数的电缆方程并不自动成为少突胶质细胞模型；细胞因子群体方程也不自动成为单个小胶质细胞模型。
+Mathematical levels must not be conflated. Hodgkin–Huxley models membrane potential and channel gating; a simplified IP3–Ca²⁺ system models a signal module; a cable equation with myelin parameters is not automatically an oligodendrocyte model; and a cytokine-population equation is not automatically a single-microglia model.
