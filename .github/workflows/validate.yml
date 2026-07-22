@@ -17,3 +17,7 @@ jobs:
         with:
           python-version: "3.12"
       - run: python scripts/validate_catalogue.py
+      - run: python scripts/build_tables.py
+      - run: git diff --exit-code -- models/model_catalog.json models/model_catalog.yaml
+      - run: python scripts/validate_references.py
+      - run: python scripts/validate_links.py
