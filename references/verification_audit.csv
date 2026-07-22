@@ -1,0 +1,7 @@
+model_id,checked_on,metadata_source,doi_title_match,authors_venue_year_checked,equations_inspected,implementation_license_checked,notes
+hodgkin_huxley_1952,2026-07-22,Crossref REST API,yes,yes,no,no,PMID 12991237 also identified during seed search.
+izhikevich_2003,2026-07-22,Crossref REST API,yes,yes,no,no,No implementation was imported.
+de_pitta_2009_gchi,2026-07-22,Crossref REST API,yes,yes,no,no,Astrocyte-specific paper verified by DOI metadata.
+postnov_2009_neuron_astrocyte,2026-07-22,Crossref REST API,yes,yes,no,no,Recorded as mixed neuron-glia rather than forcing a single-cell label.
+amato_arnold_2025_microglia,2026-07-22,Crossref REST API,yes,yes,no,no,Metadata verified; biological state labels retain source framing.
+nikolov_2022_oligodendrocyte,2026-07-22,Crossref REST API,yes,yes,no,no,Metadata verified; kinetic equation inspection pending.
