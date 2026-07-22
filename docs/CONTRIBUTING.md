@@ -1,10 +1,10 @@
-# 贡献指南
+# Contributing
 
-请通过分支和 Pull Request 提交更改。不得添加论文 PDF、出版社图表、补充材料或无明确可复用许可证的外部代码。
+Submit changes through a branch and pull request. Do not add paper PDFs, publisher figures, supplements, or external code without an explicit reusable license.
 
-新增模型记录需提供：原始持久标识符、目标细胞、数学形式、模型归类、分类依据，以及书目/方程/实现三种独立状态。若信息不足，请先加入 `references/screening_candidates.csv`，不要把候选直接升级为核心记录。
+A new model record needs a primary persistent identifier, target cell type, mathematical form, model classification, evidence for that classification, and separate bibliography/equation/implementation states. When information is insufficient, add the source to `references/screening_candidates.csv` rather than promoting it directly to the core catalogue.
 
-提交前运行：
+Before submitting, run:
 
 ```text
 python scripts/validate_catalogue.py
@@ -13,4 +13,4 @@ python scripts/validate_references.py
 python scripts/validate_links.py
 ```
 
-只有在来源、公式位置、变量/参数与许可证均可审计时，才可把记录升级为更高证据状态。请用自己的语言总结原文，引用原始论文，并明确任何不确定性。
+Only sources, equation locations, variables/parameters, and licenses that can be audited may upgrade a record's evidence state. Summarise sources in your own words, cite original papers, and preserve uncertainty explicitly.

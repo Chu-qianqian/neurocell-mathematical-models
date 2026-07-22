@@ -1,54 +1,54 @@
-# 项目计划与完成状态
+# Project plan and completion status
 
-## 研究目标
+## Research objective
 
-建立一个可维护的神经系统细胞数学模型图谱：每条模型记录均将书目信息、方程证据、实现状态、许可证和生物学解释拆分记录。项目首先交付小而可靠的核心版，随后才扩展覆盖率。
+Build a maintainable atlas of mathematical models for nervous-system cells. Each model record keeps bibliography, equation evidence, implementation status, license status, and biological interpretation distinct. The project delivers a small, reliable core release before expanding coverage.
 
-## 范围
+## Scope
 
-神经元、星形胶质细胞、小胶质细胞、少突胶质细胞、OPC/NG2 glia、Schwann cell、室管膜细胞、放射状胶质细胞、神经干细胞、周细胞、脑血管内皮细胞，以及明确建模的混合细胞系统。
+Neurons, astrocytes, microglia, oligodendrocytes, OPC/NG2 glia, Schwann cells, ependymal cells, radial glia, neural stem cells, pericytes, brain endothelial cells, and explicitly modelled mixed-cell systems.
 
-## 收录与排除
+## Inclusion and exclusion
 
-纳入的模型必须有可定位的稳定来源，并明确呈现数学或计算模型。单纯提及细胞、没有模型的实验研究、无法追溯的二手说法、许可证不明的复制代码及论文全文均被排除。候选与核心记录分层存放。
+An included model needs a traceable stable source and an explicit mathematical or computational model. Experimental papers that merely mention a cell, secondary claims without a source, copied code with unclear licensing, and paper full text are excluded. Candidate and core records are stored separately.
 
-## 文献核验与方程提取
+## Literature and equation verification
 
-- 书目核验：DOI、题名、作者、年份和期刊以 Crossref、PubMed 或出版社页之一为依据。
-- 方程核验：记录公式/方法的位置、变量、单位、初始或边界条件、假设和独立一致性检查后，才可标记 `extracted`。
-- 实现核验：外部代码需有明确来源和许可证；未核验时只保存链接和状态。
+- Bibliography verification: DOI, title, authors, year, and venue are checked against Crossref, PubMed, or a publisher page.
+- Equation verification: a source location, variables, units, initial/boundary conditions, assumptions, and an independent consistency check are required before a record becomes `extracted`.
+- Implementation verification: external code must have a clear source and license; otherwise only its link and status may be recorded.
 
-## 版权合规
+## Copyright compliance
 
-不收录论文 PDF、原图、整表、补充材料或许可证不明的第三方代码。原创代码适用 Apache-2.0；原创文档与策展表格适用 CC BY 4.0；外部材料保留原有条款。
+No paper PDF, original figure, full table, supplement, or third-party code with unclear licensing is included. Original code is Apache-2.0; original documentation and curator-created tables are CC BY 4.0; external materials retain their original terms.
 
-## 阶段任务
+## Work phases
 
-| 阶段 | 交付物 | 状态 |
+| Phase | Deliverable | Status |
 | --- | --- | --- |
-| 0 | 治理文件、双许可证、免责声明、`main` 初始化 | 已完成 |
-| 1 | 检索协议、字段模式、基础校验脚本 | 已完成 |
-| 2 | 书目核验的 6 条种子记录 | 已完成 |
-| 3 | 中文导航、分类、候选筛选队列与空白分析 | 进行中 |
-| 4 | 方程位置、变量/参数和独立转录核验 | 计划中 |
-| 5 | 许可明确来源的原创最小实现与测试 | 计划中 |
-| 6 | 多数据库系统检索和各细胞类型的广泛扩展 | 计划中 |
+| 0 | Governance files, dual licenses, disclaimer, `main` initialisation | Complete |
+| 1 | Search protocol, data schema, baseline validator | Complete |
+| 2 | Six bibliographically verified seed records | Complete |
+| 3 | English navigation, classification, candidate queue, and gap analysis | Complete |
+| 4 | Equation locations, variable/parameter extraction, and independent checking | Planned |
+| 5 | Original minimal implementations from clearly licensed sources | Planned |
+| 6 | Multi-database systematic search and broad cell-type expansion | Planned |
 
-## 预期结构
+## Intended structure
 
-- `data/models/`：最小、严格校验的核心记录；
-- `models/`：与扩展字段契约兼容的 CSV/JSON/YAML 目录；
-- `references/`：检索式、候选队列、BibTeX 与核验审计；
-- `docs/` 与 `equations/`：原创中文解释、分类和研究空白；
-- `scripts/`：离线结构校验；`.github/`：PR 运行的验证。
+- `data/models/`: minimal, strictly validated core records;
+- `models/`: expanded CSV/JSON/YAML catalogue contract;
+- `references/`: search strings, candidate queue, BibTeX, and verification audit;
+- `docs/` and `equations/`: original English explanations, classification, and research gaps;
+- `scripts/`: offline validation; `.github/`: validation on pull requests.
 
-## 完成清单
+## Completion checklist
 
-- [x] 项目治理、双许可证和免责声明
-- [x] 可复现检索策略与基础数据模式
-- [x] 书目核验的种子目录
-- [x] 中文核心导航和证据状态约定
-- [ ] 方程级定位与独立核验
-- [ ] 全细胞类型的系统检索与完整筛选计数
-- [ ] 明确许可证的原创最小实现
-- [ ] 公开代码和实验验证的逐条审计
+- [x] Governance, dual-license policy, and disclaimer
+- [x] Reproducible search strategy and baseline data schema
+- [x] Bibliographically verified seed catalogue
+- [x] English core navigation and evidence-state conventions
+- [ ] Equation-level source locations and independent checking
+- [ ] Systematic all-cell-type search and complete screening counts
+- [ ] Original minimal implementations from clearly licensed sources
+- [ ] Record-level auditing of public code and experimental validation

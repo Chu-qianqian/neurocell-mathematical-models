@@ -1,5 +1,5 @@
-# 神经元
+# Neurons
 
-当前核心记录包括 Hodgkin–Huxley 与 Izhikevich。前者是通道门控与膜电位的机制性模型，后者是低维放电模型；二者都只覆盖神经元功能的一部分。候选筛选队列已记录 FitzHugh–Nagumo、Morris–Lecar 与 Hindmarsh–Rose 的书目元数据，等待正文/方程核验。
+Current core records include Hodgkin–Huxley and Izhikevich. The first is a mechanistic model of channel gating and membrane potential; the second is a low-dimensional spiking model. Neither covers all neuronal functions. The screening queue records bibliographic metadata for FitzHugh–Nagumo, Morris–Lecar, and Hindmarsh–Rose, pending full-text and equation verification.
 
-下一轮重点：Morris–Lecar、FitzHugh–Nagumo、Hindmarsh–Rose、Integrate-and-Fire、LIF、AdEx、区室、电缆、突触电导、可塑性、递质释放、树突整合和轴突传导。需要分别评价生物真实性、计算成本、适用尺度、参数来源和公开实现许可证。
+The next search round prioritises Morris–Lecar, FitzHugh–Nagumo, Hindmarsh–Rose, Integrate-and-Fire, LIF, AdEx, compartmental and cable models, synaptic conductance and plasticity, transmitter release, dendritic integration, and axonal conduction. Biological realism, computational cost, scale, parameter provenance, and public-implementation licensing must be assessed separately.

@@ -1,10 +1,10 @@
-# 细胞类型导航
+# Cell-type navigation
 
-每个页面都记录“目前的核心模型证据”和“下一轮检索应确认的问题”；空白页面并不表示该细胞没有模型，只表示本仓库尚未找到足以进入核心目录的、方程证据明确的来源。
+Each page records current core-model evidence and questions that the next search round must resolve. An empty page does not mean the cell has no model; it means this repository has not yet found a source with sufficiently explicit equation evidence for the core catalogue.
 
-- [神经元](neurons.md)
-- [星形胶质细胞](astrocytes.md)
-- [小胶质细胞](microglia.md)
-- [少突胶质细胞与 OPC](oligodendrocytes_opc.md)
-- [Schwann cell](schwann_cells.md)
-- [其他细胞](other_cells.md)
+- [Neurons](neurons.md)
+- [Astrocytes](astrocytes.md)
+- [Microglia](microglia.md)
+- [Oligodendrocytes and OPCs](oligodendrocytes_opc.md)
+- [Schwann cells](schwann_cells.md)
+- [Other cells](other_cells.md)

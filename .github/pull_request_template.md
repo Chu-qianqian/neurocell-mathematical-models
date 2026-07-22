@@ -15,3 +15,4 @@ Describe the atlas change and its target cell type(s).
 - [ ] `python scripts/build_tables.py` passed and produced no unstaged changes.
 - [ ] `python scripts/validate_references.py` passed locally.
 - [ ] `python scripts/validate_links.py` passed locally.
+- [ ] `python scripts/validate_language.py` passed locally.

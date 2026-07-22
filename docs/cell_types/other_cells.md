@@ -1,3 +1,3 @@
-# 其他细胞
+# Other cells
 
-室管膜细胞、放射状胶质、神经干细胞、周细胞与脑血管内皮均在范围内，但当前没有合格核心记录。后续可优先从纤毛液流/室管膜运输、发育和谱系状态、神经血管耦合、血脑屏障和血流调节等方向检索。只有当来源明确给出该细胞相关的动力学单元或方程时才纳入模型目录。
+Ependymal cells, radial glia, neural stem cells, pericytes, and brain endothelial cells are in scope but have no eligible core record yet. Future searches can prioritise ciliary-fluid transport, ependymal transport, development and lineage states, neurovascular coupling, blood–brain barrier, and vascular regulation. A record enters the model catalogue only when a source explicitly provides a cell-relevant dynamical unit or equation.

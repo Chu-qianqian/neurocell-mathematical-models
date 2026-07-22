@@ -1,5 +1,5 @@
-# 小胶质细胞
+# Microglia
 
-当前有一条缺血半暗带群体动力学种子记录。它记录了原文的状态框架，但不得被外推成所有小胶质细胞的生物学分类。后续优先筛选监视/激活状态、趋化、迁移、吞噬、ATP/P2Y12、Ca²⁺、突触修剪、炎症反馈与神经退行性疾病模型，并明确是单细胞、状态转换还是群体模型。
+The current seed is a population-dynamics record for the ischemic penumbra. It retains the source's state framework but must not be generalised into a universal microglial taxonomy. Later screening prioritises surveillance/activation states, chemotaxis, migration, phagocytosis, ATP/P2Y12, Ca²⁺, synaptic pruning, inflammatory feedback, and neurodegenerative-disease models, with explicit distinction between single-cell, state-transition, and population models.
 
-对采用 M1/M2 二分法的文献，应保留原文表达，同时标注其作为现代小胶质细胞连续状态谱近似的局限。
+Sources that use an M1/M2 dichotomy should preserve their original terminology while stating its limitations as an approximation to a modern continuous microglial state spectrum.
