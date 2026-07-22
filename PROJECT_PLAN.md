@@ -1,63 +1,54 @@
-# Project plan
+# 项目计划与完成状态
 
-## Research objective
+## 研究目标
 
-Build a transparent, reproducible atlas of mathematical and computational models describing nervous-system cell types. The atlas is a navigation and comparison resource, not a replacement for primary papers or a repository of their proprietary/copyrighted content.
+建立一个可维护的神经系统细胞数学模型图谱：每条模型记录均将书目信息、方程证据、实现状态、许可证和生物学解释拆分记录。项目首先交付小而可靠的核心版，随后才扩展覆盖率。
 
-## Cell-type scope
+## 范围
 
-Primary scope: neurons, astrocytes, microglia, oligodendrocytes and oligodendrocyte precursor cells, Schwann cells, ependymal cells, satellite glia, enteric glia, and mixed neuron–glia systems. A model may be listed under more than one cell type only when the source explicitly models each type.
+神经元、星形胶质细胞、小胶质细胞、少突胶质细胞、OPC/NG2 glia、Schwann cell、室管膜细胞、放射状胶质细胞、神经干细胞、周细胞、脑血管内皮细胞，以及明确建模的混合细胞系统。
 
-## Inclusion criteria
+## 收录与排除
 
-1. A stable scholarly or archival source is identifiable by DOI, PMID, preprint identifier, or persistent repository URL.
-2. The source explicitly presents a mathematical/computational model relevant to at least one scoped cell type.
-3. The modelling formalism can be classified (for example ODE, PDE, stochastic, agent-based, compartmental, or hybrid).
-4. The record distinguishes paper verification from equation extraction and executable reproduction.
+纳入的模型必须有可定位的稳定来源，并明确呈现数学或计算模型。单纯提及细胞、没有模型的实验研究、无法追溯的二手说法、许可证不明的复制代码及论文全文均被排除。候选与核心记录分层存放。
 
-## Exclusion criteria
+## 文献核验与方程提取
 
-- Reviews, opinions, or biological experiments without a model are not model records.
-- Untraceable claims, scraped equation collections, and license-unclear copied code are excluded.
-- Model names alone are not enough: every record needs a primary source.
-- Therapeutic or clinical claims are not inferred from model inclusion.
+- 书目核验：DOI、题名、作者、年份和期刊以 Crossref、PubMed 或出版社页之一为依据。
+- 方程核验：记录公式/方法的位置、变量、单位、初始或边界条件、假设和独立一致性检查后，才可标记 `extracted`。
+- 实现核验：外部代码需有明确来源和许可证；未核验时只保存链接和状态。
 
-## Literature verification standard
+## 版权合规
 
-Each `verified_bibliography` record must have its title, authorship, venue/year, and persistent identifier checked against a primary publisher page, PubMed, or Crossref. Records whose equations were not inspected are labelled `not_extracted`; `verified_bibliography` must never be read as independently validated biology or software.
+不收录论文 PDF、原图、整表、补充材料或许可证不明的第三方代码。原创代码适用 Apache-2.0；原创文档与策展表格适用 CC BY 4.0；外部材料保留原有条款。
 
-## Equation extraction standard
+## 阶段任务
 
-Equations enter `equation_status=extracted` only when a curator records the source location (equation/section/page), states assumptions and units, and performs a second-person or scripted consistency check. The first seed keeps equation text out of the repository and uses `not_extracted` deliberately.
-
-## Copyright and license compliance
-
-- Cite and link to sources; do not upload article PDFs, figures, tables, or supplementary files unless their license and provenance are recorded.
-- Do not copy third-party implementations without a compatible, documented license and attribution.
-- Original code is Apache-2.0; original documentation and curation output are CC BY 4.0. Third-party material keeps its original terms.
-
-## Phased tasks
-
-| Phase | Deliverable | Status |
+| 阶段 | 交付物 | 状态 |
 | --- | --- | --- |
-| 0 | Governance, licenses, disclaimer, base README | complete |
-| 1 | Search protocol, schemas, validation tooling | complete |
-| 2 | Bibliographically verified seed records | complete |
-| 3 | Equation-level extraction with locators and units | planned |
-| 4 | Reproduction notebooks for permissively licensed models | planned |
-| 5 | Broad cell-type expansion and independent review | planned |
+| 0 | 治理文件、双许可证、免责声明、`main` 初始化 | 已完成 |
+| 1 | 检索协议、字段模式、基础校验脚本 | 已完成 |
+| 2 | 书目核验的 6 条种子记录 | 已完成 |
+| 3 | 中文导航、分类、候选筛选队列与空白分析 | 进行中 |
+| 4 | 方程位置、变量/参数和独立转录核验 | 计划中 |
+| 5 | 许可明确来源的原创最小实现与测试 | 计划中 |
+| 6 | 多数据库系统检索和各细胞类型的广泛扩展 | 计划中 |
 
-## Expected structure
+## 预期结构
 
-`data/models/` curated records; `references/` strategy and citation audits; `docs/` curation guidance; `scripts/` validation tools; `examples/` original minimal examples; `.github/` validation workflow and templates.
+- `data/models/`：最小、严格校验的核心记录；
+- `models/`：与扩展字段契约兼容的 CSV/JSON/YAML 目录；
+- `references/`：检索式、候选队列、BibTeX 与核验审计；
+- `docs/` 与 `equations/`：原创中文解释、分类和研究空白；
+- `scripts/`：离线结构校验；`.github/`：PR 运行的验证。
 
-## Completion checklist
+## 完成清单
 
-- [x] Project governance and dual-license policy
-- [x] Reproducible search protocol
-- [x] Machine-readable schema and seed catalogue
-- [x] Citation identifiers independently checked against Crossref
-- [ ] Equation-level extraction with source locators
-- [ ] Independent equation transcription check
-- [ ] Executable model reproductions
-- [ ] Broad coverage of all scoped cell types
+- [x] 项目治理、双许可证和免责声明
+- [x] 可复现检索策略与基础数据模式
+- [x] 书目核验的种子目录
+- [x] 中文核心导航和证据状态约定
+- [ ] 方程级定位与独立核验
+- [ ] 全细胞类型的系统检索与完整筛选计数
+- [ ] 明确许可证的原创最小实现
+- [ ] 公开代码和实验验证的逐条审计
