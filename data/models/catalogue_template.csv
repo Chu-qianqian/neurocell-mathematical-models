@@ -1,0 +1,2 @@
+model_id,model_name,cell_type,biological_process,formalism,scale,primary_source_doi,persistent_url,bibliography_status,equation_status,implementation_status,license_status,curation_note
+example_model,Replace with a source-backed model,neuron,replace with source-defined process,ODE,single_cell,10.example/replace,https://doi.org/10.example/replace,candidate,not_extracted,not_assessed,not_assessed,Template row only; do not treat as a model record.

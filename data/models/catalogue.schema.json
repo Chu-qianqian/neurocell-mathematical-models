@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Neurocell model catalogue record",
+  "type": "object",
+  "required": [
+    "model_id",
+    "model_name",
+    "cell_type",
+    "biological_process",
+    "formalism",
+    "scale",
+    "primary_source_doi",
+    "persistent_url",
+    "bibliography_status",
+    "equation_status",
+    "implementation_status",
+    "license_status",
+    "curation_note"
+  ],
+  "properties": {
+    "model_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9_-]*$"},
+    "model_name": {"type": "string", "minLength": 1},
+    "cell_type": {"type": "string"},
+    "biological_process": {"type": "string", "minLength": 1},
+    "formalism": {"enum": ["ODE", "PDE", "hybrid_ODE_PDE", "stochastic", "agent_based", "compartmental", "other"]},
+    "scale": {"enum": ["molecular", "single_cell", "population", "tissue", "network", "multi_scale"]},
+    "primary_source_doi": {"type": "string", "pattern": "^10\\.[^\\s/]+/.+"},
+    "persistent_url": {"type": "string", "pattern": "^https://doi.org/10\\."},
+    "bibliography_status": {"enum": ["verified_bibliography", "candidate", "needs_review"]},
+    "equation_status": {"enum": ["not_extracted", "extracted", "independently_checked"]},
+    "implementation_status": {"enum": ["not_assessed", "source_linked", "reproduced", "validated"]},
+    "license_status": {"enum": ["not_assessed", "documented", "compatible_for_inclusion"]},
+    "curation_note": {"type": "string", "minLength": 1}
+  },
+  "additionalProperties": false
+}
