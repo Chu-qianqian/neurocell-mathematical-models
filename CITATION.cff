@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "如果使用本图谱，请引用本仓库版本并同时引用相应的原始模型论文。"
+title: "Neurocell Mathematical Models"
+abstract: "一个可追溯、版权合规的神经系统细胞数学与计算模型图谱。"
+type: dataset
+license: CC-BY-4.0
+repository-code: "https://github.com/Chu-qianqian/neurocell-mathematical-models"
+url: "https://github.com/Chu-qianqian/neurocell-mathematical-models"
+authors:
+  - name: "Neurocell Mathematical Models contributors"
+date-released: 2026-07-22
+version: "0.1.0"
