@@ -1,0 +1,6 @@
+record_id,source_or_candidate,decision,reason,last_verified
+exclude_generic_neuron_map,equations/neurons.md,replaced,Generic family equations are not paper-specific verified transcriptions,2026-07-22
+exclude_generic_astrocyte_map,equations/astrocytes.md,replaced,Generic family equations are not paper-specific verified transcriptions,2026-07-22
+exclude_postnov_equations,postnov_2009_neuron_astrocyte,deferred,Exact equation locator and transcription were not completed,2026-07-22
+exclude_microglia_equations,amato_arnold_2025_microglia,deferred,Full-text equation audit was not completed,2026-07-22
+exclude_oligodendrocyte_equations,nikolov_2022_oligodendrocyte,deferred,Full-text equation audit was not completed,2026-07-22

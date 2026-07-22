@@ -1,5 +1,5 @@
 # Oligodendrocytes and OPCs
 
-The current seed covers oligodendrocyte differentiation dynamics. It is not a complete myelination model and does not cover OPC proliferation, migration, maturation, axon selection, g-ratio, internode length, demyelination/remyelination, or metabolic support.
+The [Nikolov et al. record](../../equations/models/nikolov_2022_oligodendrocyte.md) is bibliography verified for oligodendrocyte differentiation dynamics, but its equation system and parameters are not yet curated.
 
-Screening must state whether a source directly represents cellular/lineage states or only changes myelinated-cable parameters; these categories are counted separately.
+OPC proliferation, migration, maturation, axon selection, g-ratio, internode length, demyelination, remyelination, and metabolic support remain evidence targets. Sources that only change myelinated-cable parameters are classified separately from cellular or lineage-state models.

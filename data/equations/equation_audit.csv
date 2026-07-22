@@ -1,0 +1,9 @@
+equation_id,model_id,equation_page,equation_label,source_locator,equation_verification_source,equation_transcription_type,verification_status,last_verified
+hh1952_membrane_balance,hodgkin_huxley_1952,equations/models/hodgkin_huxley_1952.md,membrane current balance,pp. 518-519 equation (26),publisher article PDF; Physiome record 0155,exact_verified_transcription,independently_checked,2026-07-22
+hh1952_gating_kinetics,hodgkin_huxley_1952,equations/models/hodgkin_huxley_1952.md,generic gate kinetics,pp. 507 and 518-519 equations (7) (15) (16),publisher article PDF; Physiome record 0155,exact_verified_transcription,independently_checked,2026-07-22
+izh2003_voltage,izhikevich_2003,equations/models/izhikevich_2003.md,voltage equation,p. 1569 equation (1),author-hosted full paper PDF,exact_verified_transcription,independently_checked,2026-07-22
+izh2003_recovery,izhikevich_2003,equations/models/izhikevich_2003.md,recovery equation,p. 1569 equation (2),author-hosted full paper PDF,exact_verified_transcription,independently_checked,2026-07-22
+izh2003_reset,izhikevich_2003,equations/models/izhikevich_2003.md,after-spike reset,p. 1569 equation (3),author-hosted full paper PDF,exact_verified_transcription,independently_checked,2026-07-22
+gchi2009_calcium,de_pitta_2009_gchi,equations/models/de_pitta_2009_gchi.md,calcium balance,preprint p. 8 equation (5),author-posted arXiv preprint,equivalent_notation_with_mapping,independently_checked,2026-07-22
+gchi2009_gate,de_pitta_2009_gchi,equations/models/de_pitta_2009_gchi.md,IP3 receptor gate,preprint p. 8 equation (6),author-posted arXiv preprint,equivalent_notation_with_mapping,independently_checked,2026-07-22
+gchi2009_ip3,de_pitta_2009_gchi,equations/models/de_pitta_2009_gchi.md,IP3 balance,preprint p. 18 equation (20),author-posted arXiv preprint,equivalent_notation_with_mapping,independently_checked,2026-07-22

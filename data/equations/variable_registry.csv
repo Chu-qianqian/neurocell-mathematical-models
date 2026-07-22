@@ -1,0 +1,13 @@
+model_id,symbol,meaning,units,source_status,source_locator,last_verified
+hodgkin_huxley_1952,V,membrane potential displacement from rest,mV,source_verified,pp. 505 and 518-519,2026-07-22
+hodgkin_huxley_1952,I,total membrane current density,microampere per square centimetre,source_verified,p. 505,2026-07-22
+hodgkin_huxley_1952,m,sodium activation gate,dimensionless,source_verified,pp. 518-519,2026-07-22
+hodgkin_huxley_1952,h,sodium inactivation gate,dimensionless,source_verified,pp. 518-519,2026-07-22
+hodgkin_huxley_1952,n,potassium activation gate,dimensionless,source_verified,pp. 507 and 518-519,2026-07-22
+izhikevich_2003,v,membrane potential,mV scale,source_verified,p. 1569,2026-07-22
+izhikevich_2003,u,membrane recovery variable,source convention,source_verified,p. 1569,2026-07-22
+izhikevich_2003,I,synaptic or injected current,source convention,source_verified,p. 1569,2026-07-22
+de_pitta_2009_gchi,C,cytosolic calcium concentration,micromolar,source_verified,preprint pp. 6-8,2026-07-22
+de_pitta_2009_gchi,h,IP3 receptor inactivation variable,dimensionless,source_verified,preprint p. 8,2026-07-22
+de_pitta_2009_gchi,I,intracellular IP3 concentration,micromolar,source_verified,preprint pp. 7-8,2026-07-22
+de_pitta_2009_gchi,gamma,extracellular glutamate concentration,micromolar,source_verified,preprint pp. 15-18,2026-07-22

@@ -1,4 +1,4 @@
-"""Validate the CSV catalogue without requiring third-party packages."""
+"""Validate the equation-aware CSV catalogue without third-party packages."""
 
 from __future__ import annotations
 
@@ -28,7 +28,7 @@ def main() -> int:
     with CATALOGUE.open(newline="", encoding="utf-8") as handle:
         reader = csv.DictReader(handle)
         headers = reader.fieldnames or []
-        if set(headers) != allowed:
+        if set(headers) != allowed or len(headers) != len(allowed):
             errors.append("catalogue headers must exactly match schema properties")
         for line, row in enumerate(reader, start=2):
             for field in required:
@@ -48,6 +48,12 @@ def main() -> int:
             for field, allowed_values in enum_fields.items():
                 if row.get(field) not in allowed_values:
                     errors.append(f"line {line}: invalid {field}={row.get(field)!r}")
+            status = row.get("equation_status", "")
+            if status not in {"not_verified", "bibliography_verified", "full_text_unavailable", "license_unclear"}:
+                if row.get("equation_source_locator") == "not_verified":
+                    errors.append(f"line {line}: verified equation status needs a source locator")
+                if row.get("equation_transcription_type") == "not_applicable":
+                    errors.append(f"line {line}: verified equation status needs a transcription type")
     if errors:
         print("Catalogue validation failed:")
         print("\n".join(f"- {error}" for error in errors))

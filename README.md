@@ -1,60 +1,50 @@
 # Neurocell Mathematical Models
 
-> A traceable, copyright-compliant atlas of mathematical and computational models for neurons and nervous-system glia.
+> A traceable, copyright-compliant atlas of mathematical and computational models for nervous-system cells.
 
-This repository catalogues nervous-system cell models that are represented by explicit mathematical formalisms. It is not a full-text paper mirror, a collection of third-party code, or a directory of papers that merely mention a cell type. Model names, variable names, and original paper titles are retained in English for source traceability.
+This repository is an equation-level knowledge base, not a paper mirror or a collection of third-party code. It separates bibliography verification from equation verification and never treats a model-family summary as a paper-level reproduction.
 
-## Purpose
+## Current evidence counts
 
-- Record each model's cellular scope, mathematical form, biological function, evidence tier, and reproducibility status separately.
-- Provide a stable data interface for later equation-level verification, parameter extraction, and original minimal implementations.
-- Distinguish cell-intrinsic models, single-function models, cell-population models, multicellular coupled models, and indirect parameterizations.
-- Do not distribute copyrighted paper PDFs, figures, supplements, or third-party code with unclear licensing.
+- Bibliography-verified records: **6**
+- Equation-located records: **3**
+- Equation-transcribed records: **3**
+- Independently checked equation records: **3**
+- Candidate records awaiting equation screening: **5**
+- Records with unavailable or uninspected full-text equations: **3**
 
-## Current core release
+## Verified equations
 
-The core release contains **six bibliographically verified seed records**: two neuronal records, one astrocyte record, one neuron–astrocyte coupled record, one microglial record, and one oligodendrocyte record. Their DOI, author, year, and venue have been checked against Crossref. Equation-level verification, parameter transcription, third-party-code license assessment, and executable reproduction have not been completed and are never claimed as complete.
+| Cell type | Model | Equation status | Equation page |
+| --- | --- | --- | --- |
+| Neuron | Hodgkin-Huxley conductance model | independently checked | [source-traceable equations](equations/models/hodgkin_huxley_1952.md) |
+| Neuron | Izhikevich simple spiking-neuron model | independently checked | [source-traceable equations](equations/models/izhikevich_2003.md) |
+| Astrocyte | G-ChI calcium and IP3 model | independently checked; parameters incomplete | [source-traceable equations](equations/models/de_pitta_2009_gchi.md) |
+| Mixed neuron-glia system | Functional neuron-astrocyte calcium-network model | bibliography verified only | [holding record](equations/models/postnov_2009_neuron_astrocyte.md) |
+| Microglia | Ischemic-penumbra dynamics model | bibliography verified only | [holding record](equations/models/amato_arnold_2025_microglia.md) |
+| Oligodendrocyte | Differentiation dynamics model | bibliography verified only | [holding record](equations/models/nikolov_2022_oligodendrocyte.md) |
 
-| Cell type | Model | Mathematical form | Function simulated | Original paper | Code | License | Reproducibility |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| Neuron | Hodgkin-Huxley conductance model | ODE / conductance-based | Membrane excitability and action potentials | [Hodgkin & Huxley (1952)](https://doi.org/10.1113/jphysiol.1952.sp004764) | Not assessed | Not assessed | Bibliography only |
-| Neuron | Izhikevich simple spiking-neuron model | ODE | Spiking dynamics | [Izhikevich (2003)](https://doi.org/10.1109/tnn.2003.820440) | Not assessed | Not assessed | Bibliography only |
-| Astrocyte | G-ChI model | ODE | Glutamate-regulated Ca²⁺/IP3 dynamics | [De Pittà et al. (2009)](https://doi.org/10.1007/s10867-009-9155-y) | Not assessed | Not assessed | Bibliography only |
-| Mixed neuron–glia | Functional neuron-astrocyte calcium-network model | ODE | Neuron–astrocyte Ca²⁺ signalling | [Postnov et al. (2009)](https://doi.org/10.1007/s10867-009-9156-x) | Not assessed | Not assessed | Bibliography only |
-| Microglia | Ischemic-penumbra dynamics model | ODE | Microglial dynamics in ischemic penumbra | [Amato & Arnold (2025)](https://doi.org/10.1016/j.mbs.2025.109549) | Not assessed | Not assessed | Bibliography only |
-| Oligodendrocyte | Differentiation dynamics model | ODE | Oligodendrocyte differentiation | [Nikolov et al. (2022)](https://doi.org/10.3390/math10162928) | Not assessed | Not assessed | Bibliography only |
+The catalogue is machine-readable in [models/model_catalog.csv](models/model_catalog.csv). Every displayed equation has an audit row in [data/equations/equation_audit.csv](data/equations/equation_audit.csv). Candidate literature is not automatically promoted to a core record; see [references/screening_candidates.csv](references/screening_candidates.csv).
 
-The machine-readable seed catalogue is [data/models/catalogue.csv](data/models/catalogue.csv). The expanded catalogue contract is [models/model_catalog.csv](models/model_catalog.csv). Candidate literature is not automatically treated as a core model record; see [references/screening_candidates.csv](references/screening_candidates.csv).
+## Evidence and copyright boundary
 
-## Inclusion and exclusion criteria
-
-**Inclusion gate:** a stable source is identifiable; the paper explicitly presents or uses a cell-relevant mathematical/computational model; its formalism can be classified; and bibliography, equation, implementation, and license statuses are recorded independently.
-
-**Excluded from core model records:** experimental papers without a model, review-only conclusions, untraceable claims, models that only parameterize myelin or glia without explicit cellular scope, and copied third-party code with unclear licensing. Literature without equation verification remains in the screening queue.
+Equation pages require a source locator, source-access status, transcription type, and audit row. Sources with no inspected equation location remain holding records or candidates. The repository stores original explanatory prose and concise cited mathematics only; it does not distribute PDFs, publisher figures, copied tables, supplements, or third-party code. Linked third-party code remains outside this repository unless its license has been recorded as compatible.
 
 ## Navigation
 
-- [Scope and classification](docs/overview.md)
-- [Methodology and evidence rules](docs/methodology.md)
-- [Comparison matrix](docs/comparison_matrix.md)
-- [Research gaps](docs/research_gaps.md)
+- [Verified-equation index](equations/README.md)
+- [Equation curation protocol](docs/equation_curation_protocol.md)
+- [Equation notation policy](docs/equation_notation_policy.md)
+- [Model scope taxonomy](docs/model_scope_taxonomy.md)
 - [Cell-type pages](docs/cell_types/README.md)
-- [Equation-reading guide](equations/README.md)
-- [Search strategy](references/search_strategy.md)
+- [Research gaps](docs/research_gaps.md)
+- [Search log](references/search_log.csv) and [exclusion log](references/exclusion_log.csv)
 - [Data dictionary](docs/data_dictionary.md)
 - [Contribution guide](docs/CONTRIBUTING.md)
 
-## Model classification
+## Cell-type coverage
 
-Classification tags cover mathematical form (ODE, PDE, SDE, reaction-diffusion, conductance-based, agent-based, hybrid, and more), biological scale (molecular to systems level), and function (electrical activity, calcium signalling, inflammation, myelination, vascular regulation, and more). Each record also uses one of `cell_intrinsic`, `cell_function`, `cell_population`, `coupled_multicellular`, or `indirect_parameterization`. These are curator classifications, not replacements for author terminology.
-
-## Literature quality and verification tiers
-
-`A`, `B`, `C`, and `D` mean foundational/classic, important application, coupled/extended, and exploratory sources. They are not journal-impact-factor labels or fixed citation counts. Evidence states include `verified`, `partially verified`, `not verified`, `full text unavailable`, `license unclear`, `code unavailable`, and `parameters incomplete`. All current seed records are **bibliography verified and equation not verified**.
-
-## Citation and contribution
-
-Please cite both this repository version and the relevant original paper. Repository metadata is in [CITATION.cff](CITATION.cff). Before contributing, read [docs/CONTRIBUTING.md](docs/CONTRIBUTING.md) and provide a traceable primary source, verification notes, and code-license information.
+The current directly displayed systems cover two neuron models and one astrocyte model. Microglia and oligodendrocyte records are bibliography-verified holding records. Schwann cells, OPCs, ependymal cells, radial glia, neural stem cells, pericytes, and endothelial cells are documented search-queue categories rather than equation-verified models.
 
 ## Licenses and disclaimer
 
@@ -63,4 +53,4 @@ Please cite both this repository version and the relevant original paper. Reposi
 - Third-party material is not relicensed; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 - This repository is a literature-navigation and educational resource; see [DISCLAIMER.md](DISCLAIMER.md).
 
-Last updated: 2026-07-22 (core release; see each record's `last_verified`).
+Last verified: 2026-07-22.
