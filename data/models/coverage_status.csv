@@ -1,0 +1,11 @@
+cell_type,scope_status,verified_model_count,notes
+neuron,seeded,0,Seed records will be added after source verification.
+astrocyte,seeded,0,Seed records will be added after source verification.
+microglia,seeded,0,Seed records will be added after source verification.
+oligodendrocyte,seeded,0,Seed records will be added after source verification.
+oligodendrocyte_precursor_cell,in_scope,0,Planned expansion.
+schwann_cell,in_scope,0,No verified seed record yet.
+ependymal_cell,in_scope,0,Planned expansion.
+satellite_glia,in_scope,0,Planned expansion.
+enteric_glia,in_scope,0,Planned expansion.
+mixed_neuron_glia_system,in_scope,0,Planned expansion.
