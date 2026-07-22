@@ -3,7 +3,7 @@
   model_name: "Hodgkin-Huxley conductance model"
   cell_type: "Neuron"
   cell_subtype: "giant axon membrane"
-  biological_function: "memory excitability and action-potential conduction"
+  biological_function: "membrane excitability and action-potential conduction"
   mathematical_form: "ODE; conductance-based"
   spatial_model: "no"
   stochastic: "no"
