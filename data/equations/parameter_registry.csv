@@ -1,0 +1,12 @@
+model_id,parameter,meaning,units,value_or_range,provenance,status,last_verified
+hodgkin_huxley_1952,C_M,membrane capacitance per area,microfarad per square centimetre,parameters_incomplete,p. 518 equation (26) and Table 3,parameters_incomplete,2026-07-22
+hodgkin_huxley_1952,gbar_K,maximal potassium conductance density,millimho per square centimetre,parameters_incomplete,p. 518 equation (26) and Table 3,parameters_incomplete,2026-07-22
+hodgkin_huxley_1952,gbar_Na,maximal sodium conductance density,millimho per square centimetre,parameters_incomplete,p. 518 equation (26) and Table 3,parameters_incomplete,2026-07-22
+hodgkin_huxley_1952,g_l,leak conductance density,millimho per square centimetre,parameters_incomplete,p. 518 equation (26) and Table 3,parameters_incomplete,2026-07-22
+izhikevich_2003,a,recovery time-scale parameter,dimensionless in source convention,0.02 typical,p. 1569,source_verified,2026-07-22
+izhikevich_2003,b,recovery sensitivity parameter,dimensionless in source convention,0.2 typical,p. 1569,source_verified,2026-07-22
+izhikevich_2003,c,post-spike voltage reset,mV,-65 typical,p. 1569,source_verified,2026-07-22
+izhikevich_2003,d,post-spike recovery increment,dimensionless in source convention,2 typical,p. 1570,source_verified,2026-07-22
+de_pitta_2009_gchi,v_ER,SERCA pump-rate scale,source rate units,parameters_incomplete,preprint equations (1) and (5); parameter table pending,parameters_incomplete,2026-07-22
+de_pitta_2009_gchi,v_beta,PLC-beta production-rate scale,source rate units,parameters_incomplete,preprint equations (15) and (19); parameter table pending,parameters_incomplete,2026-07-22
+de_pitta_2009_gchi,v_delta,PLC-delta production-rate scale,source rate units,parameters_incomplete,preprint equations (7) (8) and (20); parameter table pending,parameters_incomplete,2026-07-22

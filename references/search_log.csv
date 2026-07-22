@@ -1,0 +1,7 @@
+search_id,database,exact_query,date_searched,retrieved_count,screening_decision,reason
+crossref_hh_20260722,Crossref API,10.1113/jphysiol.1952.sp004764,2026-07-22,1,included,bibliography verified and equation source inspected
+crossref_izh_20260722,Crossref API,10.1109/TNN.2003.820440,2026-07-22,1,included,bibliography verified and author-hosted equation source inspected
+crossref_gchi_20260722,Crossref API,10.1007/s10867-009-9155-y,2026-07-22,1,included,bibliography verified and author-posted equation source inspected
+crossref_postnov_20260722,Crossref API,10.1007/s10867-009-9156-x,2026-07-22,1,holding_record,bibliography verified but exact equation locator pending
+crossref_microglia_20260722,Crossref API,10.1016/j.mbs.2025.109549,2026-07-22,1,holding_record,bibliography verified but full-text equation audit pending
+crossref_oligodendrocyte_20260722,Crossref API,10.3390/math10162928,2026-07-22,1,holding_record,bibliography verified but full-text equation audit pending

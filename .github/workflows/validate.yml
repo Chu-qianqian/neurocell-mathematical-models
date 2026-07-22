@@ -20,5 +20,6 @@ jobs:
       - run: python scripts/build_tables.py
       - run: git diff --exit-code -- models/model_catalog.json models/model_catalog.yaml
       - run: python scripts/validate_references.py
+      - run: python scripts/validate_equations.py
       - run: python scripts/validate_links.py
       - run: python scripts/validate_language.py
