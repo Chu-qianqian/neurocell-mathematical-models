@@ -1,11 +1,11 @@
 cell_type,scope_status,verified_model_count,notes
-neuron,seeded,0,Seed records will be added after source verification.
-astrocyte,seeded,0,Seed records will be added after source verification.
-microglia,seeded,0,Seed records will be added after source verification.
-oligodendrocyte,seeded,0,Seed records will be added after source verification.
+neuron,seeded,2,Hodgkin-Huxley and Izhikevich seed records; equation extraction pending.
+astrocyte,seeded,1,De Pittà et al. G-ChI source; equation extraction pending.
+microglia,seeded,1,Amato and Arnold data-driven ischemic-penumbra source; source terminology retained.
+oligodendrocyte,seeded,1,Nikolov et al. differentiation-dynamics source; equation extraction pending.
 oligodendrocyte_precursor_cell,in_scope,0,Planned expansion.
 schwann_cell,in_scope,0,No verified seed record yet.
 ependymal_cell,in_scope,0,Planned expansion.
 satellite_glia,in_scope,0,Planned expansion.
 enteric_glia,in_scope,0,Planned expansion.
-mixed_neuron_glia_system,in_scope,0,Planned expansion.
+mixed_neuron_glia_system,seeded,1,Postnov et al. functional neuron-astrocyte network model.
