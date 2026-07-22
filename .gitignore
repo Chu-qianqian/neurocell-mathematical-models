@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.mypy_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Build and generated outputs
+build/
+dist/
+*.egg-info/
+reports/generated/
+data/derived/
+
+# Local configuration and secrets
+.env
+.env.*
+*.pem
+*.key
+
+# OS/editor artifacts
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
