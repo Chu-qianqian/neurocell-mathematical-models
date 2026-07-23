@@ -9,5 +9,6 @@ Priority evidence targets are:
 3. Curate an oligodendrocyte or OPC model with exact differentiation or myelination equations and parameter provenance.
 4. Screen models of Schwann cells, ependymal cells, radial glia, neural stem cells, pericytes, and endothelial cells without treating reviews or descriptive papers as equation sources.
 5. Add original educational implementations only after the source equations and third-party licensing boundary are clear.
+6. Audit exact equation locators, variables, parameters, and numerical conditions for the Wilson-Cowan, Potjans-Diesmann, Montbrio-Pazo-Roxin, and Wong-Wang network holding records without importing third-party code or article material.
 
 Candidate records are deliberately retained outside the verified equation count until they satisfy the equation gate.
