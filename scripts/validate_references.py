@@ -8,7 +8,14 @@ import re
 import sys
 from pathlib import Path
 
-from build_tables import build_readme, json_view, yaml_view
+from build_tables import (
+    bib_view,
+    build_readme,
+    equation_index,
+    json_view,
+    reference_csv,
+    yaml_view,
+)
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -16,8 +23,8 @@ MODELS = ROOT / "models" / "model_catalog.csv"
 JSON_VIEW = ROOT / "models" / "model_catalog.json"
 YAML_VIEW = ROOT / "models" / "model_catalog.yaml"
 README_VIEW = ROOT / "README.md"
+EQUATION_INDEX = ROOT / "equations" / "README.md"
 REFERENCES = ROOT / "references" / "references.csv"
-CANDIDATES = ROOT / "references" / "screening_candidates.csv"
 SCREENING = ROOT / "references" / "model_screening_master.csv"
 SCREENING_INVENTORY = ROOT / "references" / "model_screening_inventory.csv"
 VERIFICATION_AUDIT = ROOT / "references" / "verification_audit.csv"
@@ -68,7 +75,6 @@ def main() -> int:
     errors: list[str] = []
     models = read_csv(MODELS)
     references = read_csv(REFERENCES)
-    candidates = read_csv(CANDIDATES)
     screening = read_csv(SCREENING)
     inventory = read_csv(SCREENING_INVENTORY)
     verification_audit = read_csv(VERIFICATION_AUDIT)
@@ -89,7 +95,6 @@ def main() -> int:
         errors.append("verification audit must cover every canonical model exactly once")
     check_dois(models, "doi", "models", errors)
     check_dois(references, "doi", "references", errors)
-    check_dois(candidates, "doi", "candidates", errors)
     for index, row in enumerate(models, start=2):
         if row.get("code_url", "").strip() and not row.get("code_license", "").strip():
             errors.append(f"models:{index}: external code URL needs a license status")
@@ -99,7 +104,14 @@ def main() -> int:
         if row.get("equation_status") in EQUATION_STATUSES:
             if row.get("equation_source_locator") in {"", "not verified"}:
                 errors.append(f"models:{index}: transcribed status needs a source locator")
-            if row.get("equation_transcription_type") in {"", "not applicable"}:
+            if (
+                row.get("equation_status") != "equation_located"
+                and row.get("equation_transcription_type") in {
+                    "",
+                    "not applicable",
+                    "not_applicable",
+                }
+            ):
                 errors.append(f"models:{index}: transcribed status needs a transcription type")
         matching_audit = [
             audit_row
@@ -124,6 +136,12 @@ def main() -> int:
         errors.append("model_catalog.yaml is stale; run python scripts/build_tables.py")
     if README_VIEW.read_text(encoding="utf-8") != build_readme(models, screening):
         errors.append("README.md is stale; run python scripts/build_tables.py")
+    if EQUATION_INDEX.read_text(encoding="utf-8") != equation_index(models):
+        errors.append("equations/README.md is stale; run python scripts/build_tables.py")
+    if REFERENCES.read_text(encoding="utf-8") != reference_csv(models):
+        errors.append("references.csv is stale; run python scripts/build_tables.py")
+    if BIB.read_text(encoding="utf-8") != bib_view(models):
+        errors.append("references.bib is stale; run python scripts/build_tables.py")
 
     screening_required = {
         "screening_id",
@@ -213,7 +231,10 @@ def main() -> int:
         print("Reference validation failed:")
         print("\n".join(f"- {error}" for error in errors))
         return 1
-    print(f"Reference validation passed: {len(models)} core records, {len(candidates)} candidates")
+    print(
+        f"Reference validation passed: {len(models)} canonical records, "
+        f"{len(screening)} screening outcomes"
+    )
     return 0
 
 

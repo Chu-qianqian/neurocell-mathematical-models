@@ -14,8 +14,16 @@ MODELS = ROOT / "models" / "model_catalog.csv"
 AUDIT = ROOT / "data" / "equations" / "equation_audit.csv"
 VARIABLES = ROOT / "data" / "equations" / "variable_registry.csv"
 PARAMETERS = ROOT / "data" / "equations" / "parameter_registry.csv"
-DISPLAYED = {
+INDEPENDENT_TEMPLATE = (
+    ROOT / "data" / "equations" / "independent_review_template.csv"
+)
+LOCATED = {
     "equation_located",
+    "equation_transcribed",
+    "second_pass_checked",
+    "independently_checked",
+}
+DISPLAYED = {
     "equation_transcribed",
     "second_pass_checked",
     "independently_checked",
@@ -36,24 +44,45 @@ AUDIT_FIELDS = {
     "verification_status",
     "source_version",
     "source_access_date",
-    "independent_checker",
-    "independent_check_date",
-    "independent_check_method",
-    "independent_verification_source",
-    "discrepancy_found",
+    "checker_name",
+    "checker_role",
+    "check_date",
+    "check_method",
+    "source_identifier",
+    "frozen_commit_sha",
+    "discrepancies_found",
     "discrepancy_resolution",
+    "resolution_date",
 }
 INDEPENDENT_FIELDS = {
-    "independent_checker",
-    "independent_check_date",
-    "independent_check_method",
-    "independent_verification_source",
+    "checker_name",
+    "checker_role",
+    "check_date",
+    "check_method",
+    "source_identifier",
     "source_version",
     "source_access_date",
-    "discrepancy_found",
+    "frozen_commit_sha",
+    "discrepancies_found",
     "discrepancy_resolution",
+    "resolution_date",
 }
 PLACEHOLDERS = {"", "not_verified", "not verified", "not_applicable"}
+INDEPENDENT_TEMPLATE_FIELDS = [
+    "equation_id",
+    "model_id",
+    "checker_name",
+    "checker_role",
+    "check_date",
+    "check_method",
+    "source_identifier",
+    "source_version",
+    "source_access_date",
+    "frozen_commit_sha",
+    "discrepancies_found",
+    "discrepancy_resolution",
+    "resolution_date",
+]
 
 
 def read_csv(path: Path) -> list[dict[str, str]]:
@@ -71,6 +100,11 @@ def main() -> int:
     audit_ids: set[str] = set()
     audited_models: set[str] = set()
     audit_counts: Counter[str] = Counter()
+
+    with INDEPENDENT_TEMPLATE.open(encoding="utf-8", newline="") as handle:
+        template_fields = csv.DictReader(handle).fieldnames or []
+    if template_fields != INDEPENDENT_TEMPLATE_FIELDS:
+        errors.append("independent review template has unexpected fields")
 
     if audit and not AUDIT_FIELDS.issubset(audit[0]):
         errors.append("audit: missing strict provenance or independent-check columns")
@@ -96,11 +130,26 @@ def main() -> int:
             if not row.get(field, "").strip():
                 errors.append(f"audit:{line}: missing {field}")
         if row.get("verification_status") == "independently_checked":
-            for field in INDEPENDENT_FIELDS:
+            unconditional = INDEPENDENT_FIELDS - {
+                "discrepancy_resolution",
+                "resolution_date",
+            }
+            for field in unconditional:
                 if row.get(field, "").strip() in PLACEHOLDERS:
                     errors.append(
                         f"audit:{line}: independently checked row needs {field}"
                     )
+            discrepancy = row.get("discrepancies_found", "").strip()
+            if discrepancy not in {"yes", "no"}:
+                errors.append(
+                    f"audit:{line}: independently checked row needs yes/no discrepancies_found"
+                )
+            if discrepancy == "yes":
+                for field in ("discrepancy_resolution", "resolution_date"):
+                    if row.get(field, "").strip() in PLACEHOLDERS:
+                        errors.append(
+                            f"audit:{line}: resolved discrepancy needs {field}"
+                        )
 
     variable_models = {row.get("model_id", "") for row in variables}
     parameter_models = {row.get("model_id", "") for row in parameters}
@@ -153,6 +202,26 @@ def main() -> int:
             if audit_counts[model_id] < displayed_blocks:
                 errors.append(
                     f"models:{model_id}: fewer audit rows than displayed equation blocks"
+                )
+        if status == "equation_located":
+            if model_id not in audited_models:
+                errors.append(f"models:{model_id}: located status needs audit rows")
+            if displayed_blocks:
+                errors.append(
+                    f"models:{model_id}: located-only status must not display equations"
+                )
+            model_audit = [
+                audit_row
+                for audit_row in audit
+                if audit_row.get("model_id") == model_id
+            ]
+            if not model_audit or any(
+                audit_row.get("verification_status") != "equation_located"
+                or audit_row.get("equation_transcription_type") != "not_applicable"
+                for audit_row in model_audit
+            ):
+                errors.append(
+                    f"models:{model_id}: located-only audit rows claim stronger evidence"
                 )
         if status in NO_DISPLAY and displayed_blocks:
             errors.append(
