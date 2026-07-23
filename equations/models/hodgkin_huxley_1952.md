@@ -3,9 +3,10 @@
 ## Verification status
 
 - Bibliography: verified against Crossref on 2026-07-22.
-- Equation source inspected: publisher-accessible article PDF and an independent Physiome model record.
+- Equation source inspected: publisher-accessible article and Physiome model record.
 - Source locator: Hodgkin and Huxley (1952), pp. 505 and 518-519, equations (1)-(7), (15)-(16), and (26); Physiome record 0155 identifies the rate-law page.
-- Independent transcription check: completed against the cited article's summary of equations.
+- Maintainer second-pass check: completed against the cited article's summary of equations.
+- Independent transcription check: not documented; no independent checker evidence is recorded.
 - Full-text access status: lawful publisher-accessible source inspected.
 
 ## Scope
@@ -39,13 +40,13 @@ Hodgkin, A. L. and Huxley, A. F. A quantitative description of membrane current 
 
 ## Equations
 
-The following is an exact verified transcription in the source notation:
+The following is an exact source transcription with a maintainer second-pass check:
 
 $$
 I=C_M\frac{dV}{dt}+\bar g_K n^4(V-V_K)+\bar g_{Na}m^3h(V-V_{Na})+g_l(V-V_l).
 $$
 
-The gating equations are exact verified transcriptions; $x$ is $n$, $m$, or $h$ with its respective source rates:
+The gating equations are exact source transcriptions with a maintainer second-pass check; $x$ is $n$, $m$, or $h$ with its respective source rates:
 
 $$
 \frac{dx}{dt}=\alpha_x(V)(1-x)-\beta_x(V)x.
@@ -67,4 +68,4 @@ This is a squid giant-axon membrane model with a specific voltage and temperatur
 
 ## Reproducibility and code
 
-The [Physiome record 0155](https://www.imagwiki.nibib.nih.gov/physiome/jsim/models/webmodel/NSR/hodgkinhuxley1952) was inspected as an independent equation check. No third-party code is included here; code license status is `license_unclear`.
+The [Physiome record 0155](https://www.imagwiki.nibib.nih.gov/physiome/jsim/models/webmodel/NSR/hodgkinhuxley1952) was inspected during the maintainer workflow. That comparison is not represented as an independent check because no independent checker record is available. No third-party code is included here; code license status is `license_unclear`.
