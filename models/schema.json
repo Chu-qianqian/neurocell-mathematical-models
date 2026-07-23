@@ -1,0 +1,340 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Neurocell mathematical model catalogue record",
+  "description": "Schema for models/model_catalog.csv, the sole hand-maintained model catalogue.",
+  "type": "object",
+  "required": [
+    "model_id",
+    "model_name",
+    "cell_type",
+    "cell_subtype",
+    "biological_function",
+    "mathematical_form",
+    "spatial_model",
+    "stochastic",
+    "scale",
+    "state_variables",
+    "main_parameters",
+    "input",
+    "output",
+    "original_paper_title",
+    "original_paper_authors",
+    "publication_year",
+    "journal",
+    "doi",
+    "pmid",
+    "paper_url",
+    "open_access_status",
+    "code_available",
+    "code_url",
+    "code_license",
+    "model_database",
+    "model_database_url",
+    "experimental_validation",
+    "implementation_status",
+    "recommended_platform",
+    "quality_tier",
+    "model_scope",
+    "evidence_notes",
+    "limitations",
+    "equation_page",
+    "equation_status",
+    "equation_source_locator",
+    "equation_verification_source",
+    "equation_transcription_type",
+    "variable_registry_status",
+    "parameter_registry_status",
+    "initial_conditions_status",
+    "boundary_conditions_status",
+    "numerical_method_status",
+    "full_text_access_status",
+    "code_license_status",
+    "last_verified",
+    "brian2_compatibility",
+    "brian2_compatibility_reason",
+    "brian2_implementation_status",
+    "brian2_version",
+    "implementation_scope",
+    "numerical_test_status",
+    "reference_behavior_status",
+    "reproduction_status"
+  ],
+  "properties": {
+    "model_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9_-]*$"
+    },
+    "model_name": {
+      "type": "string"
+    },
+    "cell_type": {
+      "type": "string"
+    },
+    "cell_subtype": {
+      "type": "string"
+    },
+    "biological_function": {
+      "type": "string"
+    },
+    "mathematical_form": {
+      "type": "string"
+    },
+    "spatial_model": {
+      "type": "string"
+    },
+    "stochastic": {
+      "type": "string"
+    },
+    "scale": {
+      "type": "string"
+    },
+    "state_variables": {
+      "type": "string"
+    },
+    "main_parameters": {
+      "type": "string"
+    },
+    "input": {
+      "type": "string"
+    },
+    "output": {
+      "type": "string"
+    },
+    "original_paper_title": {
+      "type": "string"
+    },
+    "original_paper_authors": {
+      "type": "string"
+    },
+    "publication_year": {
+      "type": "string"
+    },
+    "journal": {
+      "type": "string"
+    },
+    "doi": {
+      "type": "string",
+      "pattern": "^10\\.[^\\s/]+/.+"
+    },
+    "pmid": {
+      "type": "string"
+    },
+    "paper_url": {
+      "type": "string",
+      "pattern": "^https://doi\\.org/10\\."
+    },
+    "open_access_status": {
+      "type": "string"
+    },
+    "code_available": {
+      "type": "string"
+    },
+    "code_url": {
+      "type": "string"
+    },
+    "code_license": {
+      "type": "string"
+    },
+    "model_database": {
+      "type": "string"
+    },
+    "model_database_url": {
+      "type": "string"
+    },
+    "experimental_validation": {
+      "type": "string"
+    },
+    "implementation_status": {
+      "type": "string",
+      "enum": [
+        "not_implemented",
+        "planned",
+        "syntax_checked",
+        "smoke_tested",
+        "reference_behavior_reproduced"
+      ]
+    },
+    "recommended_platform": {
+      "type": "string"
+    },
+    "quality_tier": {
+      "type": "string",
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "model_scope": {
+      "type": "string",
+      "enum": [
+        "cell_intrinsic",
+        "cell_function",
+        "cell_population",
+        "coupled_multicellular",
+        "indirect_parameterization"
+      ]
+    },
+    "evidence_notes": {
+      "type": "string"
+    },
+    "limitations": {
+      "type": "string"
+    },
+    "equation_page": {
+      "type": "string"
+    },
+    "equation_status": {
+      "type": "string",
+      "enum": [
+        "bibliography_verified",
+        "equation_located",
+        "equation_transcribed",
+        "second_pass_checked",
+        "independently_checked",
+        "parameters_incomplete",
+        "full_text_unavailable",
+        "license_unclear",
+        "not_verified"
+      ]
+    },
+    "equation_source_locator": {
+      "type": "string"
+    },
+    "equation_verification_source": {
+      "type": "string"
+    },
+    "equation_transcription_type": {
+      "type": "string",
+      "enum": [
+        "not_applicable",
+        "exact_verified_transcription",
+        "equivalent_notation_with_mapping",
+        "conceptual_schematic_not_source_verified"
+      ]
+    },
+    "variable_registry_status": {
+      "type": "string",
+      "enum": [
+        "not_verified",
+        "registered"
+      ]
+    },
+    "parameter_registry_status": {
+      "type": "string",
+      "enum": [
+        "not_verified",
+        "registered",
+        "parameters_incomplete"
+      ]
+    },
+    "initial_conditions_status": {
+      "type": "string",
+      "enum": [
+        "not_verified",
+        "not_applicable",
+        "source_example_located",
+        "registered"
+      ]
+    },
+    "boundary_conditions_status": {
+      "type": "string",
+      "enum": [
+        "not_verified",
+        "not_applicable",
+        "source_example_located",
+        "registered"
+      ]
+    },
+    "numerical_method_status": {
+      "type": "string",
+      "enum": [
+        "not_verified",
+        "not_applicable",
+        "source_example_located",
+        "registered"
+      ]
+    },
+    "full_text_access_status": {
+      "type": "string",
+      "enum": [
+        "not_verified",
+        "source_identified",
+        "source_inspected",
+        "full_text_unavailable"
+      ]
+    },
+    "code_license_status": {
+      "type": "string",
+      "enum": [
+        "not_assessed",
+        "license_unclear",
+        "documented",
+        "compatible_for_inclusion"
+      ]
+    },
+    "last_verified": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "brian2_compatibility": {
+      "type": "string",
+      "enum": [
+        "native",
+        "possible_custom_ode",
+        "possible_with_spatial_discretization",
+        "not_suitable",
+        "not_assessed"
+      ]
+    },
+    "brian2_compatibility_reason": {
+      "type": "string"
+    },
+    "brian2_implementation_status": {
+      "type": "string",
+      "enum": [
+        "not_implemented",
+        "planned",
+        "syntax_checked",
+        "smoke_tested",
+        "reference_behavior_reproduced"
+      ]
+    },
+    "brian2_version": {
+      "type": "string"
+    },
+    "implementation_scope": {
+      "type": "string"
+    },
+    "numerical_test_status": {
+      "type": "string",
+      "enum": [
+        "not_run",
+        "passed",
+        "failed",
+        "not_applicable"
+      ]
+    },
+    "reference_behavior_status": {
+      "type": "string",
+      "enum": [
+        "not_assessed",
+        "not_reproduced",
+        "qualitative_match",
+        "reproduced"
+      ]
+    },
+    "reproduction_status": {
+      "type": "string",
+      "enum": [
+        "not_attempted",
+        "implementation_only",
+        "qualitative_behavior_reproduced",
+        "paper_result_partially_reproduced",
+        "paper_result_reproduced"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

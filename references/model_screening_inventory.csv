@@ -1,0 +1,279 @@
+source_inventory_line,category,requested_model_or_family
+24,A1 Reduced point-neuron models,Lapicque integrate-and-fire
+25,A1 Reduced point-neuron models,Leaky integrate-and-fire
+26,A1 Reduced point-neuron models,Stochastic/noisy LIF
+27,A1 Reduced point-neuron models,Exponential integrate-and-fire
+28,A1 Reduced point-neuron models,Adaptive exponential integrate-and-fire
+29,A1 Reduced point-neuron models,Quadratic integrate-and-fire
+30,A1 Reduced point-neuron models,Theta neuron
+31,A1 Reduced point-neuron models,Izhikevich simple spiking-neuron model
+32,A1 Reduced point-neuron models,Adaptive-threshold LIF / ALIF
+33,A1 Reduced point-neuron models,Allen GLIF1–GLIF5
+34,A1 Reduced point-neuron models,Generalized linear point-process neuron
+58,A2 Conductance-based models,Hodgkin–Huxley 1952
+59,A2 Conductance-based models,Morris–Lecar 1981
+60,A2 Conductance-based models,FitzHugh–Nagumo
+61,A2 Conductance-based models,Hindmarsh–Rose
+62,A2 Conductance-based models,Traub pyramidal-neuron model families
+63,A2 Conductance-based models,Wang–Buzsáki fast-spiking interneuron model
+64,A2 Conductance-based models,PV-like fast-spiking conductance models
+65,A2 Conductance-based models,SST/Martinotti-like conductance models
+66,A2 Conductance-based models,VIP-like interneuron models
+67,A2 Conductance-based models,LAMP5/neurogliaform/NDNF model families
+68,A2 Conductance-based models,Thalamic relay-cell T-type calcium models
+69,A2 Conductance-based models,Thalamic reticular-nucleus models
+70,A2 Conductance-based models,De Schutter–Bower Purkinje-cell model
+71,A2 Conductance-based models,Cerebellar granule-cell conductance models
+72,A2 Conductance-based models,D1/D2 medium-spiny-neuron model families
+91,A3 Cable and compartmental models,Rall cable model
+92,A3 Cable and compartmental models,Passive and active compartmental neuron models
+93,A3 Cable and compartmental models,Morphologically reconstructed neuron models
+94,A3 Cable and compartmental models,Naud active-dendrite two-compartment model
+95,A3 Cable and compartmental models,Larkum BAC-firing mechanism models
+96,A3 Cable and compartmental models,CA1 pyramidal dendritic integration models
+97,A3 Cable and compartmental models,CA3 pyramidal multicompartment models
+98,A3 Cable and compartmental models,Cerebellar Purkinje multicompartment models
+99,A3 Cable and compartmental models,Cerebellar granule multicompartment models
+100,A3 Cable and compartmental models,MRG double-cable myelinated-axon model
+126,B Synaptic and plasticity models,Tsodyks–Markram short-term plasticity
+127,B Synaptic and plasticity models,AMPA conductance models
+128,B Synaptic and plasticity models,NMDA conductance models
+129,B Synaptic and plasticity models,Voltage-dependent magnesium block of NMDA receptors
+130,B Synaptic and plasticity models,GABA_A conductance models
+131,B Synaptic and plasticity models,GABA_B conductance models
+132,B Synaptic and plasticity models,Vesicle-pool and release-probability models
+133,B Synaptic and plasticity models,Song–Miller–Abbott STDP
+134,B Synaptic and plasticity models,Calcium-based LTP/LTD models
+135,B Synaptic and plasticity models,Graupner–Brunel calcium-plasticity models
+136,B Synaptic and plasticity models,Clopath voltage-based STDP
+137,B Synaptic and plasticity models,Homeostatic plasticity
+138,B Synaptic and plasticity models,Synaptic scaling
+139,B Synaptic and plasticity models,Metaplasticity
+140,B Synaptic and plasticity models,Heterosynaptic plasticity
+141,B Synaptic and plasticity models,Structural plasticity
+142,B Synaptic and plasticity models,Axonal conduction-delay plasticity
+143,B Synaptic and plasticity models,```
+161,C1 Astrocyte calcium and IP3,De Young–Keizer IP3-receptor model
+162,C1 Astrocyte calcium and IP3,Li–Rinzel reduced IP3-receptor calcium model
+163,C1 Astrocyte calcium and IP3,De Pittà G-ChI astrocyte model
+164,C1 Astrocyte calcium and IP3,Astrocyte calcium-induced calcium-release models
+165,C1 Astrocyte calcium and IP3,Astrocyte calcium microdomain models
+166,C1 Astrocyte calcium and IP3,Astrocyte calcium-wave reaction–diffusion models
+167,C1 Astrocyte calcium and IP3,Gap-junction/IP3 diffusion astrocyte-network models
+168,C1 Astrocyte calcium and IP3,Bergmann-glia calcium models
+169,C1 Astrocyte calcium and IP3,Müller-glia calcium models
+184,C2 Astrocyte morphology,Polykretis multicompartment astrocyte model
+185,C2 Astrocyte morphology,ASTRO / Savtchenko three-dimensional astrocyte model
+186,C2 Astrocyte morphology,Astrocytic microdomain local-plasticity model
+187,C2 Astrocyte morphology,Morphology-dependent astrocytic calcium models
+206,C3 Astrocyte ion homeostasis,Halnes electrodiffusive astrocyte–extracellular-space model
+207,C3 Astrocyte ion homeostasis,Astrocytic potassium spatial-buffering models
+208,C3 Astrocyte ion homeostasis,Kir4.1-based potassium-uptake models
+209,C3 Astrocyte ion homeostasis,Na+/K+-ATPase astrocyte models
+210,C3 Astrocyte ion homeostasis,"Na+, K+ and Cl− concentration models"
+211,C3 Astrocyte ion homeostasis,Astrocyte–extracellular-volume models
+212,C3 Astrocyte ion homeostasis,Cell-volume and osmotic astrocyte models
+213,C3 Astrocyte ion homeostasis,Müller-glia potassium-siphoning models
+223,C4 Astrocyte metabolism,Astrocytic EAAT glutamate-uptake models
+224,C4 Astrocyte metabolism,Glutamate–glutamine-cycle models
+225,C4 Astrocyte metabolism,Astrocyte–neuron lactate-shuttle models
+226,C4 Astrocyte metabolism,Glucose–lactate transport models
+227,C4 Astrocyte metabolism,Astrocytic glycogen-metabolism models
+228,C4 Astrocyte metabolism,Astrocyte–neuron energy-budget models
+229,C4 Astrocyte metabolism,Oxygen- and glucose-limited neuron–astrocyte models
+243,D1 Microglia population models,Amato–Arnold ischemic-penumbra microglial population model
+244,D1 Microglia population models,Microglial inflammatory cytokine ODE models
+245,D1 Microglia population models,Microglial activation–resolution feedback models
+246,D1 Microglia population models,Microglial population growth and death models
+247,D1 Microglia population models,Microglial state-transition models
+274,D2 Microglia spatial models,ATP/P2Y12 microglial chemotaxis models
+275,D2 Microglia spatial models,Microglial process-extension models
+276,D2 Microglia spatial models,Microglial migration PDE models
+277,D2 Microglia spatial models,Agent-based microglial migration models
+278,D2 Microglia spatial models,Aβ chemotaxis and phagocytosis models
+279,D2 Microglia spatial models,Microglial proliferation and plaque-response models
+280,D2 Microglia spatial models,Myelin-debris phagocytosis models
+301,D3 Microglia molecular models,TREM2–APOE models
+302,D3 Microglia molecular models,CX3CL1–CX3CR1 models
+303,D3 Microglia molecular models,Complement C1q/C3 models
+304,D3 Microglia molecular models,DAM state-transition models
+305,D3 Microglia molecular models,Interferon-responsive microglial models
+306,D3 Microglia molecular models,Lipid-associated microglial models
+307,D3 Microglia molecular models,Gene-regulatory Boolean or ODE models
+321,E1 Oligodendrocyte lineage,Nikolov oligodendrocyte differentiation model
+322,E1 Oligodendrocyte lineage,OPC proliferation models
+323,E1 Oligodendrocyte lineage,OPC migration models
+324,E1 Oligodendrocyte lineage,OPC differentiation models
+325,E1 Oligodendrocyte lineage,OPC density-regulation models
+326,E1 Oligodendrocyte lineage,OPC-to-pre-oligodendrocyte transition models
+327,E1 Oligodendrocyte lineage,Pre-oligodendrocyte-to-mature-oligodendrocyte models
+328,E1 Oligodendrocyte lineage,Oligodendrocyte lineage Markov models
+329,E1 Oligodendrocyte lineage,Oligodendrocyte lineage ODE models
+330,E1 Oligodendrocyte lineage,Agent-based oligodendrocyte lineage models
+344,E2 Myelinated axons,MRG myelinated-axon model
+345,E2 Myelinated axons,Double-cable myelinated-axon models
+346,E2 Myelinated axons,Node-of-Ranvier models
+347,E2 Myelinated axons,Paranodal and internodal models
+348,E2 Myelinated axons,g-ratio and conduction-velocity models
+349,E2 Myelinated axons,Myelin-thickness models
+350,E2 Myelinated axons,Internode-length models
+351,E2 Myelinated axons,Demyelination conduction models
+352,E2 Myelinated axons,Remyelination conduction models
+369,E3 Myelin plasticity,Pajevic-type myelin and conduction-delay models
+370,E3 Myelin plasticity,Noori-type activity-dependent myelination models
+371,E3 Myelin plasticity,Adaptive conduction-delay models
+372,E3 Myelin plasticity,Myelin-dependent network-synchronization models
+373,E3 Myelin plasticity,Joint synaptic and myelin-plasticity models
+374,E3 Myelin plasticity,Oligodendrocyte-mediated myelin-plasticity models
+394,E4 Demyelination,Multiple-sclerosis demyelination models
+395,E4 Demyelination,OPC recruitment models
+396,E4 Demyelination,Oligodendrocyte death models
+397,E4 Demyelination,Inflammation–demyelination coupling models
+398,E4 Demyelination,Remyelination population models
+399,E4 Demyelination,Axonal damage–myelin feedback models
+409,F Peripheral glia,Schwann-cell precursor differentiation
+410,F Peripheral glia,Immature Schwann-cell dynamics
+411,F Peripheral glia,Myelinating versus non-myelinating Schwann-cell state models
+412,F Peripheral glia,Neuregulin/ErbB-dependent Schwann-cell differentiation
+413,F Peripheral glia,Repair Schwann-cell transition
+414,F Peripheral glia,c-Jun-driven Schwann-cell injury response
+415,F Peripheral glia,Wallerian degeneration multicellular models
+416,F Peripheral glia,Schwann-cell–macrophage coupling
+417,F Peripheral glia,Büngner-band formation
+418,F Peripheral glia,Peripheral-axon regeneration
+419,F Peripheral glia,Peripheral remyelination
+420,F Peripheral glia,Neural-conduit Schwann-cell migration
+421,F Peripheral glia,Terminal Schwann cells at the neuromuscular junction
+422,F Peripheral glia,Satellite glial-cell ion-homeostasis models
+423,F Peripheral glia,Olfactory ensheathing-cell regeneration models
+437,G Other nervous-system cells,Ependymal cells
+438,G Other nervous-system cells,Choroid-plexus epithelial cells
+439,G Other nervous-system cells,Radial glia
+440,G Other nervous-system cells,Neural stem cells
+441,G Other nervous-system cells,Pericytes
+442,G Other nervous-system cells,Brain endothelial cells
+443,G Other nervous-system cells,Vascular smooth-muscle cells
+444,G Other nervous-system cells,Müller glia
+445,G Other nervous-system cells,Satellite glial cells
+446,G Other nervous-system cells,Enteric glia
+447,G Other nervous-system cells,Olfactory ensheathing cells
+448,G Other nervous-system cells,Perivascular macrophages
+449,G Other nervous-system cells,Meningeal macrophages
+450,G Other nervous-system cells,Infiltrating monocytes
+482,H1 Recurrent spiking networks,van Vreeswijk–Sompolinsky balanced network
+483,H1 Recurrent spiking networks,Brunel sparse E/I network
+484,H1 Recurrent spiking networks,Potjans–Diesmann cortical microcircuit
+485,H1 Recurrent spiking networks,Song–Miller–Abbott STDP network
+486,H1 Recurrent spiking networks,Tsodyks–Markram recurrent STP networks
+494,H2 Neural-mass and field models,Wilson–Cowan
+495,H2 Neural-mass and field models,Jansen–Rit
+496,H2 Neural-mass and field models,Brunel Fokker–Planck mean field
+497,H2 Neural-mass and field models,Montbrió–Pazó–Roxin exact QIF mean field
+498,H2 Neural-mass and field models,Amari neural field
+499,H2 Neural-mass and field models,Liley neural-field models
+500,H2 Neural-mass and field models,Robinson corticothalamic models
+501,H2 Neural-mass and field models,Dynamic mean-field models
+502,H2 Neural-mass and field models,Reduced Wong–Wang whole-brain node model
+503,H2 Neural-mass and field models,Kuramoto connectome-coupled phase models
+513,H3 Memory and attractor models,Hopfield associative-memory network
+514,H3 Memory and attractor models,Continuous-attractor networks
+515,H3 Memory and attractor models,Zhang head-direction continuous attractor
+516,H3 Memory and attractor models,Burak–Fiete grid-cell continuous attractor
+517,H3 Memory and attractor models,Winner-take-all networks
+518,H3 Memory and attractor models,Compte prefrontal working-memory network
+519,H3 Memory and attractor models,Wong–Wang decision network
+520,H3 Memory and attractor models,Reservoir / liquid-state spiking networks
+528,H4 Oscillation and sleep models,Wang–Buzsáki ING gamma network
+529,H4 Oscillation and sleep models,PING gamma networks
+530,H4 Oscillation and sleep models,Theta–gamma coupling models
+531,H4 Oscillation and sleep models,Thalamic spindle models
+532,H4 Oscillation and sleep models,Thalamocortical slow-wave models
+533,H4 Oscillation and sleep models,Cortical Up/Down-state models
+534,H4 Oscillation and sleep models,Hippocampal sharp-wave-ripple models
+535,H4 Oscillation and sleep models,Slow-wave-sleep models
+543,H5 Brain-region circuits,Billeh mouse V1 model
+544,H5 Brain-region circuits,Rao–Ballard predictive-coding circuit
+545,H5 Brain-region circuits,Cell-type-specific PV/SST/VIP cortical circuits
+546,H5 Brain-region circuits,Barrel-cortex models
+547,H5 Brain-region circuits,Compte PFC working-memory circuit
+548,H5 Brain-region circuits,CA3 recurrent-memory circuits
+549,H5 Brain-region circuits,CA1 dendritic-integration circuits
+550,H5 Brain-region circuits,Grid-cell entorhinal circuits
+551,H5 Brain-region circuits,Marr–Albus–Ito cerebellar framework
+552,H5 Brain-region circuits,Cerebellar timing models
+553,H5 Brain-region circuits,Frank basal-ganglia Go/NoGo model
+554,H5 Brain-region circuits,Gurney–Prescott–Redgrave action-selection model
+555,H5 Brain-region circuits,Terman STN–GPe model
+556,H5 Brain-region circuits,Olfactory-bulb mitral–granule networks
+557,H5 Brain-region circuits,Amygdala fear-learning networks
+558,H5 Brain-region circuits,Locus-coeruleus neuromodulatory networks
+559,H5 Brain-region circuits,Spinal central-pattern-generator models
+560,H5 Brain-region circuits,Pre-Bötzinger respiratory-rhythm models
+576,I1 Nadkarni-Jung models,Nadkarni–Jung minimal neuron–astrocyte unit
+577,I1 Nadkarni-Jung models,Nadkarni–Jung tripartite-synapse extensions
+594,I2 Postnov model,Dynamical patterns of calcium signaling in a functional model of neuron-astrocyte networks
+615-616,I3 Polykretis network architecture,A Neural-Astrocytic Network Architecture: Astrocytic calcium waves modulate synchronous neuronal activity
+653,I4 Astrocytic microdomain,The Astrocytic Microdomain as a Generative Mechanism for Local Plasticity
+670,I5 Associative memory,Kozachkov–Michmizos neuronal–astrocytic associative-memory models
+671,I5 Associative memory,Sequence Learning in Associative Neuronal-Astrocytic Networks
+672,I5 Associative memory,Neuron–Astrocyte Associative Memory
+691,I6 Astrocyte slow rhythms,Astrocytic calcium-wave slow-rhythm models
+692,I6 Astrocyte slow rhythms,Astrocyte-mediated slow-wave networks
+693,I6 Astrocyte slow rhythms,Astrocytic modulation of hippocampal theta
+694,I6 Astrocyte slow rhythms,Astrocyte-mediated sleep-memory network models
+710,I7 Place-cell models,Astrocyte-dependent place-cell formation
+711,I7 Place-cell models,CA3–CA1 neuron–astrocyte network models
+712,I7 Place-cell models,Extracellular-calcium-regulated place-cell models
+733,I8 Ionic and metabolic networks,Astrocyte K+-buffering–neuron excitability networks
+734,I8 Ionic and metabolic networks,Astrocyte glutamate-uptake–E/I networks
+735,I8 Ionic and metabolic networks,Neuron–astrocyte metabolic networks
+736,I8 Ionic and metabolic networks,Neuron–astrocyte lactate-shuttle networks
+737,I8 Ionic and metabolic networks,Astrocyte cell-volume–seizure networks
+738,I8 Ionic and metabolic networks,Astrocyte gap-junction–neuronal synchronization networks
+748,J Neuron-microglia networks,Microglia-dependent synaptic-pruning networks
+749,J Neuron-microglia networks,Complement-mediated network-rewiring models
+750,J Neuron-microglia networks,Cytokine-driven neuronal-damage networks
+751,J Neuron-microglia networks,ATP/P2Y12 neuron–microglia coupling
+752,J Neuron-microglia networks,CX3CL1/CX3CR1 neuron–microglia coupling
+753,J Neuron-microglia networks,TREM2/APOE neurodegeneration networks
+754,J Neuron-microglia networks,Microglial Aβ-clearance neuronal networks
+755,J Neuron-microglia networks,Microglia-dependent epilepsy networks
+756,J Neuron-microglia networks,Microglia–astrocyte–neuron inflammatory networks
+780,K Neuron-myelin networks,Myelin-dependent conduction-delay networks
+781,K Neuron-myelin networks,Activity-dependent myelination networks
+782,K Neuron-myelin networks,Adaptive myelin-plasticity networks
+783,K Neuron-myelin networks,Oligodendrocyte-mediated network synchronization
+784,K Neuron-myelin networks,Joint synaptic–myelin learning models
+785,K Neuron-myelin networks,Demyelination-induced network desynchronization
+786,K Neuron-myelin networks,Remyelination and functional-recovery networks
+787,K Neuron-myelin networks,Axon–oligodendrocyte metabolic-support models
+809,L Peripheral-nerve networks,Axon–Schwann-cell myelination models
+810,L Peripheral-nerve networks,Peripheral-nerve injury networks
+811,L Peripheral-nerve networks,Wallerian-degeneration multicellular networks
+812,L Peripheral-nerve networks,Schwann-cell–macrophage regeneration models
+813,L Peripheral-nerve networks,Repair-Schwann-cell–axon regrowth models
+814,L Peripheral-nerve networks,Peripheral remyelination networks
+815,L Peripheral-nerve networks,Neuromuscular-junction terminal-Schwann-cell models
+827,M Neurovascular networks,Neuron–astrocyte–vascular smooth-muscle models
+828,M Neurovascular networks,Neuron–astrocyte–pericyte models
+829,M Neurovascular networks,Neuron–astrocyte–endothelial models
+830,M Neurovascular networks,Neuron–astrocyte–pericyte–endothelial neurovascular-unit models
+831,M Neurovascular networks,Astrocyte calcium–vascular-diameter models
+832,M Neurovascular networks,NO-dependent neurovascular models
+833,M Neurovascular networks,Arachidonic-acid metabolite vascular models
+834,M Neurovascular networks,Inflammation-dependent neurovascular models
+835,M Neurovascular networks,Microglia–astrocyte–vascular models
+836,M Neurovascular networks,Blood–brain-barrier permeability networks
+837,M Neurovascular networks,BOLD forward models
+865,N Disease and whole-brain models,Epileptor
+866,N Disease and whole-brain models,Epileptor connectome networks
+867,N Disease and whole-brain models,Virtual Epileptic Patient models
+868,N Disease and whole-brain models,Spreading-depolarization models
+869,N Disease and whole-brain models,Astrocyte-related epilepsy networks
+870,N Disease and whole-brain models,Microglia-related neuroinflammation networks
+871,N Disease and whole-brain models,Alzheimer disease Aβ/tau/glia networks
+872,N Disease and whole-brain models,Demyelination and multiple-sclerosis networks
+873,N Disease and whole-brain models,Whole-brain dynamic mean-field models
+874,N Disease and whole-brain models,Reduced Wong–Wang connectome models
+875,N Disease and whole-brain models,Kuramoto connectome models
+876,N Disease and whole-brain models,Corticothalamic neural-field models
