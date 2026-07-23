@@ -9,7 +9,8 @@ The catalogue uses these states:
 - `bibliography_verified`: title, authors, venue, year, and DOI were checked against Crossref or another authoritative metadata record.
 - `equation_located`: a source containing the system was inspected and its locator was recorded.
 - `equation_transcribed`: a displayed equation has an audit row and transcription type.
-- `independently_checked`: the displayed transcription was checked again against the cited source.
+- `second_pass_checked`: the displayed transcription received a second check in the same maintainer workflow.
+- `independently_checked`: a separate checker is documented with date, method, source version, verification source, and discrepancy resolution.
 - `parameters_incomplete`: an equation may be located, but the source parameters have not been fully curated.
 - `full_text_unavailable`: the source could not be inspected lawfully in this curation pass.
 - `license_unclear`: a linked code or database item has no documented reuse assessment.
@@ -23,6 +24,7 @@ The catalogue uses these states:
 3. Add variables, parameters, and every displayed equation to the CSV registries under `data/equations/`.
 4. State whether a transcription is exact, equivalent with a symbol mapping, or conceptual. Only the first two are permitted on a model-specific verified page.
 5. Record unverified inputs, initial conditions, boundary conditions, numerical methods, and code licenses explicitly rather than filling gaps from secondary sources.
-6. Run the local validators before proposing the change.
+6. Record a maintainer second pass separately from an independent check. Re-reading a source in one workflow is not independent evidence.
+7. Run the local validators before proposing the change.
 
 No PDFs, copied figures, copied tables, supplements, or third-party code are stored in this repository.

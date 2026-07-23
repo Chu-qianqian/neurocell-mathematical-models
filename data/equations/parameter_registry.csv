@@ -10,3 +10,16 @@ izhikevich_2003,d,post-spike recovery increment,dimensionless in source conventi
 de_pitta_2009_gchi,v_ER,SERCA pump-rate scale,source rate units,parameters_incomplete,preprint equations (1) and (5); parameter table pending,parameters_incomplete,2026-07-22
 de_pitta_2009_gchi,v_beta,PLC-beta production-rate scale,source rate units,parameters_incomplete,preprint equations (15) and (19); parameter table pending,parameters_incomplete,2026-07-22
 de_pitta_2009_gchi,v_delta,PLC-delta production-rate scale,source rate units,parameters_incomplete,preprint equations (7) (8) and (20); parameter table pending,parameters_incomplete,2026-07-22
+wilson_cowan_1972,tau_E,excitatory population time constant,source convention,parameters_incomplete,"article p. 8, equations (7)-(8)",parameters_incomplete,2026-07-23
+wilson_cowan_1972,tau_I,inhibitory population time constant,source convention,parameters_incomplete,"article p. 8, equations (7)-(8)",parameters_incomplete,2026-07-23
+wilson_cowan_1972,r_E,excitatory refractory activity factor,source convention,parameters_incomplete,"article p. 8, equations (7)-(8)",parameters_incomplete,2026-07-23
+wilson_cowan_1972,r_I,inhibitory refractory activity factor,source convention,parameters_incomplete,"article p. 8, equations (7)-(8)",parameters_incomplete,2026-07-23
+wilson_cowan_1972,k_E,excitatory coarse-graining scale factor,source convention,parameters_incomplete,"article p. 8, equations (7)-(8)",parameters_incomplete,2026-07-23
+wilson_cowan_1972,k_I,inhibitory coarse-graining scale factor,source convention,parameters_incomplete,"article p. 8, equations (7)-(8)",parameters_incomplete,2026-07-23
+wilson_cowan_1972,c_1,excitatory-to-excitatory coupling coefficient,source convention,parameters_incomplete,"article p. 8, equations (7)-(8)",parameters_incomplete,2026-07-23
+wilson_cowan_1972,c_2,inhibitory-to-excitatory coupling coefficient,source convention,parameters_incomplete,"article p. 8, equations (7)-(8)",parameters_incomplete,2026-07-23
+wilson_cowan_1972,c_3,excitatory-to-inhibitory coupling coefficient,source convention,parameters_incomplete,"article p. 8, equations (7)-(8)",parameters_incomplete,2026-07-23
+wilson_cowan_1972,c_4,inhibitory-to-inhibitory coupling coefficient,source convention,parameters_incomplete,"article p. 8, equations (7)-(8)",parameters_incomplete,2026-07-23
+montbrio_pazo_roxin_2015,Delta,half-width of the Lorentzian excitability distribution,source nondimensional convention,parameters_incomplete,"arXiv:1506.06581v1, Section II.B, equations (12a)-(12b)",parameters_incomplete,2026-07-23
+montbrio_pazo_roxin_2015,eta_bar,center of the excitability distribution,source nondimensional convention,parameters_incomplete,"arXiv:1506.06581v1, Section II.B, equations (12a)-(12b)",parameters_incomplete,2026-07-23
+montbrio_pazo_roxin_2015,J,mean-field coupling strength,source nondimensional convention,parameters_incomplete,"arXiv:1506.06581v1, Section II.B, equations (12a)-(12b)",parameters_incomplete,2026-07-23

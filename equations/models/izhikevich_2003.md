@@ -5,7 +5,8 @@
 - Bibliography: verified against Crossref on 2026-07-22.
 - Equation source inspected: author-hosted full paper PDF.
 - Source locator: Izhikevich (2003), p. 1569, Section II, equations (1)-(3).
-- Independent transcription check: completed against the author-hosted paper PDF.
+- Maintainer second-pass check: completed against the author-hosted paper PDF.
+- Independent transcription check: not documented; no independent checker evidence is recorded.
 - Full-text access status: lawful author-hosted full text inspected.
 
 ## Scope
@@ -40,7 +41,7 @@ Izhikevich, E. M. Simple model of spiking neurons. *IEEE Transactions on Neural 
 
 ## Equations
 
-These are exact verified transcriptions of equations (1)-(3):
+These are exact source transcriptions of equations (1)-(3) with a maintainer second-pass check:
 
 $$
 \frac{dv}{dt}=0.04v^2+5v+140-u+I,

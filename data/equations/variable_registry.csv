@@ -11,3 +11,7 @@ de_pitta_2009_gchi,C,cytosolic calcium concentration,micromolar,source_verified,
 de_pitta_2009_gchi,h,IP3 receptor inactivation variable,dimensionless,source_verified,preprint p. 8,2026-07-22
 de_pitta_2009_gchi,I,intracellular IP3 concentration,micromolar,source_verified,preprint pp. 7-8,2026-07-22
 de_pitta_2009_gchi,gamma,extracellular glutamate concentration,micromolar,source_verified,preprint pp. 15-18,2026-07-22
+wilson_cowan_1972,E,coarse-grained excitatory population activity,source activity convention,source_verified,"article p. 8, equation (7)",2026-07-23
+wilson_cowan_1972,I,coarse-grained inhibitory population activity,source activity convention,source_verified,"article p. 8, equation (8)",2026-07-23
+montbrio_pazo_roxin_2015,r,population firing rate,inverse source time,source_verified,"arXiv:1506.06581v1, Section II.B, equation (12a)",2026-07-23
+montbrio_pazo_roxin_2015,v,population mean membrane potential,source voltage convention,source_verified,"arXiv:1506.06581v1, Section II.B, equation (12b)",2026-07-23

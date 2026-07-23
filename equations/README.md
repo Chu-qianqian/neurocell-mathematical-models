@@ -1,17 +1,27 @@
-# Verified equations
+# Equation evidence index
 
-This directory no longer presents generic model-family equations as if they were source-specific transcriptions. A model-specific page displays mathematics only when the catalogue records an inspected source locator and an equation-audit row.
+This directory does not present generic model-family equations as source-specific transcriptions. A model-specific page displays mathematics only when the canonical catalogue records an inspected source locator and equation-audit rows.
 
-| Model | Cell type | Equation status | Page |
+## Independently checked
+
+No record currently has the named checker, date, method, source version, verification source, and discrepancy resolution required for `independently_checked`.
+
+## Maintainer second-pass checked
+
+| Model | Cell type | Status | Page |
 | --- | --- | --- | --- |
-| Hodgkin-Huxley conductance model | Neuron | independently checked | [equations](models/hodgkin_huxley_1952.md) |
-| Izhikevich simple spiking-neuron model | Neuron | independently checked | [equations](models/izhikevich_2003.md) |
-| G-ChI model | Astrocyte | independently checked; parameters incomplete | [equations](models/de_pitta_2009_gchi.md) |
-| Functional neuron-astrocyte calcium-network model | Mixed neuron-glia system | bibliography verified only | [holding record](models/postnov_2009_neuron_astrocyte.md) |
-| Ischemic-penumbra dynamics model | Microglia | bibliography verified only | [holding record](models/amato_arnold_2025_microglia.md) |
-| Differentiation dynamics model | Oligodendrocyte | bibliography verified only | [holding record](models/nikolov_2022_oligodendrocyte.md) |
+| Hodgkin-Huxley conductance model | Neuron | `second_pass_checked` | [equations](models/hodgkin_huxley_1952.md) |
+| Izhikevich simple spiking-neuron model | Neuron | `second_pass_checked` | [equations](models/izhikevich_2003.md) |
+| G-ChI model | Astrocyte | `second_pass_checked`; parameters incomplete | [equations](models/de_pitta_2009_gchi.md) |
 
-The former cell-family pages are retained as status pages. They contain no paper-specific mathematical system and point readers to the evidence-gated model pages or search queue.
+## Equation transcribed
+
+| Model | Cell type | Status | Page |
+| --- | --- | --- | --- |
+| Wilson-Cowan population model | Neural population | `equation_transcribed` | [equations](models/wilson_cowan_1972.md) |
+| Montbrio-Pazo-Roxin exact QIF mean field | Neural population | `equation_transcribed` | [equations](models/montbrio_pazo_roxin_2015.md) |
+
+The remaining model pages are bibliography-only holding records and contain no source-specific displayed equation. The former cell-family pages remain status pages:
 
 - [Neurons](neurons.md)
 - [Astrocytes](astrocytes.md)
