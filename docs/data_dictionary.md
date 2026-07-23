@@ -9,13 +9,18 @@ Values such as `not_verified`, `not_assessed`, `not_run`, and an empty code loca
 Important field groups include:
 
 - `model_scope`: `cell_intrinsic`, `cell_function`, `cell_population`, `coupled_multicellular`, or `indirect_parameterization`;
-- `quality_tier`: A–D evidence tier, not an impact factor or fixed citation count;
+- `biological_cell_scope`, `cell_type`, `nervous_system_region`, and `model_scale`: controlled biological and scale classifications that do not imply equation verification;
+- `mathematical_form`, `interaction_scope`, `network_type`, `spatial_structure`, `stochasticity`, and `plasticity_scope`: controlled mathematical and interaction classifications;
+- `parent_model_id` and semicolon-delimited `related_model_ids`: validated links between source-defined model families and later extensions;
+- `network_conditions_status` and `network_conditions_locator`: connectivity, population-size, topology, or coupling evidence, kept separate from spatial boundary conditions;
+- `event_handling_status` and `event_handling_locator`: threshold, reset, state-transition, or other event evidence, kept separate from continuous dynamics;
+- `quality_tier`: A-D evidence tier, not an impact factor or fixed citation count;
 - `evidence_notes` and `limitations`: original curator wording of verification boundaries;
 - `code_available`, `code_url`, and `code_license`: only upgraded after reviewing each external repository; an accessible webpage is not redistributable code.
 - `equation_status`: separates bibliography-only, located, transcribed, maintainer second-pass, and independently checked evidence;
 - `brian2_compatibility`: feasibility classification, not evidence that an implementation runs;
 - `brian2_implementation_status`, `numerical_test_status`, `reference_behavior_status`, and `reproduction_status`: separate execution evidence from reference-behavior and paper-result reproduction.
 
-Independent-check provenance is equation-specific and is recorded in `data/equations/equation_audit.csv`, including checker identity, date, method, verification source, source version, access date, discrepancy flag, and resolution.
+Independent-check provenance is equation-specific and is recorded in `data/equations/equation_audit.csv`, including checker identity and role, date, method, frozen source identifier and version, access date, frozen commit, discrepancy flag, resolution, and resolution date.
 
-The broad request scope is not mixed into the canonical catalogue. It is tracked separately in `references/model_screening_master.csv`; source families remain `search_queue` or `not_verified` until a source-specific evidence gate is satisfied.
+The broad request scope is not mixed into the canonical catalogue. It is tracked separately in `references/model_screening_master.csv`; a `candidate` result means the row passed title-level scope screening but still lacks source-specific evidence. The generated bibliography views do not form a second model catalogue.

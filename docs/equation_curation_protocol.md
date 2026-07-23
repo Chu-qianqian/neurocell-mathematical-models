@@ -27,4 +27,8 @@ The catalogue uses these states:
 6. Record a maintainer second pass separately from an independent check. Re-reading a source in one workflow is not independent evidence.
 7. Run the local validators before proposing the change.
 
+`equation_located` does not authorize displayed source equations. Displayed mathematics requires `equation_transcribed` or stronger evidence, registry coverage, and an audit row. The independent-review contract is defined in [independent_review_protocol.md](independent_review_protocol.md).
+
+Boundary conditions, network conditions, event handling, external input, initial conditions, and numerical integration settings are audited independently. `not_applicable` for a non-spatial ODE boundary does not imply that connectivity or threshold/reset rules are absent.
+
 No PDFs, copied figures, copied tables, supplements, or third-party code are stored in this repository.
