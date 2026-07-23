@@ -16,7 +16,7 @@ This repository is an equation-level knowledge base, not a paper mirror or a col
 - Records with incomplete parameter registries: **9**
 - Records explicitly marked full text unavailable: **0**
 - Records whose source full text is unavailable or not yet inspected: **18**
-- Records with unclear external-code licensing: **10**
+- Records with unclear external-code licensing: **9**
 - Screening inventory rows: **278** (20 promoted to the canonical catalogue)
 
 ## Model catalogue
@@ -58,14 +58,14 @@ The unified table above preserves each row-level equation state. `second_pass_ch
 | Model | Brian2 compatibility | Implementation | Numerical tests | Reference behavior | Reproduction |
 | --- | --- | --- | --- | --- | --- |
 | Hodgkin-Huxley conductance model | `native` | `not_implemented` | `not_run` | `not_assessed` | `not_attempted` |
-| Izhikevich simple spiking-neuron model | `native` | `not_implemented` | `not_run` | `not_assessed` | `not_attempted` |
+| Izhikevich simple spiking-neuron model | `native` | `smoke_tested` | `passed` | `not_assessed` | `implementation_only` |
 | G-ChI astrocyte calcium and IP3 model | `possible_custom_ode` | `not_implemented` | `not_run` | `not_assessed` | `not_attempted` |
 | Functional neuron-astrocyte calcium-network model | `not_assessed` | `not_implemented` | `not_run` | `not_assessed` | `not_attempted` |
 | Data-driven microglial ischemic-penumbra model | `not_assessed` | `not_implemented` | `not_run` | `not_assessed` | `not_attempted` |
 | Oligodendrocyte differentiation dynamics model | `not_assessed` | `not_implemented` | `not_run` | `not_assessed` | `not_attempted` |
 | Wilson-Cowan excitatory-inhibitory population model | `possible_custom_ode` | `not_implemented` | `not_run` | `not_assessed` | `not_attempted` |
 | Potjans-Diesmann cortical microcircuit model | `not_assessed` | `not_implemented` | `not_run` | `not_assessed` | `not_attempted` |
-| Montbrio-Pazo-Roxin exact neural-mass reduction | `possible_custom_ode` | `not_implemented` | `not_run` | `not_assessed` | `not_attempted` |
+| Montbrio-Pazo-Roxin exact neural-mass reduction | `possible_custom_ode` | `smoke_tested` | `passed` | `not_assessed` | `implementation_only` |
 | Recurrent decision-network model | `not_assessed` | `not_implemented` | `not_run` | `not_assessed` | `not_attempted` |
 | Morris-Lecar excitable-membrane model | `not_assessed` | `not_implemented` | `not_run` | `not_assessed` | `not_attempted` |
 | Adaptive exponential integrate-and-fire model | `not_assessed` | `not_implemented` | `not_run` | `not_assessed` | `not_attempted` |

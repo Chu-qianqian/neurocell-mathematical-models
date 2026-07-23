@@ -67,4 +67,6 @@ The model is phenomenological and reduces detailed channel mechanisms to two sta
 
 ## Reproducibility and code
 
-The paper links an author-hosted MATLAB demonstration. It is not imported into this repository. Code license status is `license_unclear`.
+The paper links an author-hosted MATLAB demonstration. It is not imported into this repository, and its license status remains `license_unclear`.
+
+The repository provides an [original Brian2 implementation-only example](../../implementations/brian2/izhikevich_2003.py). It uses Python 3.12.13, Brian2 2.10.1, NumPy 2.5.1, seed 20260723, Euler integration, a 0.1-ms time step, and a 200-ms duration. Passing smoke tests establish execution, finite states, bounded ranges, deterministic repeatability, Brian2 unit consistency, and occurrence of the threshold/reset event. They do not establish reference behavior or paper-result reproduction.

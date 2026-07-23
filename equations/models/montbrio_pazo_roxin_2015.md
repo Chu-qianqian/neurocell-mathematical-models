@@ -57,7 +57,7 @@ $\Delta/\pi$ reflects the width of quenched excitability heterogeneity. The $2rv
 
 ## Inputs, outputs, and conditions
 
-Input is $I(t)$; outputs are $r(t)$ and $v(t)$. The source reports Euler simulations with a fixed time step for network comparisons, but this repository has not implemented or rerun them. Initial conditions are not registered. Boundary conditions are not applicable to the displayed temporal ODE.
+Input is $I(t)$; outputs are $r(t)$ and $v(t)$. The source reports Euler simulations with a fixed time step for network comparisons, but this repository has not implemented or rerun that source simulation protocol. Initial conditions are not registered. Boundary conditions are not applicable to the displayed temporal ODE.
 
 ## Assumptions and limitations
 
@@ -69,4 +69,6 @@ The source provides a theoretical derivation and comparisons with simulations of
 
 ## Reproducibility and code
 
-No implementation is included or executed. Brian2 compatibility is classified as `possible_custom_ode`; this is a feasibility assessment only. Numerical tests were not run, reference behavior was not assessed, and paper results were not reproduced.
+The repository provides an [original Brian2 implementation-only example](../../implementations/brian2/montbrio_pazo_roxin_2015.py). It maps one nondimensional source-time unit to 1 ms for Brian2 dimensional consistency and uses Python 3.12.13, Brian2 2.10.1, NumPy 2.5.1, seed 20260723, fourth-order Runge-Kutta integration, a 0.01-source-unit time step, and a 20-source-unit duration.
+
+Passing smoke tests establish execution, finite states, bounded ranges, deterministic repeatability, and Brian2 unit consistency. The chosen parameter point is a bounded implementation test, not a source demonstration parameter set. Reference behavior was not assessed, and no paper result was reproduced.
