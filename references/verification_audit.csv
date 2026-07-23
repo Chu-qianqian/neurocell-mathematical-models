@@ -9,3 +9,18 @@ wilson_cowan_1972,2026-07-23,PubMed; PMC; publisher DOI record,yes,yes,yes,no,Pr
 potjans_diesmann_2014,2026-07-23,PubMed; publisher DOI record,yes,yes,no,no,Equation and parameter audit remains pending.
 montbrio_pazo_roxin_2015,2026-07-23,arXiv; publisher DOI record,yes,yes,yes,no,ArXiv v1 Section II.B equations (12a)-(12b) were transcribed; a second pass remains pending.
 wong_wang_2006,2026-07-23,PubMed; publisher DOI record,yes,yes,no,no,Equation and parameter audit remains pending.
+morris_lecar_1981,2026-07-23,Crossref; PubMed or publisher metadata,yes,yes,no,no,Bibliographic identity verified; equation and license audits remain pending.
+brette_gerstner_2005_adex,2026-07-23,Crossref; PubMed or publisher metadata,yes,yes,no,no,Bibliographic identity verified; equation and license audits remain pending.
+tsodyks_markram_1998_stp,2026-07-23,Crossref; PubMed or publisher metadata,yes,yes,no,no,Bibliographic identity verified; equation and license audits remain pending.
+brunel_2000_ei_network,2026-07-23,Crossref; PubMed or publisher metadata,yes,yes,no,no,Bibliographic identity verified; equation and license audits remain pending.
+hopfield_1982,2026-07-23,Crossref; PubMed or publisher metadata,yes,yes,no,no,Bibliographic identity verified; equation and license audits remain pending.
+wang_buzsaki_1996_gamma,2026-07-23,Crossref; PubMed or publisher metadata,yes,yes,no,no,Bibliographic identity verified; equation and license audits remain pending.
+li_rinzel_1994,2026-07-23,Crossref; PubMed or publisher metadata,yes,yes,no,no,Bibliographic identity verified; equation and license audits remain pending.
+mrg_2002_myelinated_axon,2026-07-23,Crossref; PubMed or publisher metadata,yes,yes,no,no,Bibliographic identity verified; equation and license audits remain pending.
+jirsa_2014_epileptor,2026-07-23,Crossref; PubMed or publisher metadata,yes,yes,no,no,Bibliographic identity verified; equation and license audits remain pending.
+polykretis_2018_neural_astrocytic_network,2026-07-23,Crossref; arXiv,yes,yes,yes,no,"Exact source locations were inspected, but equations were not transcribed."
+halnes_2013_electrodiffusive_astrocyte,2026-07-23,Crossref; PubMed; PMC; arXiv,yes,yes,yes,no,"Exact source locations were inspected, but equations were not transcribed."
+neuron_astrocyte_associative_memory_2025,2026-07-23,Crossref; PNAS,yes,yes,no,no,Bibliographic identity verified; equation and license audits remain pending.
+astrocyte_place_cell_formation_2022,2026-07-23,Crossref; PMC,yes,yes,no,no,Bibliographic identity verified; equation and license audits remain pending.
+polykretis_astrocytic_microdomain,2026-07-23,Crossref; author publication page,yes,yes,no,no,Bibliographic identity verified; equation and license audits remain pending.
+sequence_learning_neuronal_astrocytic_network,2026-07-23,Crossref; arXiv,yes,yes,no,no,Bibliographic identity verified; equation and license audits remain pending.

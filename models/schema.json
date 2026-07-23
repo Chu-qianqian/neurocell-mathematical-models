@@ -35,6 +35,20 @@
     "recommended_platform",
     "quality_tier",
     "model_scope",
+    "biological_cell_scope",
+    "nervous_system_region",
+    "model_scale",
+    "interaction_scope",
+    "network_type",
+    "spatial_structure",
+    "stochasticity",
+    "plasticity_scope",
+    "parent_model_id",
+    "related_model_ids",
+    "network_conditions_status",
+    "network_conditions_locator",
+    "event_handling_status",
+    "event_handling_locator",
     "evidence_notes",
     "limitations",
     "equation_page",
@@ -68,7 +82,20 @@
       "type": "string"
     },
     "cell_type": {
-      "type": "string"
+      "type": "string",
+      "enum": [
+        "neuron",
+        "synapse",
+        "astrocyte",
+        "microglia",
+        "oligodendrocyte",
+        "neural_population",
+        "mixed_neuron_astrocyte_system",
+        "myelinated_axon",
+        "astrocyte_extracellular_system",
+        "astrocyte_relevant_calcium_mechanism",
+        "excitable_membrane"
+      ]
     },
     "cell_subtype": {
       "type": "string"
@@ -77,7 +104,19 @@
       "type": "string"
     },
     "mathematical_form": {
-      "type": "string"
+      "type": "string",
+      "enum": [
+        "ordinary_differential_equation",
+        "partial_differential_equation",
+        "stochastic_differential_equation",
+        "difference_equation",
+        "event_driven",
+        "agent_based",
+        "probabilistic",
+        "hybrid",
+        "other",
+        "not_assessed"
+      ]
     },
     "spatial_model": {
       "type": "string"
@@ -175,6 +214,136 @@
         "coupled_multicellular",
         "indirect_parameterization"
       ]
+    },
+    "biological_cell_scope": {
+      "type": "string",
+      "enum": [
+        "neuronal",
+        "glial",
+        "mixed_neuron_glia",
+        "neural_population",
+        "synaptic",
+        "other_nervous_system_related"
+      ]
+    },
+    "nervous_system_region": {
+      "type": "string",
+      "enum": [
+        "not_assessed",
+        "central_nervous_system_unspecified",
+        "peripheral_nervous_system",
+        "cerebral_cortex",
+        "hippocampus",
+        "hippocampal_ca3_ca1"
+      ]
+    },
+    "model_scale": {
+      "type": "string",
+      "enum": [
+        "molecular",
+        "subcellular",
+        "single_cell",
+        "multicompartment_cell",
+        "cell_pair",
+        "local_microcircuit",
+        "population",
+        "neural_mass",
+        "neural_field",
+        "large_scale_network",
+        "whole_brain",
+        "not_assessed"
+      ]
+    },
+    "interaction_scope": {
+      "type": "string",
+      "enum": [
+        "none",
+        "intrinsic",
+        "external_input",
+        "synaptic",
+        "population_coupling",
+        "network_connectivity",
+        "neuron_astrocyte",
+        "astrocyte_extracellular",
+        "not_assessed"
+      ]
+    },
+    "network_type": {
+      "type": "string",
+      "enum": [
+        "not_applicable",
+        "spiking_network",
+        "firing_rate_network",
+        "neural_mass",
+        "attractor_network",
+        "cortical_microcircuit",
+        "interneuron_network",
+        "neuron_astrocyte_network",
+        "not_assessed"
+      ]
+    },
+    "spatial_structure": {
+      "type": "string",
+      "enum": [
+        "nonspatial",
+        "one_dimensional",
+        "multicompartment",
+        "network_topology",
+        "not_assessed"
+      ]
+    },
+    "stochasticity": {
+      "type": "string",
+      "enum": [
+        "deterministic",
+        "stochastic",
+        "mixed",
+        "not_assessed"
+      ]
+    },
+    "plasticity_scope": {
+      "type": "string",
+      "enum": [
+        "none",
+        "short_term_synaptic",
+        "long_term_synaptic",
+        "intrinsic",
+        "myelin",
+        "network",
+        "not_assessed"
+      ]
+    },
+    "parent_model_id": {
+      "type": "string"
+    },
+    "related_model_ids": {
+      "type": "string"
+    },
+    "network_conditions_status": {
+      "type": "string",
+      "enum": [
+        "not_verified",
+        "not_applicable",
+        "source_identified",
+        "source_located",
+        "registered"
+      ]
+    },
+    "network_conditions_locator": {
+      "type": "string"
+    },
+    "event_handling_status": {
+      "type": "string",
+      "enum": [
+        "not_verified",
+        "not_applicable",
+        "source_identified",
+        "source_located",
+        "registered"
+      ]
+    },
+    "event_handling_locator": {
+      "type": "string"
     },
     "evidence_notes": {
       "type": "string"
@@ -283,8 +452,8 @@
       "enum": [
         "native",
         "possible_custom_ode",
-        "possible_with_spatial_discretization",
-        "not_suitable",
+        "possible_network_implementation",
+        "difficult_or_out_of_scope",
         "not_assessed"
       ]
     },

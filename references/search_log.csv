@@ -5,3 +5,7 @@ crossref_gchi_20260722,Crossref API,10.1007/s10867-009-9155-y,2026-07-22,1,inclu
 crossref_postnov_20260722,Crossref API,10.1007/s10867-009-9156-x,2026-07-22,1,holding_record,bibliography verified but exact equation locator pending
 crossref_microglia_20260722,Crossref API,10.1016/j.mbs.2025.109549,2026-07-22,1,holding_record,bibliography verified but full-text equation audit pending
 crossref_oligodendrocyte_20260722,Crossref API,10.3390/math10162928,2026-07-22,1,holding_record,bibliography verified but full-text equation audit pending
+crossref_priority_batch_20260723,Crossref API,Direct DOI lookup for 15 priority model publications listed in the 2026-07-23 curation batch,2026-07-23,15,included,"Title, authors, year, venue, and DOI matched."
+pubmed_priority_batch_20260723,PubMed,"Direct title and PMID checks for Morris-Lecar, AdEx, Tsodyks-Markram, Wang-Buzsaki, Li-Rinzel, MRG, Epileptor, and Halnes",2026-07-23,8,included,Biomedical bibliographic identities matched.
+arxiv_astrocyte_batch_20260723,arXiv,1807.02514; 1304.7782; 1707.05649,2026-07-23,3,included,Author-submitted versions identified; two were inspected for equation locators.
+pmc_equation_sources_20260723,PubMed Central,PMC3868551; PMC9671849; PMC346238,2026-07-23,3,included,Lawful full-text records were identified; Halnes equation locations were inspected.
