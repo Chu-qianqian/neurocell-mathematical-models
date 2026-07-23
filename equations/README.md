@@ -1,33 +1,32 @@
+<!-- Generated from models/model_catalog.csv; do not edit by hand. -->
 # Equation evidence index
 
-This directory does not present generic model-family equations as source-specific transcriptions. A model-specific page displays mathematics only when the canonical catalogue records an inspected source locator and equation-audit rows.
+This index is generated from the canonical catalogue. Evidence states remain separate: a bibliography-only record has no source-specific displayed equation, `equation_located` records await transcription, `equation_transcribed` records await review, `second_pass_checked` records have a maintainer check, and `independently_checked` requires a separate documented checker.
 
-## Independently checked
-
-No record currently has the named checker, date, method, source version, verification source, and discrepancy resolution required for `independently_checked`.
-
-## Maintainer second-pass checked
-
-| Model | Cell type | Status | Page |
-| --- | --- | --- | --- |
-| Hodgkin-Huxley conductance model | Neuron | `second_pass_checked` | [equations](models/hodgkin_huxley_1952.md) |
-| Izhikevich simple spiking-neuron model | Neuron | `second_pass_checked` | [equations](models/izhikevich_2003.md) |
-| G-ChI model | Astrocyte | `second_pass_checked`; parameters incomplete | [equations](models/de_pitta_2009_gchi.md) |
-
-## Equation transcribed
-
-| Model | Cell type | Status | Page |
-| --- | --- | --- | --- |
-| Wilson-Cowan population model | Neural population | `equation_transcribed` | [equations](models/wilson_cowan_1972.md) |
-| Montbrio-Pazo-Roxin exact QIF mean field | Neural population | `equation_transcribed` | [equations](models/montbrio_pazo_roxin_2015.md) |
-
-The remaining model pages are bibliography-only holding records and contain no source-specific displayed equation. The former cell-family pages remain status pages:
-
-- [Neurons](neurons.md)
-- [Astrocytes](astrocytes.md)
-- [Microglia](microglia.md)
-- [Oligodendrocytes and OPCs](oligodendrocytes.md)
-- [Schwann cells](schwann_cells.md)
-- [Other cells](other_cells.md)
-
-Read [the curation protocol](../docs/equation_curation_protocol.md) and [notation policy](../docs/equation_notation_policy.md) before reusing an equation.
+| Model ID | Model | Biological scope | Cell or network type | Scale | Equation status | Primary source | Equation locator | Review scope |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `hodgkin_huxley_1952` | [Hodgkin-Huxley conductance model](models/hodgkin_huxley_1952.md) | `neuronal` | `neuron` / `not_applicable` | `single_cell` | `second_pass_checked` | [DOI](https://doi.org/10.1113/jphysiol.1952.sp004764) | pp. 505 and 518-519 equations (1)-(7) (15)-(16) and (26) | maintainer second pass |
+| `izhikevich_2003` | [Izhikevich simple spiking-neuron model](models/izhikevich_2003.md) | `neuronal` | `neuron` / `not_applicable` | `single_cell` | `second_pass_checked` | [DOI](https://doi.org/10.1109/tnn.2003.820440) | p. 1569 Section II equations (1)-(3) | maintainer second pass |
+| `de_pitta_2009_gchi` | [G-ChI astrocyte calcium and IP3 model](models/de_pitta_2009_gchi.md) | `glial` | `astrocyte` / `not_applicable` | `single_cell` | `second_pass_checked` | [DOI](https://doi.org/10.1007/s10867-009-9155-y) | author preprint pp. 8 and 18 equations (5) (6) and (20) | maintainer second pass |
+| `postnov_2009_neuron_astrocyte` | [Functional neuron-astrocyte calcium-network model](models/postnov_2009_neuron_astrocyte.md) | `mixed_neuron_glia` | `mixed_neuron_astrocyte_system` / `neuron_astrocyte_network` | `large_scale_network` | `bibliography_verified` | [DOI](https://doi.org/10.1007/s10867-009-9156-x) | not verified | bibliography only |
+| `amato_arnold_2025_microglia` | [Data-driven microglial ischemic-penumbra model](models/amato_arnold_2025_microglia.md) | `glial` | `microglia` / `not_applicable` | `population` | `bibliography_verified` | [DOI](https://doi.org/10.1016/j.mbs.2025.109549) | not verified | bibliography only |
+| `nikolov_2022_oligodendrocyte` | [Oligodendrocyte differentiation dynamics model](models/nikolov_2022_oligodendrocyte.md) | `glial` | `oligodendrocyte` / `not_applicable` | `population` | `bibliography_verified` | [DOI](https://doi.org/10.3390/math10162928) | not verified | bibliography only |
+| `wilson_cowan_1972` | [Wilson-Cowan excitatory-inhibitory population model](models/wilson_cowan_1972.md) | `neural_population` | `neural_population` / `firing_rate_network` | `population` | `equation_transcribed` | [DOI](https://doi.org/10.1016/s0006-3495(72)86068-5) | article p. 8, equations (7)-(8) | transcribed; review pending |
+| `potjans_diesmann_2014` | [Potjans-Diesmann cortical microcircuit model](models/potjans_diesmann_2014_microcircuit.md) | `neural_population` | `neural_population` / `cortical_microcircuit` | `local_microcircuit` | `bibliography_verified` | [DOI](https://doi.org/10.1093/cercor/bhs358) | not verified | bibliography only |
+| `montbrio_pazo_roxin_2015` | [Montbrio-Pazo-Roxin exact neural-mass reduction](models/montbrio_pazo_roxin_2015.md) | `neural_population` | `neural_population` / `neural_mass` | `neural_mass` | `equation_transcribed` | [DOI](https://doi.org/10.1103/physrevx.5.021028) | arXiv:1506.06581v1, Section II.B, equations (12a)-(12b) | transcribed; review pending |
+| `wong_wang_2006` | [Recurrent decision-network model](models/wong_wang_2006_decision.md) | `neural_population` | `neural_population` / `attractor_network` | `population` | `bibliography_verified` | [DOI](https://doi.org/10.1523/jneurosci.3733-05.2006) | not verified | bibliography only |
+| `morris_lecar_1981` | [Morris-Lecar excitable-membrane model](models/morris_lecar_1981.md) | `other_nervous_system_related` | `excitable_membrane` / `not_applicable` | `single_cell` | `bibliography_verified` | [DOI](https://doi.org/10.1016/s0006-3495(81)84782-0) | not_verified | bibliography only |
+| `brette_gerstner_2005_adex` | [Adaptive exponential integrate-and-fire model](models/brette_gerstner_2005_adex.md) | `neuronal` | `neuron` / `not_applicable` | `single_cell` | `bibliography_verified` | [DOI](https://doi.org/10.1152/jn.00686.2005) | not_verified | bibliography only |
+| `tsodyks_markram_1998_stp` | [Tsodyks-Pawelzik-Markram dynamic-synapse model](models/tsodyks_markram_1998_stp.md) | `synaptic` | `synapse` / `not_applicable` | `subcellular` | `bibliography_verified` | [DOI](https://doi.org/10.1162/089976698300017502) | not_verified | bibliography only |
+| `brunel_2000_ei_network` | [Brunel sparse excitatory-inhibitory network](models/brunel_2000_ei_network.md) | `neural_population` | `neural_population` / `spiking_network` | `large_scale_network` | `bibliography_verified` | [DOI](https://doi.org/10.1023/a:1008925309027) | not_verified | bibliography only |
+| `hopfield_1982` | [Hopfield associative-memory network](models/hopfield_1982.md) | `neural_population` | `neural_population` / `attractor_network` | `large_scale_network` | `bibliography_verified` | [DOI](https://doi.org/10.1073/pnas.79.8.2554) | not_verified | bibliography only |
+| `wang_buzsaki_1996_gamma` | [Wang-Buzsaki inhibitory gamma network](models/wang_buzsaki_1996_gamma.md) | `neural_population` | `neural_population` / `interneuron_network` | `local_microcircuit` | `bibliography_verified` | [DOI](https://doi.org/10.1523/jneurosci.16-20-06402.1996) | not_verified | bibliography only |
+| `li_rinzel_1994` | [Li-Rinzel reduced IP3-receptor calcium mechanism](models/li_rinzel_1994.md) | `other_nervous_system_related` | `astrocyte_relevant_calcium_mechanism` / `not_applicable` | `subcellular` | `bibliography_verified` | [DOI](https://doi.org/10.1006/jtbi.1994.1041) | not_verified | bibliography only |
+| `mrg_2002_myelinated_axon` | [McIntyre-Richardson-Grill myelinated-axon model](models/mrg_2002_myelinated_axon.md) | `neuronal` | `myelinated_axon` / `not_applicable` | `multicompartment_cell` | `bibliography_verified` | [DOI](https://doi.org/10.1152/jn.00353.2001) | not_verified | bibliography only |
+| `jirsa_2014_epileptor` | [Epileptor seizure-dynamics model](models/jirsa_2014_epileptor.md) | `neural_population` | `neural_population` / `neural_mass` | `neural_mass` | `bibliography_verified` | [DOI](https://doi.org/10.1093/brain/awu133) | not_verified | bibliography only |
+| `polykretis_2018_neural_astrocytic_network` | [Polykretis neural-astrocytic network architecture](models/polykretis_2018_neural_astrocytic_network.md) | `mixed_neuron_glia` | `mixed_neuron_astrocyte_system` / `neuron_astrocyte_network` | `local_microcircuit` | `equation_located` | [DOI](https://doi.org/10.1145/3229884.3229890) | arXiv:1807.02514v1, Methods, equations (1)-(9) | source located; transcription pending |
+| `halnes_2013_electrodiffusive_astrocyte` | [Halnes astrocyte-extracellular electrodiffusive model](models/halnes_2013_electrodiffusive_astrocyte.md) | `glial` | `astrocyte_extracellular_system` / `not_applicable` | `multicompartment_cell` | `equation_located` | [DOI](https://doi.org/10.1371/journal.pcbi.1003386) | PMC3868551, Model, equations (1)-(6), plus astrocyte/ECS membrane-mechanism sections | source located; transcription pending |
+| `neuron_astrocyte_associative_memory_2025` | [Neuron-astrocyte associative-memory model](models/neuron_astrocyte_associative_memory_2025.md) | `mixed_neuron_glia` | `mixed_neuron_astrocyte_system` / `neuron_astrocyte_network` | `large_scale_network` | `bibliography_verified` | [DOI](https://doi.org/10.1073/pnas.2417788122) | not_verified | bibliography only |
+| `astrocyte_place_cell_formation_2022` | [Astrocyte-dependent place-cell formation model](models/astrocyte_place_cell_formation_2022.md) | `mixed_neuron_glia` | `mixed_neuron_astrocyte_system` / `neuron_astrocyte_network` | `large_scale_network` | `bibliography_verified` | [DOI](https://doi.org/10.1007/s10827-022-00828-6) | not_verified | bibliography only |
+| `polykretis_astrocytic_microdomain` | [Astrocytic microdomain local-plasticity model](models/polykretis_astrocytic_microdomain.md) | `mixed_neuron_glia` | `mixed_neuron_astrocyte_system` / `neuron_astrocyte_network` | `local_microcircuit` | `bibliography_verified` | [DOI](https://doi.org/10.1007/978-3-030-05587-5_15) | not_verified | bibliography only |
+| `sequence_learning_neuronal_astrocytic_network` | [Associative neuronal-astrocytic sequence-learning network](models/sequence_learning_neuronal_astrocytic_network.md) | `mixed_neuron_glia` | `mixed_neuron_astrocyte_system` / `neuron_astrocyte_network` | `large_scale_network` | `bibliography_verified` | [DOI](https://doi.org/10.1007/978-3-030-59277-6_32) | not_verified | bibliography only |
