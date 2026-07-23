@@ -3,7 +3,7 @@ name: Validate atlas data
 on:
   pull_request:
   push:
-    branches: [main, codex/neurocell-model-atlas]
+    branches: [main]
 
 permissions:
   contents: read
@@ -18,8 +18,9 @@ jobs:
           python-version: "3.12"
       - run: python scripts/validate_catalogue.py
       - run: python scripts/build_tables.py
-      - run: git diff --exit-code -- models/model_catalog.json models/model_catalog.yaml
+      - run: git diff --exit-code -- README.md models/model_catalog.json models/model_catalog.yaml
       - run: python scripts/validate_references.py
       - run: python scripts/validate_equations.py
       - run: python scripts/validate_links.py
       - run: python scripts/validate_language.py
+      - run: git diff --check
