@@ -13,8 +13,13 @@ ROOT = Path(__file__).resolve().parents[1]
 CATALOGUE = ROOT / "models" / "model_catalog.csv"
 SCHEMA = ROOT / "models" / "schema.json"
 DOI_RE = re.compile(r"10\.[^\s/]+/.+", re.I)
-TRANSCRIBED = {
+LOCATED_OR_STRONGER = {
     "equation_located",
+    "equation_transcribed",
+    "second_pass_checked",
+    "independently_checked",
+}
+TRANSCRIBED = {
     "equation_transcribed",
     "second_pass_checked",
     "independently_checked",
@@ -38,12 +43,14 @@ def main() -> int:
     errors: list[str] = []
     ids: set[str] = set()
     dois: set[str] = set()
+    rows: list[dict[str, str]] = []
     with CATALOGUE.open(newline="", encoding="utf-8") as handle:
         reader = csv.DictReader(handle)
         headers = reader.fieldnames or []
         if headers != required or set(headers) != allowed:
             errors.append("catalogue headers must exactly match schema properties")
         for line, row in enumerate(reader, start=2):
+            rows.append(row)
             for field in required:
                 if field not in row:
                     errors.append(f"line {line}: missing column {field}")
@@ -86,14 +93,38 @@ def main() -> int:
                     )
 
             status = row.get("equation_status", "")
-            if status in TRANSCRIBED:
+            if status in LOCATED_OR_STRONGER:
                 if row.get("equation_source_locator") in {"", "not_verified"}:
                     errors.append(
                         f"line {line}: equation evidence needs a source locator"
                     )
+            if status in TRANSCRIBED:
                 if row.get("equation_transcription_type") == "not_applicable":
                     errors.append(
                         f"line {line}: equation evidence needs a transcription type"
+                    )
+            if (
+                status == "equation_located"
+                and row.get("equation_transcription_type") != "not_applicable"
+            ):
+                errors.append(
+                    f"line {line}: located-only evidence must not claim transcription"
+                )
+
+            for prefix in ("network_conditions", "event_handling"):
+                condition_status = row.get(f"{prefix}_status", "")
+                locator = row.get(f"{prefix}_locator", "")
+                if condition_status in {"source_located", "registered"} and locator in {
+                    "",
+                    "not_verified",
+                    "not_applicable",
+                }:
+                    errors.append(
+                        f"line {line}: {prefix} evidence needs a source locator"
+                    )
+                if condition_status == "not_applicable" and locator != "not_applicable":
+                    errors.append(
+                        f"line {line}: {prefix} not_applicable needs matching locator"
                     )
 
             code_url = row.get("code_url", "").strip()
@@ -119,6 +150,21 @@ def main() -> int:
                 errors.append(
                     f"line {line}: reproduction cannot precede implementation"
                 )
+
+    for line, row in enumerate(rows, start=2):
+        parent = row.get("parent_model_id", "")
+        if parent and parent not in ids:
+            errors.append(f"line {line}: unknown parent_model_id {parent}")
+        related = [
+            item.strip()
+            for item in row.get("related_model_ids", "").split(";")
+            if item.strip()
+        ]
+        if row.get("model_id") in related:
+            errors.append(f"line {line}: related_model_ids contains the model itself")
+        for related_id in related:
+            if related_id not in ids:
+                errors.append(f"line {line}: unknown related_model_id {related_id}")
 
     if errors:
         print("Catalogue validation failed:")

@@ -9,7 +9,17 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 TARGETS = (ROOT / "README.md", ROOT / "PROJECT_PLAN.md", ROOT / "CITATION.cff", ROOT / "CODE_OF_CONDUCT.md")
-DIRECTORIES = (ROOT / "docs", ROOT / "equations", ROOT / "references", ROOT / "models", ROOT / "data", ROOT / "scripts", ROOT / ".github")
+DIRECTORIES = (
+    ROOT / "docs",
+    ROOT / "equations",
+    ROOT / "references",
+    ROOT / "models",
+    ROOT / "data",
+    ROOT / "scripts",
+    ROOT / "implementations",
+    ROOT / "tests",
+    ROOT / ".github",
+)
 HAN_RE = re.compile(r"[\u4e00-\u9fff]")
 BRAND_TERMS = (
     "co" + "dex",
