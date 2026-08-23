@@ -1,5 +1,7 @@
 # Model scope taxonomy
 
+English | [简体中文](model_scope_taxonomy.zh-CN.md)
+
 | Scope | Meaning |
 | --- | --- |
 | `cell_intrinsic` | A state model of one cell or a homogeneous compartment. |

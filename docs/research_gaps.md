@@ -1,5 +1,7 @@
 # Research gaps and next evidence targets
 
+English | [简体中文](research_gaps.zh-CN.md)
+
 The verified-equation set currently covers a conductance-based neuron, a phenomenological spiking neuron, and a glutamate-regulated astrocyte calcium model. It does not establish universal equations for any cell class.
 
 Priority evidence targets are:

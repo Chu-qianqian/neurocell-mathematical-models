@@ -23,6 +23,7 @@ MODELS = ROOT / "models" / "model_catalog.csv"
 JSON_VIEW = ROOT / "models" / "model_catalog.json"
 YAML_VIEW = ROOT / "models" / "model_catalog.yaml"
 README_VIEW = ROOT / "README.md"
+README_ZH_VIEW = ROOT / "README.zh-CN.md"
 EQUATION_INDEX = ROOT / "equations" / "README.md"
 REFERENCES = ROOT / "references" / "references.csv"
 SCREENING = ROOT / "references" / "model_screening_master.csv"
@@ -136,6 +137,14 @@ def main() -> int:
         errors.append("model_catalog.yaml is stale; run python scripts/build_tables.py")
     if README_VIEW.read_text(encoding="utf-8") != build_readme(models, screening):
         errors.append("README.md is stale; run python scripts/build_tables.py")
+    zh_readme = build_readme(models, screening, "zh")
+    if (
+        not README_ZH_VIEW.exists()
+        or README_ZH_VIEW.read_text(encoding="utf-8") != zh_readme
+    ):
+        errors.append(
+            "README.zh-CN.md is stale or missing; run python scripts/build_tables.py"
+        )
     if EQUATION_INDEX.read_text(encoding="utf-8") != equation_index(models):
         errors.append("equations/README.md is stale; run python scripts/build_tables.py")
     if REFERENCES.read_text(encoding="utf-8") != reference_csv(models):

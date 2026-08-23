@@ -1,6 +1,8 @@
 <!-- Generated from models/model_catalog.csv; do not edit by hand. -->
 # Neurocell Mathematical Models
 
+English | [简体中文](README.zh-CN.md)
+
 > A traceable, copyright-compliant atlas of mathematical and computational models for nervous-system cells.
 
 This repository is an equation-level knowledge base, not a paper mirror or a collection of third-party code. It separates bibliography verification, equation transcription, maintainer second-pass checking, and genuinely independent checking. A model-family screening item is never treated as a source-specific verified model without an identified primary source.
@@ -116,16 +118,16 @@ Equation pages require a lawful source, a precise locator, a transcription type,
 ## Navigation
 
 - [Equation index](equations/README.md)
-- [Equation curation protocol](docs/equation_curation_protocol.md)
+- [Equation curation protocol](docs/equation_curation_protocol.md) ([中文](docs/equation_curation_protocol.zh-CN.md))
 - [Evidence-status migration](docs/evidence_status_migration.md)
 - [Independent-review protocol](docs/independent_review_protocol.md)
 - [Equation notation policy](docs/equation_notation_policy.md)
-- [Model scope taxonomy](docs/model_scope_taxonomy.md)
+- [Model scope taxonomy](docs/model_scope_taxonomy.md) ([中文](docs/model_scope_taxonomy.zh-CN.md))
 - [Cell-type pages](docs/cell_types/README.md)
-- [Research gaps](docs/research_gaps.md)
+- [Research gaps](docs/research_gaps.md) ([中文](docs/research_gaps.zh-CN.md))
 - [Screening master](references/model_screening_master.csv)
-- [Data dictionary](docs/data_dictionary.md)
-- [Contribution guide](docs/CONTRIBUTING.md)
+- [Data dictionary](docs/data_dictionary.md) ([中文](docs/data_dictionary.zh-CN.md))
+- [Contribution guide](docs/CONTRIBUTING.md) ([中文](docs/CONTRIBUTING.zh-CN.md))
 
 ## Canonical catalogue coverage
 

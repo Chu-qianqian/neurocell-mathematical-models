@@ -39,7 +39,7 @@ No paper PDF, original figure, full table, supplement, or third-party code with 
 - `data/models/`: minimal, strictly validated core records;
 - `models/`: expanded CSV/JSON/YAML catalogue contract;
 - `references/`: search strings, candidate queue, BibTeX, and verification audit;
-- `docs/` and `equations/`: original English explanations, classification, and research gaps;
+- `docs/` and `equations/`: original English explanations, classification, and research gaps, with `*.zh-CN.md` Chinese mirrors for the core documents;
 - `scripts/`: offline validation; `.github/`: validation on pull requests.
 
 ## Completion checklist

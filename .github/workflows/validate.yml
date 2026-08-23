@@ -3,7 +3,9 @@ name: Validate atlas data
 on:
   pull_request:
   push:
-    branches: [main]
+    branches:
+      - main
+      - curation/evidence-audit-and-reproducibility
 
 permissions:
   contents: read
@@ -20,7 +22,7 @@ jobs:
       - run: python -m pip install --disable-pip-version-check -r requirements-brian2.txt
       - run: python scripts/validate_catalogue.py
       - run: python scripts/build_tables.py
-      - run: git diff --exit-code -- README.md equations/README.md models/model_catalog.json models/model_catalog.yaml references/references.csv references/references.bib
+      - run: git diff --exit-code -- README.md README.zh-CN.md equations/README.md models/model_catalog.json models/model_catalog.yaml references/references.csv references/references.bib
       - run: python scripts/validate_references.py
       - run: python scripts/validate_equations.py
       - run: python scripts/validate_links.py

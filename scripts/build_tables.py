@@ -6,12 +6,23 @@ import csv
 import json
 from pathlib import Path
 
+from i18n_zh import (
+    EMPTY_TABLE_ZH,
+    IMPL_HEADERS_ZH,
+    MODEL_HEADERS_ZH,
+    NAV_SUFFIXES_ZH,
+    REVIEW_LABELS_ZH,
+    SWITCHER_LINE_EN,
+    render_zh_readme,
+)
+
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "models" / "model_catalog.csv"
 JSON_OUT = ROOT / "models" / "model_catalog.json"
 YAML_OUT = ROOT / "models" / "model_catalog.yaml"
 README_OUT = ROOT / "README.md"
+README_ZH_OUT = ROOT / "README.zh-CN.md"
 EQUATION_INDEX_OUT = ROOT / "equations" / "README.md"
 SCREENING = ROOT / "references" / "model_screening_master.csv"
 REFERENCES_OUT = ROOT / "references" / "references.csv"
@@ -47,13 +58,43 @@ def markdown_cell(value: str) -> str:
     return value.replace("|", r"\|").replace("\n", " ")
 
 
-def model_table(records: list[dict[str, str]]) -> str:
+REVIEW_SCOPE_LABELS_EN = {
+    "independently_checked": "independent check documented",
+    "second_pass_checked": "maintainer second pass",
+    "equation_transcribed": "transcribed; review pending",
+    "equation_located": "source located; transcription pending",
+    "bibliography_verified": "bibliography only",
+}
+
+MODEL_TABLE_HEADERS_EN = (
+    "| Model ID | Model | Biological scope | Cell or network type | Scale | Equation status | Primary source | Equation locator | Review scope |",
+    "| --- | --- | --- | --- | --- | --- | --- | --- | --- |",
+)
+
+IMPLEMENTATION_TABLE_HEADERS_EN = (
+    "| Model | Brian2 compatibility | Implementation | Numerical tests | Reference behavior | Reproduction |",
+    "| --- | --- | --- | --- | --- | --- |",
+)
+
+
+def review_scope_label(record: dict[str, str], lang: str) -> str:
+    if lang == "zh":
+        return REVIEW_LABELS_ZH.get(
+            record["equation_status"], REVIEW_LABELS_ZH["bibliography_verified"]
+        )
+    return REVIEW_SCOPE_LABELS_EN.get(
+        record["equation_status"], REVIEW_SCOPE_LABELS_EN["bibliography_verified"]
+    )
+
+
+def model_table(records: list[dict[str, str]], lang: str = "en") -> str:
     if not records:
-        return "No records currently meet this evidence state."
-    lines = [
-        "| Model ID | Model | Biological scope | Cell or network type | Scale | Equation status | Primary source | Equation locator | Review scope |",
-        "| --- | --- | --- | --- | --- | --- | --- | --- | --- |",
-    ]
+        return (
+            EMPTY_TABLE_ZH
+            if lang == "zh"
+            else "No records currently meet this evidence state."
+        )
+    lines = list(MODEL_HEADERS_ZH if lang == "zh" else MODEL_TABLE_HEADERS_EN)
     for record in records:
         lines.append(
             "| `{model_id}` | [{model_name}]({equation_page}) | "
@@ -63,36 +104,17 @@ def model_table(records: list[dict[str, str]]) -> str:
             "{review_scope} |".format(
                 **{
                     **{key: markdown_cell(value) for key, value in record.items()},
-                    "review_scope": (
-                        "independent check documented"
-                        if record["equation_status"] == "independently_checked"
-                        else (
-                            "maintainer second pass"
-                            if record["equation_status"] == "second_pass_checked"
-                            else (
-                                "transcribed; review pending"
-                                if record["equation_status"]
-                                == "equation_transcribed"
-                                else (
-                                    "source located; transcription pending"
-                                    if record["equation_status"]
-                                    == "equation_located"
-                                    else "bibliography only"
-                                )
-                            )
-                        )
-                    ),
+                    "review_scope": review_scope_label(record, lang),
                 }
             )
         )
     return "\n".join(lines)
 
 
-def implementation_table(records: list[dict[str, str]]) -> str:
-    lines = [
-        "| Model | Brian2 compatibility | Implementation | Numerical tests | Reference behavior | Reproduction |",
-        "| --- | --- | --- | --- | --- | --- |",
-    ]
+def implementation_table(records: list[dict[str, str]], lang: str = "en") -> str:
+    lines = list(
+        IMPL_HEADERS_ZH if lang == "zh" else IMPLEMENTATION_TABLE_HEADERS_EN
+    )
     for record in records:
         lines.append(
             "| {model_name} | `{brian2_compatibility}` | "
@@ -181,9 +203,9 @@ This index is generated from the canonical catalogue. Evidence states remain sep
 """
 
 
-def build_readme(
+def compute_stats(
     records: list[dict[str, str]], screening: list[dict[str, str]]
-) -> str:
+) -> dict:
     statuses = {
         status: sum(record["equation_status"] == status for record in records)
         for status in {
@@ -225,22 +247,68 @@ def build_readme(
     cell_counts: dict[str, int] = {}
     for record in records:
         cell_counts[record["cell_type"]] = cell_counts.get(record["cell_type"], 0) + 1
-    coverage = "\n".join(
-        f"- {cell_type}: **{count}**"
-        for cell_type, count in sorted(cell_counts.items())
-    )
     latest = max(record["last_verified"] for record in records)
     screening_counts: dict[str, int] = {}
     for row in screening:
         screening_counts[row["screening_status"]] = (
             screening_counts.get(row["screening_status"], 0) + 1
         )
+    return {
+        "records": records,
+        "screening": screening,
+        "statuses": statuses,
+        "equation_located_or_beyond": equation_located_or_beyond,
+        "parameters_incomplete": parameters_incomplete,
+        "full_text_unavailable": full_text_unavailable,
+        "uninspected_full_text": uninspected_full_text,
+        "license_unclear": license_unclear,
+        "promoted_screening": promoted_screening,
+        "cell_counts": cell_counts,
+        "screening_counts": screening_counts,
+        "latest": latest,
+    }
+
+
+def build_readme(
+    records: list[dict[str, str]],
+    screening: list[dict[str, str]],
+    lang: str = "en",
+) -> str:
+    s = compute_stats(records, screening)
+    coverage = "\n".join(
+        f"- {cell_type}: **{count}**"
+        for cell_type, count in sorted(s["cell_counts"].items())
+    )
     screening_summary = "\n".join(
         f"- `{status}`: **{count}**"
-        for status, count in sorted(screening_counts.items())
+        for status, count in sorted(s["screening_counts"].items())
     )
+    if lang == "zh":
+        return _readme_zh(s, coverage, screening_summary)
+    return _readme_en(s, coverage, screening_summary)
+
+
+def _readme_en(s: dict, coverage: str, screening_summary: str) -> str:
+    records = s["records"]
+    screening = s["screening"]
+    statuses = s["statuses"]
+    equation_located_or_beyond = s["equation_located_or_beyond"]
+    parameters_incomplete = s["parameters_incomplete"]
+    full_text_unavailable = s["full_text_unavailable"]
+    uninspected_full_text = s["uninspected_full_text"]
+    license_unclear = s["license_unclear"]
+    promoted_screening = s["promoted_screening"]
+    latest = s["latest"]
+    switcher = SWITCHER_LINE_EN
+    nav_curation = f"({NAV_SUFFIXES_ZH['equation_curation_protocol']})"
+    nav_taxonomy = f"({NAV_SUFFIXES_ZH['model_scope_taxonomy']})"
+    nav_gaps = f"({NAV_SUFFIXES_ZH['research_gaps']})"
+    nav_dictionary = f"({NAV_SUFFIXES_ZH['data_dictionary']})"
+    nav_contributing = f"({NAV_SUFFIXES_ZH['contributing']})"
     return f"""<!-- {GENERATED_NOTICE} -->
 # Neurocell Mathematical Models
+
+{switcher}
 
 > A traceable, copyright-compliant atlas of mathematical and computational models for nervous-system cells.
 
@@ -302,16 +370,16 @@ Equation pages require a lawful source, a precise locator, a transcription type,
 ## Navigation
 
 - [Equation index](equations/README.md)
-- [Equation curation protocol](docs/equation_curation_protocol.md)
+- [Equation curation protocol](docs/equation_curation_protocol.md) {nav_curation}
 - [Evidence-status migration](docs/evidence_status_migration.md)
 - [Independent-review protocol](docs/independent_review_protocol.md)
 - [Equation notation policy](docs/equation_notation_policy.md)
-- [Model scope taxonomy](docs/model_scope_taxonomy.md)
+- [Model scope taxonomy](docs/model_scope_taxonomy.md) {nav_taxonomy}
 - [Cell-type pages](docs/cell_types/README.md)
-- [Research gaps](docs/research_gaps.md)
+- [Research gaps](docs/research_gaps.md) {nav_gaps}
 - [Screening master](references/model_screening_master.csv)
-- [Data dictionary](docs/data_dictionary.md)
-- [Contribution guide](docs/CONTRIBUTING.md)
+- [Data dictionary](docs/data_dictionary.md) {nav_dictionary}
+- [Contribution guide](docs/CONTRIBUTING.md) {nav_contributing}
 
 ## Canonical catalogue coverage
 
@@ -330,12 +398,26 @@ Last verified: {latest}.
 """
 
 
+def _readme_zh(s: dict, coverage: str, screening_summary: str) -> str:
+    return render_zh_readme(
+        s,
+        coverage,
+        screening_summary,
+        GENERATED_NOTICE,
+        model_table(s["records"], "zh"),
+        implementation_table(s["records"], "zh"),
+    )
+
+
 def main() -> int:
     records = read_csv(SOURCE)
     screening = read_csv(SCREENING)
     JSON_OUT.write_text(json_view(records), encoding="utf-8")
     YAML_OUT.write_text(yaml_view(records), encoding="utf-8")
     README_OUT.write_text(build_readme(records, screening), encoding="utf-8")
+    README_ZH_OUT.write_text(
+        build_readme(records, screening, "zh"), encoding="utf-8"
+    )
     EQUATION_INDEX_OUT.write_text(equation_index(records), encoding="utf-8")
     REFERENCES_OUT.write_text(reference_csv(records), encoding="utf-8")
     BIB_OUT.write_text(bib_view(records), encoding="utf-8")

@@ -1,5 +1,7 @@
 # Equation curation protocol
 
+English | [简体中文](equation_curation_protocol.zh-CN.md)
+
 ## Evidence gate
 
 An equation is displayed only after a curator has inspected a lawful full-text, author-posted preprint, publisher supplement, model database entry, or source-code location and recorded a precise locator. Bibliographic verification alone does not authorize equation display.

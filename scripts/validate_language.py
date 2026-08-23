@@ -21,6 +21,8 @@ DIRECTORIES = (
     ROOT / ".github",
 )
 HAN_RE = re.compile(r"[\u4e00-\u9fff]")
+ZH_LINK_RE = re.compile(r"\]\([^)]*\.zh-CN\.md\)")
+HAN_ALLOWED_FILES = {"scripts/i18n_zh.py"}
 BRAND_TERMS = (
     "co" + "dex",
     "chat" + "gpt",
@@ -51,8 +53,12 @@ def main() -> int:
     for path in files_to_check():
         if path.suffix.lower() not in {".md", ".csv", ".json", ".yaml", ".yml", ".py", ".bib", ".cff"}:
             continue
+        allow_han = (
+            ".zh-CN." in path.name
+            or path.relative_to(ROOT).as_posix() in HAN_ALLOWED_FILES
+        )
         for line_no, line in enumerate(path.read_text(encoding="utf-8").splitlines(), start=1):
-            if HAN_RE.search(line):
+            if HAN_RE.search(line) and not allow_han and not ZH_LINK_RE.search(line):
                 errors.append(f"{path.relative_to(ROOT)}:{line_no}")
             if BRAND_RE.search(line):
                 errors.append(
