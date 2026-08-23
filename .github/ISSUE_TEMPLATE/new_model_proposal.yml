@@ -1,0 +1,102 @@
+name: New model proposal
+description: Propose a mathematical or computational model for inclusion in the atlas.
+title: "Proposal: "
+labels: ["model-proposal"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for proposing a model. The catalogue only accepts records with a
+        traceable primary source and an explicit mathematical model. Reviews and
+        descriptive papers cannot serve as equation sources.
+  - type: input
+    id: model_name
+    attributes:
+      label: Model name
+      description: Name used in the primary source.
+      placeholder: e.g. Morris-Lecar excitable-membrane model
+    validations:
+      required: true
+  - type: input
+    id: primary_source_doi
+    attributes:
+      label: Primary source DOI
+      description: Persistent identifier of the paper that defines the model equations.
+      placeholder: e.g. 10.1016/s0006-3495(81)84782-0
+    validations:
+      required: true
+  - type: dropdown
+    id: cell_type
+    attributes:
+      label: Target cell type
+      options:
+        - neuron
+        - astrocyte
+        - microglia
+        - oligodendrocyte
+        - OPC / NG2 glia
+        - Schwann cell
+        - ependymal cell
+        - radial glia
+        - neural stem cell
+        - pericyte
+        - endothelial cell
+        - mixed neuron-glia system
+        - neural population
+        - synapse
+        - other
+    validations:
+      required: true
+  - type: dropdown
+    id: mathematical_form
+    attributes:
+      label: Mathematical form
+      options:
+        - ODE
+        - PDE
+        - stochastic
+        - difference equation
+        - event-driven
+        - agent-based
+        - probabilistic
+        - hybrid
+        - other
+    validations:
+      required: true
+  - type: dropdown
+    id: full_text_access
+    attributes:
+      label: How can the source be lawfully accessed?
+      options:
+        - open-access publisher version
+        - author-posted preprint
+        - PubMed Central full text
+        - model database entry (e.g. ModelDB)
+        - source-code repository with clear license
+        - paywalled / not openly accessible
+    validations:
+      required: true
+  - type: textarea
+    id: source_locator
+    attributes:
+      label: Known equation locator
+      description: Page, section, equation numbers, database entry, or code file, if already known. Write "unknown" otherwise.
+      placeholder: e.g. p. 1008, equations (1)-(4)
+    validations:
+      required: false
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Why this model belongs in the atlas
+    validations:
+      required: true
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Submission checklist
+      options:
+        - label: The DOI resolves to the paper I am proposing.
+        - label: The source contains an explicit mathematical or computational model.
+        - label: I understand that no paper PDFs, figures, copied tables, or unlicensed code may be uploaded here.
+    validations:
+      required: true

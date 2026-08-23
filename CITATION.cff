@@ -8,5 +8,5 @@ repository-code: "https://github.com/Chu-qianqian/neurocell-mathematical-models"
 url: "https://github.com/Chu-qianqian/neurocell-mathematical-models"
 authors:
   - name: "Neurocell Mathematical Models contributors"
-date-released: 2026-07-22
-version: "0.1.0"
+date-released: 2026-08-23
+version: "0.2.0"

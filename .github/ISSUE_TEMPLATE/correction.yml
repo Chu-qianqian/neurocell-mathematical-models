@@ -1,0 +1,34 @@
+name: Data correction
+description: Report an error in the catalogue, equations, parameters, or documentation.
+title: "Correction: "
+labels: ["correction"]
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      description: File path and record ID, or README section.
+      placeholder: e.g. models/model_catalog.csv, row morris_lecar_1981
+    validations:
+      required: true
+  - type: textarea
+    id: current_value
+    attributes:
+      label: Current content
+      description: What the repository currently states.
+    validations:
+      required: true
+  - type: textarea
+    id: correct_value
+    attributes:
+      label: Corrected content and evidence
+      description: What it should state, with a verifiable source (DOI link, locator, or citation).
+    validations:
+      required: true
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have checked that this is not already fixed on the default branch.
+        - label: My evidence can be verified without copyrighted attachments.
