@@ -64,12 +64,12 @@
       "last_verified": "2026-07-23",
       "brian2_compatibility": "native",
       "brian2_compatibility_reason": "The conductance-based ODE system is expressible in Brian2; no repository implementation has been executed.",
-      "brian2_implementation_status": "not_implemented",
-      "brian2_version": "not_applicable",
+      "brian2_implementation_status": "smoke_tested",
+      "brian2_version": "2.10.1",
       "implementation_scope": "Catalogue classification only; no executable implementation.",
-      "numerical_test_status": "not_run",
-      "reference_behavior_status": "not_assessed",
-      "reproduction_status": "not_attempted"
+      "numerical_test_status": "passed",
+      "reference_behavior_status": "qualitative_match",
+      "reproduction_status": "implementation_only"
     },
     {
       "model_id": "izhikevich_2003",
@@ -762,14 +762,14 @@
       "full_text_access_status": "source_identified",
       "code_license_status": "not_assessed",
       "last_verified": "2026-07-23",
-      "brian2_compatibility": "not_assessed",
+      "brian2_compatibility": "native",
       "brian2_compatibility_reason": "Feasibility has not been assessed against a complete source audit.",
-      "brian2_implementation_status": "not_implemented",
-      "brian2_version": "not_applicable",
+      "brian2_implementation_status": "smoke_tested",
+      "brian2_version": "2.10.1",
       "implementation_scope": "No repository implementation.",
-      "numerical_test_status": "not_run",
-      "reference_behavior_status": "not_assessed",
-      "reproduction_status": "not_attempted"
+      "numerical_test_status": "passed",
+      "reference_behavior_status": "qualitative_match",
+      "reproduction_status": "implementation_only"
     },
     {
       "model_id": "brette_gerstner_2005_adex",
@@ -832,14 +832,14 @@
       "full_text_access_status": "source_identified",
       "code_license_status": "not_assessed",
       "last_verified": "2026-07-23",
-      "brian2_compatibility": "not_assessed",
+      "brian2_compatibility": "native",
       "brian2_compatibility_reason": "Feasibility has not been assessed against a complete source audit.",
-      "brian2_implementation_status": "not_implemented",
-      "brian2_version": "not_applicable",
+      "brian2_implementation_status": "smoke_tested",
+      "brian2_version": "2.10.1",
       "implementation_scope": "No repository implementation.",
-      "numerical_test_status": "not_run",
-      "reference_behavior_status": "not_assessed",
-      "reproduction_status": "not_attempted"
+      "numerical_test_status": "passed",
+      "reference_behavior_status": "qualitative_match",
+      "reproduction_status": "implementation_only"
     },
     {
       "model_id": "tsodyks_markram_1998_stp",

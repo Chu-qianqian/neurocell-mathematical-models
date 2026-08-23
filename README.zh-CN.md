@@ -59,7 +59,7 @@
 
 | 模型 | Brian2 兼容性 | 实现 | 数值测试 | 参考行为 | 复现 |
 | --- | --- | --- | --- | --- | --- |
-| Hodgkin-Huxley conductance model | `native` | `not_implemented` | `not_run` | `not_assessed` | `not_attempted` |
+| Hodgkin-Huxley conductance model | `native` | `smoke_tested` | `passed` | `qualitative_match` | `implementation_only` |
 | Izhikevich simple spiking-neuron model | `native` | `smoke_tested` | `passed` | `not_assessed` | `implementation_only` |
 | G-ChI astrocyte calcium and IP3 model | `possible_custom_ode` | `not_implemented` | `not_run` | `not_assessed` | `not_attempted` |
 | Functional neuron-astrocyte calcium-network model | `not_assessed` | `not_implemented` | `not_run` | `not_assessed` | `not_attempted` |
@@ -69,8 +69,8 @@
 | Potjans-Diesmann cortical microcircuit model | `not_assessed` | `not_implemented` | `not_run` | `not_assessed` | `not_attempted` |
 | Montbrio-Pazo-Roxin exact neural-mass reduction | `possible_custom_ode` | `smoke_tested` | `passed` | `not_assessed` | `implementation_only` |
 | Recurrent decision-network model | `not_assessed` | `not_implemented` | `not_run` | `not_assessed` | `not_attempted` |
-| Morris-Lecar excitable-membrane model | `not_assessed` | `not_implemented` | `not_run` | `not_assessed` | `not_attempted` |
-| Adaptive exponential integrate-and-fire model | `not_assessed` | `not_implemented` | `not_run` | `not_assessed` | `not_attempted` |
+| Morris-Lecar excitable-membrane model | `native` | `smoke_tested` | `passed` | `qualitative_match` | `implementation_only` |
+| Adaptive exponential integrate-and-fire model | `native` | `smoke_tested` | `passed` | `qualitative_match` | `implementation_only` |
 | Tsodyks-Pawelzik-Markram dynamic-synapse model | `not_assessed` | `not_implemented` | `not_run` | `not_assessed` | `not_attempted` |
 | Brunel sparse excitatory-inhibitory network | `possible_network_implementation` | `not_implemented` | `not_run` | `not_assessed` | `not_attempted` |
 | Hopfield associative-memory network | `not_assessed` | `not_implemented` | `not_run` | `not_assessed` | `not_attempted` |
