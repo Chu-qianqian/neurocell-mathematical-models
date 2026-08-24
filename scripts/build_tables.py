@@ -28,6 +28,11 @@ SCREENING = ROOT / "references" / "model_screening_master.csv"
 REFERENCES_OUT = ROOT / "references" / "references.csv"
 BIB_OUT = ROOT / "references" / "references.bib"
 GENERATED_NOTICE = "Generated from models/model_catalog.csv; do not edit by hand."
+ZENODO_DOI = "10.5281/zenodo.22078787"
+DOI_BADGE = (
+    f"[![DOI](https://zenodo.org/badge/DOI/{ZENODO_DOI}.svg)]"
+    f"(https://doi.org/{ZENODO_DOI})"
+)
 
 
 def yaml_quote(value: str) -> str:
@@ -300,6 +305,7 @@ def _readme_en(s: dict, coverage: str, screening_summary: str) -> str:
     promoted_screening = s["promoted_screening"]
     latest = s["latest"]
     switcher = SWITCHER_LINE_EN
+    badge = DOI_BADGE
     nav_curation = f"({NAV_SUFFIXES_ZH['equation_curation_protocol']})"
     nav_taxonomy = f"({NAV_SUFFIXES_ZH['model_scope_taxonomy']})"
     nav_gaps = f"({NAV_SUFFIXES_ZH['research_gaps']})"
@@ -309,6 +315,8 @@ def _readme_en(s: dict, coverage: str, screening_summary: str) -> str:
 # Neurocell Mathematical Models
 
 {switcher}
+
+{badge}
 
 > A traceable, copyright-compliant atlas of mathematical and computational models for nervous-system cells.
 
@@ -406,6 +414,7 @@ def _readme_zh(s: dict, coverage: str, screening_summary: str) -> str:
         GENERATED_NOTICE,
         model_table(s["records"], "zh"),
         implementation_table(s["records"], "zh"),
+        DOI_BADGE,
     )
 
 

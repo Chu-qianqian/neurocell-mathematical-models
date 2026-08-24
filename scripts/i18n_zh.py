@@ -46,6 +46,7 @@ def render_zh_readme(
     generated_notice: str,
     model_table_zh: str,
     implementation_table_zh: str,
+    doi_badge: str,
 ) -> str:
     records = s["records"]
     statuses = s["statuses"]
@@ -54,6 +55,8 @@ def render_zh_readme(
 # 神经细胞数学模型库
 
 [English](README.md) | 简体中文
+
+{doi_badge}
 
 > 一个可溯源、符合版权规范的神经系统细胞数学与计算模型图谱。
 

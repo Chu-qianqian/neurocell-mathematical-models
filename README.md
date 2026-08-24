@@ -3,6 +3,8 @@
 
 English | [简体中文](README.zh-CN.md)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22078787.svg)](https://doi.org/10.5281/zenodo.22078787)
+
 > A traceable, copyright-compliant atlas of mathematical and computational models for nervous-system cells.
 
 This repository is an equation-level knowledge base, not a paper mirror or a collection of third-party code. It separates bibliography verification, equation transcription, maintainer second-pass checking, and genuinely independent checking. A model-family screening item is never treated as a source-specific verified model without an identified primary source.
