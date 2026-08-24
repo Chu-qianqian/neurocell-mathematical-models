@@ -15,3 +15,15 @@ wilson_cowan_1972,E,coarse-grained excitatory population activity,source activit
 wilson_cowan_1972,I,coarse-grained inhibitory population activity,source activity convention,source_verified,"article p. 8, equation (8)",2026-07-23
 montbrio_pazo_roxin_2015,r,population firing rate,inverse source time,source_verified,"arXiv:1506.06581v1, Section II.B, equation (12a)",2026-07-23
 montbrio_pazo_roxin_2015,v,population mean membrane potential,source voltage convention,source_verified,"arXiv:1506.06581v1, Section II.B, equation (12b)",2026-07-23
+halnes_2013_electrodiffusive_astrocyte,c_{kn},"concentration of ion species k in domain n (n in {I,E})",mol/m^3,source_verified,"Model section, equations (2)-(4)",2026-08-24
+halnes_2013_electrodiffusive_astrocyte,j_{kM},"transmembrane flux density of species k, positive from I to E",mol/(m^2 s),source_verified,"Model section, equations (1) and (5)",2026-08-24
+halnes_2013_electrodiffusive_astrocyte,j_{kn},axial flux density of species k in domain n,mol/(m^2 s),source_verified,"Model section, equations (2)-(4)",2026-08-24
+halnes_2013_electrodiffusive_astrocyte,v_n,electric potential in domain n,volt,source_verified,"Model section, equation (4)",2026-08-24
+halnes_2013_electrodiffusive_astrocyte,v_M,"membrane potential, defined as v_I - v_E",volt,source_verified,"Model section, equation (5) and source definition of v_M",2026-08-24
+halnes_2013_electrodiffusive_astrocyte,x,position along the one-dimensional cable,metre,source_verified,"Model section, equation (1)",2026-08-24
+halnes_2013_electrodiffusive_astrocyte,t,time,second,source_verified,"Model section, equation (1)",2026-08-24
+halnes_2013_electrodiffusive_astrocyte,O_M,membrane area per tissue volume,1/metre,source_verified,"Model section, equation (1) and Figure 1",2026-08-24
+halnes_2013_electrodiffusive_astrocyte,a_I,tissue volume fraction of the intracellular I-domain,dimensionless,source_verified,"Model section, equation (1)",2026-08-24
+halnes_2013_electrodiffusive_astrocyte,a_E,tissue volume fraction of the extracellular E-domain,dimensionless,source_verified,"Model section, equation (3)",2026-08-24
+halnes_2013_electrodiffusive_astrocyte,Delta x,segment length,metre,source_verified,"Model section, equation (1)",2026-08-24
+halnes_2013_electrodiffusive_astrocyte,l,cable length,metre,source_verified,"Model section, equation (6)",2026-08-24

@@ -23,3 +23,8 @@ wilson_cowan_1972,c_4,inhibitory-to-inhibitory coupling coefficient,source conve
 montbrio_pazo_roxin_2015,Delta,half-width of the Lorentzian excitability distribution,source nondimensional convention,parameters_incomplete,"arXiv:1506.06581v1, Section II.B, equations (12a)-(12b)",parameters_incomplete,2026-07-23
 montbrio_pazo_roxin_2015,eta_bar,center of the excitability distribution,source nondimensional convention,parameters_incomplete,"arXiv:1506.06581v1, Section II.B, equations (12a)-(12b)",parameters_incomplete,2026-07-23
 montbrio_pazo_roxin_2015,J,mean-field coupling strength,source nondimensional convention,parameters_incomplete,"arXiv:1506.06581v1, Section II.B, equations (12a)-(12b)",parameters_incomplete,2026-07-23
+halnes_2013_electrodiffusive_astrocyte,D_k,diffusion constant of species k in dilute solution,m^2/s,parameters_incomplete,"Model section, equation (4)",parameters_incomplete,2026-08-24
+halnes_2013_electrodiffusive_astrocyte,lambda_n,tortuosity factor of domain n,dimensionless,parameters_incomplete,"Model section, equation (4)",parameters_incomplete,2026-08-24
+halnes_2013_electrodiffusive_astrocyte,z_k,valence of ion species k,dimensionless,parameters_incomplete,"Model section, equation (4)",parameters_incomplete,2026-08-24
+halnes_2013_electrodiffusive_astrocyte,psi,"thermal voltage, psi = RT/F",volt,parameters_incomplete,"Model section, equation (4) and source definition of psi",parameters_incomplete,2026-08-24
+halnes_2013_electrodiffusive_astrocyte,f_closure,"membrane-mechanism closure function (channels, pumps, cotransporters)",source convention,parameters_incomplete,"Model section, equation (5)",parameters_incomplete,2026-08-24
