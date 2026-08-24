@@ -40,3 +40,6 @@ polykretis_2018_neural_astrocytic_network,tau_SIC_decay,SIC decay time constant,
 polykretis_2018_neural_astrocytic_network,n_norm,biexponential normalization constant,dimensionless,6*6^0.2/5,"Methods, equation (8)",registered,2026-08-24
 polykretis_2018_neural_astrocytic_network,R_lif,LIF membrane resistance,gigaohm,0.6,"Methods, postsynaptic neuron description",registered,2026-08-24
 polykretis_2018_neural_astrocytic_network,C_lif,LIF membrane capacitance,picofarad,100,"Methods, postsynaptic neuron description",registered,2026-08-24
+hopfield_1982,U_i,neuron thresholds,dimensionless,0 unless otherwise stated,"p. 2555, after equation [1]",registered,2026-08-24
+hopfield_1982,T_ii,self-coupling constraint,dimensionless,0,"p. 2555, after equation [2]",registered,2026-08-24
+hopfield_1982,capacity,simultaneously remembered states before severe recall error,dimensionless,about 0.15 N (empirical),"p. 2556, simulation summary",registered,2026-08-24

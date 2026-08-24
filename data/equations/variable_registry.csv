@@ -49,3 +49,13 @@ polykretis_2018_neural_astrocytic_network,I_SIC,slow inward current,source conve
 polykretis_2018_neural_astrocytic_network,I_total,total current driving postsynaptic neurons,source convention,source_verified,"Methods, equation (9)",2026-08-24
 polykretis_2018_neural_astrocytic_network,I_basal,basal presynaptic current,source convention,source_verified,"Methods, equation (9)",2026-08-24
 polykretis_2018_neural_astrocytic_network,t,time since the last Calcium peak,source convention,source_verified,"Methods, equation (8)",2026-08-24
+hopfield_1982,V_i,"state of neuron i (0 not firing, 1 firing at maximum rate)",dimensionless,source_verified,"p. 2555, equation [1]",2026-08-24
+hopfield_1982,T_ij,strength of connection to neuron i from neuron j,dimensionless,source_verified,"p. 2555, equations [1], [2], [5]",2026-08-24
+hopfield_1982,U_i,fixed threshold of neuron i,dimensionless,source_verified,"p. 2555, equation [1]",2026-08-24
+hopfield_1982,V_s,stored nominal memory state s (s = 1..n),dimensionless,source_verified,"p. 2555, equation [2]",2026-08-24
+hopfield_1982,H_j_sp,effective field on neuron j when system state is V_sp,dimensionless,source_verified,"p. 2555, equations [3], [4]",2026-08-24
+hopfield_1982,E,energy of a network state with symmetric T_ij,arbitrary units,source_verified,"p. 2556, equation [7]",2026-08-24
+hopfield_1982,dE,energy change due to a single-neuron change dV_i,arbitrary units,source_verified,"p. 2556, equation [8]",2026-08-24
+hopfield_1982,N,number of neurons,dimensionless,source_verified,"p. 2555, equation [4] context",2026-08-24
+hopfield_1982,n,number of stored states,dimensionless,source_verified,"p. 2555, equation [2] context",2026-08-24
+hopfield_1982,W,mean attempt rate of asynchronous updates,1/time,source_verified,"p. 2555, model description",2026-08-24
