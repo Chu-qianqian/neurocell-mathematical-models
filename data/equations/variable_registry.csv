@@ -27,3 +27,25 @@ halnes_2013_electrodiffusive_astrocyte,a_I,tissue volume fraction of the intrace
 halnes_2013_electrodiffusive_astrocyte,a_E,tissue volume fraction of the extracellular E-domain,dimensionless,source_verified,"Model section, equation (3)",2026-08-24
 halnes_2013_electrodiffusive_astrocyte,Delta x,segment length,metre,source_verified,"Model section, equation (1)",2026-08-24
 halnes_2013_electrodiffusive_astrocyte,l,cable length,metre,source_verified,"Model section, equation (6)",2026-08-24
+polykretis_2018_neural_astrocytic_network,I,IP3 concentration,source convention,source_verified,"Methods, equation (1)",2026-08-24
+polykretis_2018_neural_astrocytic_network,I_beta,agonist-dependent IP3 production,source convention,source_verified,"Methods, equation (1)",2026-08-24
+polykretis_2018_neural_astrocytic_network,I_delta,agonist-independent IP3 production,source convention,source_verified,"Methods, equation (1)",2026-08-24
+polykretis_2018_neural_astrocytic_network,I_3K,IP3 degradation by the first enzyme,source convention,source_verified,"Methods, equation (1)",2026-08-24
+polykretis_2018_neural_astrocytic_network,I_5P,IP3 degradation by the second enzyme,source convention,source_verified,"Methods, equation (1)",2026-08-24
+polykretis_2018_neural_astrocytic_network,C,intracellular Calcium concentration,micromolar,source_verified,"Methods, equations (2), (3), (5)",2026-08-24
+polykretis_2018_neural_astrocytic_network,J_bal,Calcium-balancing Hill-form flux,micromolar/second,source_verified,"Methods, equation (2)",2026-08-24
+polykretis_2018_neural_astrocytic_network,J_chan,cytosolic Calcium increase from ER release,source convention,source_verified,"Methods, equation (3)",2026-08-24
+polykretis_2018_neural_astrocytic_network,J_leak,Calcium leakage from the ER,source convention,source_verified,"Methods, equation (3)",2026-08-24
+polykretis_2018_neural_astrocytic_network,J_pump,SERCA uptake back into the ER,source convention,source_verified,"Methods, equation (3)",2026-08-24
+polykretis_2018_neural_astrocytic_network,h,gating variable of ER-release channels,dimensionless,source_verified,"Methods, equation (4)",2026-08-24
+polykretis_2018_neural_astrocytic_network,h_infty,steady-state value of h,dimensionless,source_verified,"Methods, equation (4)",2026-08-24
+polykretis_2018_neural_astrocytic_network,tau_h,time constant of h,source convention,source_verified,"Methods, equation (4)",2026-08-24
+polykretis_2018_neural_astrocytic_network,J_RyR,Ryanodine-receptor calcium release flux,source convention,source_verified,"Methods, equation (5)",2026-08-24
+polykretis_2018_neural_astrocytic_network,C_ER,Calcium concentration in the ER,micromolar,source_verified,"Methods, equation (5)",2026-08-24
+polykretis_2018_neural_astrocytic_network,I_astro,Calcium-dependent astrocytic output amplitude,microampere/cm^2,source_verified,"Methods, equation (6)",2026-08-24
+polykretis_2018_neural_astrocytic_network,w,transformed astrocytic Calcium variable,dimensionless,source_verified,"Methods, equation (7)",2026-08-24
+polykretis_2018_neural_astrocytic_network,Theta,Heaviside function,dimensionless,source_verified,"Methods, equation (6)",2026-08-24
+polykretis_2018_neural_astrocytic_network,I_SIC,slow inward current,source convention,source_verified,"Methods, equation (8)",2026-08-24
+polykretis_2018_neural_astrocytic_network,I_total,total current driving postsynaptic neurons,source convention,source_verified,"Methods, equation (9)",2026-08-24
+polykretis_2018_neural_astrocytic_network,I_basal,basal presynaptic current,source convention,source_verified,"Methods, equation (9)",2026-08-24
+polykretis_2018_neural_astrocytic_network,t,time since the last Calcium peak,source convention,source_verified,"Methods, equation (8)",2026-08-24

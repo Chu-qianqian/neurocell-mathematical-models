@@ -12,10 +12,10 @@
 - 规范目录记录：**25**
 - 仅书目暂存记录：**18**
 - 方程已定位或更强状态的记录：**7**
-- 已转录、待第二遍复核的记录：**3**
+- 已转录、待第二遍复核的记录：**4**
 - 维护者已第二遍复核的记录：**3**
 - 已独立复核的记录：**0**
-- 参数注册表不完整的记录：**10**
+- 参数注册表不完整的记录：**11**
 - 明确标注全文不可获取的记录：**0**
 - 来源全文不可获取或尚未查验的记录：**18**
 - 外部代码许可状态不明的记录：**9**
@@ -44,7 +44,7 @@
 | `li_rinzel_1994` | [Li-Rinzel reduced IP3-receptor calcium mechanism](equations/models/li_rinzel_1994.md) | `other_nervous_system_related` | `astrocyte_relevant_calcium_mechanism` / `not_applicable` | `subcellular` | `bibliography_verified` | [DOI](https://doi.org/10.1006/jtbi.1994.1041) | not_verified | 仅书目 |
 | `mrg_2002_myelinated_axon` | [McIntyre-Richardson-Grill myelinated-axon model](equations/models/mrg_2002_myelinated_axon.md) | `neuronal` | `myelinated_axon` / `not_applicable` | `multicompartment_cell` | `bibliography_verified` | [DOI](https://doi.org/10.1152/jn.00353.2001) | not_verified | 仅书目 |
 | `jirsa_2014_epileptor` | [Epileptor seizure-dynamics model](equations/models/jirsa_2014_epileptor.md) | `neural_population` | `neural_population` / `neural_mass` | `neural_mass` | `bibliography_verified` | [DOI](https://doi.org/10.1093/brain/awu133) | not_verified | 仅书目 |
-| `polykretis_2018_neural_astrocytic_network` | [Polykretis neural-astrocytic network architecture](equations/models/polykretis_2018_neural_astrocytic_network.md) | `mixed_neuron_glia` | `mixed_neuron_astrocyte_system` / `neuron_astrocyte_network` | `local_microcircuit` | `equation_located` | [DOI](https://doi.org/10.1145/3229884.3229890) | arXiv:1807.02514v1, Methods, equations (1)-(9) | 已定位来源；待转录 |
+| `polykretis_2018_neural_astrocytic_network` | [Polykretis neural-astrocytic network architecture](equations/models/polykretis_2018_neural_astrocytic_network.md) | `mixed_neuron_glia` | `mixed_neuron_astrocyte_system` / `neuron_astrocyte_network` | `local_microcircuit` | `equation_transcribed` | [DOI](https://doi.org/10.1145/3229884.3229890) | arXiv:1807.02514v1, Methods, equations (1)-(9) | 已转录；待复核 |
 | `halnes_2013_electrodiffusive_astrocyte` | [Halnes astrocyte-extracellular electrodiffusive model](equations/models/halnes_2013_electrodiffusive_astrocyte.md) | `glial` | `astrocyte_extracellular_system` / `not_applicable` | `multicompartment_cell` | `equation_transcribed` | [DOI](https://doi.org/10.1371/journal.pcbi.1003386) | Model section, Electrodiffusive formalism, equations (1)-(6); arXiv numbering matches published PMC3868551 | 已转录；待复核 |
 | `neuron_astrocyte_associative_memory_2025` | [Neuron-astrocyte associative-memory model](equations/models/neuron_astrocyte_associative_memory_2025.md) | `mixed_neuron_glia` | `mixed_neuron_astrocyte_system` / `neuron_astrocyte_network` | `large_scale_network` | `bibliography_verified` | [DOI](https://doi.org/10.1073/pnas.2417788122) | not_verified | 仅书目 |
 | `astrocyte_place_cell_formation_2022` | [Astrocyte-dependent place-cell formation model](equations/models/astrocyte_place_cell_formation_2022.md) | `mixed_neuron_glia` | `mixed_neuron_astrocyte_system` / `neuron_astrocyte_network` | `large_scale_network` | `bibliography_verified` | [DOI](https://doi.org/10.1007/s10827-022-00828-6) | not_verified | 仅书目 |

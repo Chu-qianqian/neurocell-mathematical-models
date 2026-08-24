@@ -28,3 +28,15 @@ halnes_2013_electrodiffusive_astrocyte,lambda_n,tortuosity factor of domain n,di
 halnes_2013_electrodiffusive_astrocyte,z_k,valence of ion species k,dimensionless,parameters_incomplete,"Model section, equation (4)",parameters_incomplete,2026-08-24
 halnes_2013_electrodiffusive_astrocyte,psi,"thermal voltage, psi = RT/F",volt,parameters_incomplete,"Model section, equation (4) and source definition of psi",parameters_incomplete,2026-08-24
 halnes_2013_electrodiffusive_astrocyte,f_closure,"membrane-mechanism closure function (channels, pumps, cotransporters)",source convention,parameters_incomplete,"Model section, equation (5)",parameters_incomplete,2026-08-24
+polykretis_2018_neural_astrocytic_network,v_bal,maximal rate of Calcium depletion,micromolar/second,0.5,"Methods, equation (2)",registered,2026-08-24
+polykretis_2018_neural_astrocytic_network,K_bal,Calcium affinity of the balancing mechanism,micromolar,2,"Methods, equation (2)",registered,2026-08-24
+polykretis_2018_neural_astrocytic_network,k1,Ryanodine-receptor constant,source convention,parameters_incomplete,"Methods, equation (5); fit to Bezprozvany et al. data",parameters_incomplete,2026-08-24
+polykretis_2018_neural_astrocytic_network,k2,Ryanodine-receptor constant,source convention,parameters_incomplete,"Methods, equation (5); fit to Bezprozvany et al. data",parameters_incomplete,2026-08-24
+polykretis_2018_neural_astrocytic_network,K_d,Ryanodine-receptor dissociation constant,source convention,parameters_incomplete,"Methods, equation (5); fit to Bezprozvany et al. data",parameters_incomplete,2026-08-24
+polykretis_2018_neural_astrocytic_network,astro_amplitude,SIC amplitude coefficient,microampere/cm^2,2.11,"Methods, equation (6)",registered,2026-08-24
+polykretis_2018_neural_astrocytic_network,calcium_offset,Calcium offset in w,nanomolar,196.11,"Methods, equation (7)",registered,2026-08-24
+polykretis_2018_neural_astrocytic_network,tau_SIC_rise,SIC rise time constant,millisecond,50,"Methods, equation (8)",registered,2026-08-24
+polykretis_2018_neural_astrocytic_network,tau_SIC_decay,SIC decay time constant,millisecond,300,"Methods, equation (8)",registered,2026-08-24
+polykretis_2018_neural_astrocytic_network,n_norm,biexponential normalization constant,dimensionless,6*6^0.2/5,"Methods, equation (8)",registered,2026-08-24
+polykretis_2018_neural_astrocytic_network,R_lif,LIF membrane resistance,gigaohm,0.6,"Methods, postsynaptic neuron description",registered,2026-08-24
+polykretis_2018_neural_astrocytic_network,C_lif,LIF membrane capacitance,picofarad,100,"Methods, postsynaptic neuron description",registered,2026-08-24
