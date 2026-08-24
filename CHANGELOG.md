@@ -2,6 +2,19 @@
 
 All notable changes to this repository are documented here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [0.2.1] - 2026-08-24
+
+### Added
+
+- Source-verified equation transcriptions for three records: Halnes 2013 electrodiffusive astrocyte-extracellular model (equations (1)-(6)), Polykretis 2018 neuron-astrocytic network (equations (1)-(9)), and Hopfield 1982 associative-memory network (equations [1]-[8]).
+- Variable and parameter registry entries covering the three newly transcribed systems, including the literature-given parameter values.
+- Equation audit rows covering every newly displayed equation block.
+
+### Changed
+
+- Hopfield 1982 advanced from bibliography-only holding to `equation_transcribed`; Halnes 2013 and Polykretis 2018 advanced from `equation_located` to `equation_transcribed`.
+- The reference verification audit now records inspected equations for the three records.
+
 ## [0.2.0] - 2026-08-23
 
 ### Added
