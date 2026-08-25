@@ -94,3 +94,20 @@ wong_wang_2006,V_ss,steady-state membrane voltage V_L + I_syn/g_L,millivolt,sour
 wong_wang_2006,sigma_V,standard deviation of membrane-potential fluctuations,millivolt,source_verified,"Methods, text after equation (1)",2026-08-25
 wong_wang_2006,phi_I_syn,population firing-rate transfer function,hertz,source_verified,"Methods, equations (1)-(2)",2026-08-25
 wong_wang_2006,c_prime,motion coherence of the random-dot stimulus,percent,source_verified,"Results, stimulus displays",2026-08-25
+morris_lecar_1981,V,membrane potential,millivolt,source_verified,"Methods, equation (1)",2026-08-25
+morris_lecar_1981,I,applied current density,microampere/cm^2,source_verified,"Methods, equation (1); List of abbreviations",2026-08-25
+morris_lecar_1981,I_L_I_Ca_I_K,"leak, calcium, and potassium current densities",microampere/cm^2,source_verified,List of abbreviations,2026-08-25
+morris_lecar_1981,M,fraction of open Ca++ channels,dimensionless,source_verified,"Methods, equation (1)",2026-08-25
+morris_lecar_1981,N,fraction of open K+ channels,dimensionless,source_verified,"Methods, equation (1)",2026-08-25
+morris_lecar_1981,M_inf_N_inf,steady-state open fractions of Ca++ and K+ channels,dimensionless,source_verified,"Methods, equation (2)",2026-08-25
+morris_lecar_1981,lambda_M_lambda_N,voltage-dependent channel-opening rate constants,per second,source_verified,"Methods, equation (2)",2026-08-25
+morris_lecar_1981,mu,generic gating variable (M or N) of the single-conductance system,dimensionless,source_verified,"Analysis, equation (3)",2026-08-25
+morris_lecar_1981,mu_inf,steady state of the generic gating variable,dimensionless,source_verified,"Analysis, equations (3)-(4b)",2026-08-25
+morris_lecar_1981,V_i,"equilibrium potential for conductance i (V_L, V_Ca, or V_K)",millivolt,source_verified,"Analysis, equation (3)",2026-08-25
+morris_lecar_1981,R,nonlinear calcium driving-force function,millivolt,source_verified,"Analysis, equations (6)-(7)",2026-08-25
+morris_lecar_1981,Ca_i_Ca_o,internal and external Ca++ concentrations,millimolar,source_verified,"Analysis, equations (6)-(8)",2026-08-25
+morris_lecar_1981,f1_f2,"vector field of the reduced V,N system",millivolt/ms and per second,source_verified,"Analysis of the reduced system, equation (12)",2026-08-25
+morris_lecar_1981,V_s_N_s,singular-point coordinates of the reduced system,millivolt and dimensionless,source_verified,"Analysis of the reduced system, equation (11)",2026-08-25
+morris_lecar_1981,V_min_V_max,bounding voltages of the trapping rectangle,millivolt,source_verified,"Analysis of the reduced system, equation (10)",2026-08-25
+morris_lecar_1981,p,eigenvalue of the linearized reduced system,per millisecond,source_verified,"Analysis of the reduced system, equation (13)",2026-08-25
+morris_lecar_1981,g_bar,"equivalent conductance at the operating point, g_L + g_K N + g_Ca M",millimho/cm^2,source_verified,"Analysis of the reduced system, text between equations (15) and (16)",2026-08-25

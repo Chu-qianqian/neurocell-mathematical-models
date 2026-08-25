@@ -87,3 +87,20 @@ wong_wang_2006,tau_m,membrane time constant of the LIF parent model,millisecond,
 wong_wang_2006,tau_ref,refractory period of the LIF parent model,millisecond,not stated,"Methods, equation (1)",parameters_incomplete,2026-08-25
 wong_wang_2006,V_th_V_reset,LIF spiking threshold and reset voltage,millivolt,not stated,"Methods, equation (1)",parameters_incomplete,2026-08-25
 wong_wang_2006,nondecision_latency,fixed nondecision time added to the decision time,millisecond,100,Parameter values paragraph,registered,2026-08-25
+morris_lecar_1981,C,membrane capacitance,microfarad/cm^2,20,"List of abbreviations; Figure 2, 6, 9, and 11 captions",registered,2026-08-25
+morris_lecar_1981,g_L,leak conductance,millimho/cm^2,"2 (Figures 6, 9, 11); 3 (Figure 2, Ca++-free condition)",Figure captions,registered,2026-08-25
+morris_lecar_1981,g_Ca,calcium conductance,millimho/cm^2,"4 (Figures 6 solid, 9, 11); 0 in Ca++-free condition",Figure captions,registered,2026-08-25
+morris_lecar_1981,g_K,potassium conductance,millimho/cm^2,"8 (Figures 6 solid, 9, 11); 12 (Figure 6 broken line)",Figure captions,registered,2026-08-25
+morris_lecar_1981,g_hat_Ca,conductance constant for the nonlinear I_Ca,millimho/cm^2,not stated,List of abbreviations; equation (6),parameters_incomplete,2026-08-25
+morris_lecar_1981,V_L,leak equilibrium potential,millivolt,-50,"Figure 2, 6, 9, and 11 captions",registered,2026-08-25
+morris_lecar_1981,V_Ca,calcium equilibrium potential,millivolt,100,"Figure 6, 9, and 11 captions",registered,2026-08-25
+morris_lecar_1981,V_K,potassium equilibrium potential,millivolt,-70,"Figure 2, 6, 9, and 11 captions",registered,2026-08-25
+morris_lecar_1981,V_1,potential of M_inf = 0.5,millivolt,0 (Figure 6); 10 (Figure 9); -1 (Figure 11),Figure captions,registered,2026-08-25
+morris_lecar_1981,V_2,reciprocal slope of M_inf voltage dependence,millivolt,15,"Figure 2, 6, 9, and 11 captions",registered,2026-08-25
+morris_lecar_1981,V_3,potential of N_inf = 0.5,millivolt,"10 (Figures 6, 11); -1 (Figures 2, 9)",Figure captions,registered,2026-08-25
+morris_lecar_1981,V_4,reciprocal slope of N_inf voltage dependence,millivolt,"10 (Figure 6); 14.5 (Figures 2, 9, 11)",Figure captions,registered,2026-08-25
+morris_lecar_1981,lambda_bar_M,maximum Ca++-channel opening rate,per second,"1.0 (Figure 6 solid); 6 (Figure 6 broken line); 0.1 (Figures 9, 11)",Figure captions,registered,2026-08-25
+morris_lecar_1981,lambda_bar_N,maximum K+-channel opening rate,per second,"0.1 (Figure 6); 1/15 (Figures 2, 9, 11)",Figure captions,registered,2026-08-25
+morris_lecar_1981,K_acc,accumulation-layer constant for intracellular Ca++,per centimetre,chosen for a 1 micrometre compartment; numeric value not stated,Text after equation (8); List of abbreviations,parameters_incomplete,2026-08-25
+morris_lecar_1981,F_faraday,Faraday constant,coulomb per mole,standard physical constant,List of abbreviations continuation,registered,2026-08-25
+morris_lecar_1981,voltage_scale_R,voltage scale in the electrodiffusion driving force,millivolt,12.5,Equation (7),registered,2026-08-25
