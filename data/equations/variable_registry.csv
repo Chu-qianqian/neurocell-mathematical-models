@@ -111,3 +111,9 @@ morris_lecar_1981,V_s_N_s,singular-point coordinates of the reduced system,milli
 morris_lecar_1981,V_min_V_max,bounding voltages of the trapping rectangle,millivolt,source_verified,"Analysis of the reduced system, equation (10)",2026-08-25
 morris_lecar_1981,p,eigenvalue of the linearized reduced system,per millisecond,source_verified,"Analysis of the reduced system, equation (13)",2026-08-25
 morris_lecar_1981,g_bar,"equivalent conductance at the operating point, g_L + g_K N + g_Ca M",millimho/cm^2,source_verified,"Analysis of the reduced system, text between equations (15) and (16)",2026-08-25
+brette_gerstner_2005_adex,V,membrane potential,millivolt,source_verified,"Methods, equation (1)",2026-08-25
+brette_gerstner_2005_adex,w,adaptation variable (a current),nanoampere,source_verified,"Methods, equation (3)",2026-08-25
+brette_gerstner_2005_adex,I,synaptic current,nanoampere,source_verified,"Methods, equation (1)",2026-08-25
+brette_gerstner_2005_adex,f_V,passive-plus-spike function of the voltage equation,nanoampere,source_verified,"Methods, equation (2)",2026-08-25
+brette_gerstner_2005_adex,g_e_g_i,fluctuating excitatory and inhibitory synaptic conductances,nanosiemens,source_verified,Table 1 aEIF box,2026-08-25
+brette_gerstner_2005_adex,V_peak,voltage at which a spike is triggered,millivolt,source_verified,"Methods, after equation (1)",2026-08-25

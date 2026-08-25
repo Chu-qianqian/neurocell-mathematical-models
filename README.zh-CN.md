@@ -12,14 +12,14 @@
 ## 覆盖概况
 
 - 规范目录记录：**25**
-- 仅书目暂存记录：**14**
-- 方程已定位或更强状态的记录：**11**
-- 已转录、待第二遍复核的记录：**8**
+- 仅书目暂存记录：**13**
+- 方程已定位或更强状态的记录：**12**
+- 已转录、待第二遍复核的记录：**9**
 - 维护者已第二遍复核的记录：**3**
 - 已独立复核的记录：**0**
 - 参数注册表不完整的记录：**10**
 - 明确标注全文不可获取的记录：**0**
-- 来源全文不可获取或尚未查验的记录：**14**
+- 来源全文不可获取或尚未查验的记录：**13**
 - 外部代码许可状态不明的记录：**8**
 - 筛选清单行数：**278**（其中 20 条已晋升进入规范目录）
 
@@ -38,7 +38,7 @@
 | `montbrio_pazo_roxin_2015` | [Montbrio-Pazo-Roxin exact neural-mass reduction](equations/models/montbrio_pazo_roxin_2015.md) | `neural_population` | `neural_population` / `neural_mass` | `neural_mass` | `equation_transcribed` | [DOI](https://doi.org/10.1103/physrevx.5.021028) | arXiv:1506.06581v1, Section II.B, equations (12a)-(12b) | 已转录；待复核 |
 | `wong_wang_2006` | [Recurrent decision-network model](equations/models/wong_wang_2006_decision.md) | `neural_population` | `neural_population` / `attractor_network` | `population` | `equation_transcribed` | [DOI](https://doi.org/10.1523/jneurosci.3733-05.2006) | Materials and Methods equations (1)-(9) and Phase-plane reduction displays; Dynamical equations equations (10)-(21); Simulations noise display; Results stimulus displays and equation (22); Appendix system | 已转录；待复核 |
 | `morris_lecar_1981` | [Morris-Lecar excitable-membrane model](equations/models/morris_lecar_1981.md) | `other_nervous_system_related` | `excitable_membrane` / `not_applicable` | `single_cell` | `equation_transcribed` | [DOI](https://doi.org/10.1016/s0006-3495(81)84782-0) | Methods, The Model, equations (1)-(2); Analysis, equations (3)-(7); Ca-accumulation perturbation, equation (8); Limit-cycle oscillations, reduced system and equations (9)-(17) | 已转录；待复核 |
-| `brette_gerstner_2005_adex` | [Adaptive exponential integrate-and-fire model](equations/models/brette_gerstner_2005_adex.md) | `neuronal` | `neuron` / `not_applicable` | `single_cell` | `bibliography_verified` | [DOI](https://doi.org/10.1152/jn.00686.2005) | not_verified | 仅书目 |
+| `brette_gerstner_2005_adex` | [Adaptive exponential integrate-and-fire model](equations/models/brette_gerstner_2005_adex.md) | `neuronal` | `neuron` / `not_applicable` | `single_cell` | `equation_transcribed` | [DOI](https://doi.org/10.1152/jn.00686.2005) | Methods, Adapting the aEIF model, equations (1)-(3); Table 1 aEIF parameter box (conductance-based form and reset rule) | 已转录；待复核 |
 | `tsodyks_markram_1998_stp` | [Tsodyks-Pawelzik-Markram dynamic-synapse model](equations/models/tsodyks_markram_1998_stp.md) | `synaptic` | `synapse` / `not_applicable` | `subcellular` | `bibliography_verified` | [DOI](https://doi.org/10.1162/089976698300017502) | not_verified | 仅书目 |
 | `brunel_2000_ei_network` | [Brunel sparse excitatory-inhibitory network](equations/models/brunel_2000_ei_network.md) | `neural_population` | `neural_population` / `spiking_network` | `large_scale_network` | `bibliography_verified` | [DOI](https://doi.org/10.1023/a:1008925309027) | not_verified | 仅书目 |
 | `hopfield_1982` | [Hopfield associative-memory network](equations/models/hopfield_1982.md) | `neural_population` | `neural_population` / `attractor_network` | `large_scale_network` | `equation_transcribed` | [DOI](https://doi.org/10.1073/pnas.79.8.2554) | pp. 2555-2556, bracketed equations [1]-[8] | 已转录；待复核 |

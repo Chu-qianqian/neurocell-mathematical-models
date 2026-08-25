@@ -104,3 +104,14 @@ morris_lecar_1981,lambda_bar_N,maximum K+-channel opening rate,per second,"0.1 (
 morris_lecar_1981,K_acc,accumulation-layer constant for intracellular Ca++,per centimetre,chosen for a 1 micrometre compartment; numeric value not stated,Text after equation (8); List of abbreviations,parameters_incomplete,2026-08-25
 morris_lecar_1981,F_faraday,Faraday constant,coulomb per mole,standard physical constant,List of abbreviations continuation,registered,2026-08-25
 morris_lecar_1981,voltage_scale_R,voltage scale in the electrodiffusion driving force,millivolt,12.5,Equation (7),registered,2026-08-25
+brette_gerstner_2005_adex,C,membrane capacitance,picofarad,281,"Table 1, aEIF parameters",registered,2026-08-25
+brette_gerstner_2005_adex,g_L,leak conductance,nanosiemens,30,"Table 1, aEIF parameters",registered,2026-08-25
+brette_gerstner_2005_adex,E_L,leak (resting) potential,millivolt,-70.6,"Table 1, aEIF parameters",registered,2026-08-25
+brette_gerstner_2005_adex,V_T,threshold potential,millivolt,-50.4 (alternative estimate -50.7),Table 1; Parameter fitting text,registered,2026-08-25
+brette_gerstner_2005_adex,Delta_T,slope factor,millivolt,2 (alternative estimate 2.2),Table 1; Parameter fitting text,registered,2026-08-25
+brette_gerstner_2005_adex,tau_w,adaptation time constant,millisecond,144,"Table 1, aEIF parameters",registered,2026-08-25
+brette_gerstner_2005_adex,a,subthreshold adaptation level,nanosiemens,4,"Table 1, aEIF parameters",registered,2026-08-25
+brette_gerstner_2005_adex,b,spike-triggered adaptation increment,nanoampere,0.0805,"Table 1, aEIF parameters",registered,2026-08-25
+brette_gerstner_2005_adex,V_r,reset value of V after a spike,millivolt,-70.6 (E_L),Table 1 aEIF box; Methods text,registered,2026-08-25
+brette_gerstner_2005_adex,E_e,excitatory (AMPA) reversal potential,millivolt,0,"Methods, Detailed neuron model",registered,2026-08-25
+brette_gerstner_2005_adex,E_i,inhibitory (GABA_A) reversal potential,millivolt,-75,"Methods, Detailed neuron model",registered,2026-08-25
