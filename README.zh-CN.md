@@ -12,15 +12,15 @@
 ## 覆盖概况
 
 - 规范目录记录：**25**
-- 仅书目暂存记录：**16**
-- 方程已定位或更强状态的记录：**9**
-- 已转录、待第二遍复核的记录：**6**
+- 仅书目暂存记录：**15**
+- 方程已定位或更强状态的记录：**10**
+- 已转录、待第二遍复核的记录：**7**
 - 维护者已第二遍复核的记录：**3**
 - 已独立复核的记录：**0**
-- 参数注册表不完整的记录：**11**
+- 参数注册表不完整的记录：**10**
 - 明确标注全文不可获取的记录：**0**
-- 来源全文不可获取或尚未查验的记录：**16**
-- 外部代码许可状态不明的记录：**9**
+- 来源全文不可获取或尚未查验的记录：**15**
+- 外部代码许可状态不明的记录：**8**
 - 筛选清单行数：**278**（其中 20 条已晋升进入规范目录）
 
 ## 模型目录
@@ -36,7 +36,7 @@
 | `wilson_cowan_1972` | [Wilson-Cowan excitatory-inhibitory population model](equations/models/wilson_cowan_1972.md) | `neural_population` | `neural_population` / `firing_rate_network` | `population` | `equation_transcribed` | [DOI](https://doi.org/10.1016/s0006-3495(72)86068-5) | article p. 8, equations (7)-(8) | 已转录；待复核 |
 | `potjans_diesmann_2014` | [Potjans-Diesmann cortical microcircuit model](equations/models/potjans_diesmann_2014_microcircuit.md) | `neural_population` | `neural_population` / `cortical_microcircuit` | `local_microcircuit` | `bibliography_verified` | [DOI](https://doi.org/10.1093/cercor/bhs358) | not verified | 仅书目 |
 | `montbrio_pazo_roxin_2015` | [Montbrio-Pazo-Roxin exact neural-mass reduction](equations/models/montbrio_pazo_roxin_2015.md) | `neural_population` | `neural_population` / `neural_mass` | `neural_mass` | `equation_transcribed` | [DOI](https://doi.org/10.1103/physrevx.5.021028) | arXiv:1506.06581v1, Section II.B, equations (12a)-(12b) | 已转录；待复核 |
-| `wong_wang_2006` | [Recurrent decision-network model](equations/models/wong_wang_2006_decision.md) | `neural_population` | `neural_population` / `attractor_network` | `population` | `bibliography_verified` | [DOI](https://doi.org/10.1523/jneurosci.3733-05.2006) | not verified | 仅书目 |
+| `wong_wang_2006` | [Recurrent decision-network model](equations/models/wong_wang_2006_decision.md) | `neural_population` | `neural_population` / `attractor_network` | `population` | `equation_transcribed` | [DOI](https://doi.org/10.1523/jneurosci.3733-05.2006) | Materials and Methods equations (1)-(9) and Phase-plane reduction displays; Dynamical equations equations (10)-(21); Simulations noise display; Results stimulus displays and equation (22); Appendix system | 已转录；待复核 |
 | `morris_lecar_1981` | [Morris-Lecar excitable-membrane model](equations/models/morris_lecar_1981.md) | `other_nervous_system_related` | `excitable_membrane` / `not_applicable` | `single_cell` | `bibliography_verified` | [DOI](https://doi.org/10.1016/s0006-3495(81)84782-0) | not_verified | 仅书目 |
 | `brette_gerstner_2005_adex` | [Adaptive exponential integrate-and-fire model](equations/models/brette_gerstner_2005_adex.md) | `neuronal` | `neuron` / `not_applicable` | `single_cell` | `bibliography_verified` | [DOI](https://doi.org/10.1152/jn.00686.2005) | not_verified | 仅书目 |
 | `tsodyks_markram_1998_stp` | [Tsodyks-Pawelzik-Markram dynamic-synapse model](equations/models/tsodyks_markram_1998_stp.md) | `synaptic` | `synapse` / `not_applicable` | `subcellular` | `bibliography_verified` | [DOI](https://doi.org/10.1162/089976698300017502) | not_verified | 仅书目 |
@@ -156,4 +156,4 @@
 - 第三方素材不重新授权，见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
 - 本仓库是文献导航与教育资源，见 [DISCLAIMER.md](DISCLAIMER.md)。
 
-最后核验：2026-08-24。
+最后核验：2026-08-25。

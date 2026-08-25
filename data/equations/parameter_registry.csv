@@ -58,3 +58,32 @@ wang_buzsaki_1996_gamma,beta_syn,channel closing rate (tau_syn = 1/beta),1/milli
 wang_buzsaki_1996_gamma,theta_syn,sigmoid threshold for transmitter release,millivolt,0,"Methods, Model synapse paragraph",registered,2026-08-24
 wang_buzsaki_1996_gamma,M_syn,average synaptic contacts per neuron,dimensionless,varied; about 60 needed for gamma band,"Methods, Random network connectivity; Discussion",registered,2026-08-24
 wang_buzsaki_1996_gamma,N_cells,number of cells in the network,dimensionless,varied (e.g. 30-100),"Methods, Random network connectivity",registered,2026-08-24
+wong_wang_2006,tau_r,population firing-rate relaxation time constant,millisecond,2,"Methods, Phase-plane reduction step (3)",registered,2026-08-25
+wong_wang_2006,tau_AMPA,AMPA gating decay time constant,millisecond,2,Appendix parameter list,registered,2026-08-25
+wong_wang_2006,tau_NMDA,NMDA gating decay time constant (denoted tau_S),millisecond,100,Introduction; Appendix parameter list,registered,2026-08-25
+wong_wang_2006,tau_GABA,GABA gating decay time constant,millisecond,not stated,"Methods, equation (7)",parameters_incomplete,2026-08-25
+wong_wang_2006,gamma,NMDA gating kinetic parameter,dimensionless,0.641,"Methods, after equation (8)",registered,2026-08-25
+wong_wang_2006,c_E,pyramidal-cell F-I gain factor,per (volt nanoampere),310,"Methods, after equation (2)",registered,2026-08-25
+wong_wang_2006,g_E,pyramidal-cell F-I noise/curvature factor,second,0.16,"Methods, after equation (2)",registered,2026-08-25
+wong_wang_2006,I_E,pyramidal-cell F-I threshold current (rate units),hertz,125,"Methods, after equation (2)",registered,2026-08-25
+wong_wang_2006,c_I,interneuron F-I gain factor,per (volt nanoampere),615,"Methods, after equation (2)",registered,2026-08-25
+wong_wang_2006,g_I,interneuron F-I noise/curvature factor,second,0.087,"Methods, after equation (2)",registered,2026-08-25
+wong_wang_2006,I_I,interneuron F-I threshold current (rate units),hertz,177,"Methods, after equation (2)",registered,2026-08-25
+wong_wang_2006,g_2,slope of the linearized interneuron response,dimensionless,2,"Methods, after equation (9)",registered,2026-08-25
+wong_wang_2006,r_0,intercept of the linearized interneuron response,hertz,11.5,"Methods, after equation (9)",registered,2026-08-25
+wong_wang_2006,J_N_11_J_N_22,recurrent NMDA self-coupling of a selective population,nanoampere,0.1561 (standard set); 0.2609 (appendix set),Parameter values paragraph; Appendix,registered,2026-08-25
+wong_wang_2006,J_N_12_J_N_21,effective NMDA cross-coupling between selective populations,nanoampere,0.0264 (standard set); 0.0497 (appendix set),Parameter values paragraph; Appendix,registered,2026-08-25
+wong_wang_2006,J_A_11_J_A_22,recurrent AMPA self-coupling of a selective population,nanocoulomb,9.9026e-4,Parameter values paragraph,registered,2026-08-25
+wong_wang_2006,J_A_12_J_A_21,effective AMPA cross-coupling between selective populations,nanoampere per hertz,6.5177e-5,Parameter values paragraph,registered,2026-08-25
+wong_wang_2006,J_A_ext,external AMPA coupling for stimulus inputs,nanoampere per hertz,0.2243e-3 (standard set); 5.2e-4 (appendix set),"Results, after stimulus displays; Appendix",registered,2026-08-25
+wong_wang_2006,I_0,mean effective external input common to both populations,nanoampere,0.2346 (standard set); 0.3255 (appendix set),Parameter values paragraph; Appendix,registered,2026-08-25
+wong_wang_2006,sigma_noise,standard deviation of the OU noise current,nanoampere,0.007 (standard set); 0.02 (appendix set),"Methods, Simulations; Appendix",registered,2026-08-25
+wong_wang_2006,theta,decision threshold on the firing rate,hertz,15,Parameter values paragraph,registered,2026-08-25
+wong_wang_2006,mu_0,zero-coherence stimulus strength,hertz,30,"Results, stimulus displays; Appendix",registered,2026-08-25
+wong_wang_2006,a,gain of the appendix input-output function,per (volt nanoampere),270,Appendix parameter list,registered,2026-08-25
+wong_wang_2006,b,threshold offset of the appendix input-output function,hertz,108,Appendix parameter list,registered,2026-08-25
+wong_wang_2006,d,scale of the appendix input-output function,second,0.154,Appendix parameter list,registered,2026-08-25
+wong_wang_2006,tau_m,membrane time constant of the LIF parent model,millisecond,not stated,"Methods, equation (1); inherited from Wang (2002)",parameters_incomplete,2026-08-25
+wong_wang_2006,tau_ref,refractory period of the LIF parent model,millisecond,not stated,"Methods, equation (1)",parameters_incomplete,2026-08-25
+wong_wang_2006,V_th_V_reset,LIF spiking threshold and reset voltage,millivolt,not stated,"Methods, equation (1)",parameters_incomplete,2026-08-25
+wong_wang_2006,nondecision_latency,fixed nondecision time added to the decision time,millisecond,100,Parameter values paragraph,registered,2026-08-25

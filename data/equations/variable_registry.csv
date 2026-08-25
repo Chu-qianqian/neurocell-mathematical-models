@@ -72,3 +72,25 @@ wang_buzsaki_1996_gamma,s,fraction of open synaptic channels,dimensionless,sourc
 wang_buzsaki_1996_gamma,F,normalized transmitter-receptor complex concentration,dimensionless,source_verified,"Methods, equation (2.4)",2026-08-24
 wang_buzsaki_1996_gamma,V_pre,presynaptic membrane potential,millivolt,source_verified,"Methods, equation (2.4)",2026-08-24
 wang_buzsaki_1996_gamma,t,time,millisecond,source_verified,"Methods, equation (2.1)",2026-08-24
+wong_wang_2006,r_i,"mean firing rate of excitatory population i (i = 1, 2 selective; 3 nonselective)",hertz,source_verified,"Methods, equation (3)",2026-08-25
+wong_wang_2006,r_I,mean firing rate of the inhibitory population,hertz,source_verified,"Methods, equation (4)",2026-08-25
+wong_wang_2006,I_syn,total synaptic input current to a single cell,nanoampere,source_verified,"Methods, equations (1)-(2)",2026-08-25
+wong_wang_2006,I_syn_i,total synaptic input current to population i,nanoampere,source_verified,"Methods, equations (14)-(15)",2026-08-25
+wong_wang_2006,S_AMPA_i,AMPA synaptic gating variable of population i,dimensionless,source_verified,"Methods, equation (5)",2026-08-25
+wong_wang_2006,S_NMDA_i,NMDA synaptic gating variable of population i (denoted S_i in the reduced system),dimensionless,source_verified,"Methods, equations (6) and (10)-(11)",2026-08-25
+wong_wang_2006,S_GABA,GABA synaptic gating variable of the inhibitory population,dimensionless,source_verified,"Methods, equation (7)",2026-08-25
+wong_wang_2006,psi_i,steady state of S_i,dimensionless,source_verified,"Methods, text after equations (3)-(7)",2026-08-25
+wong_wang_2006,F,"steady-state rise function of the NMDA gating variable, F(psi_i) = psi_i/(tau_NMDA(1 - psi_i))",per millisecond,source_verified,"Methods, text after equations (3)-(7)",2026-08-25
+wong_wang_2006,x_i,effective synaptic input to selective population i,nanoampere,source_verified,"Methods, equations (18)-(19)",2026-08-25
+wong_wang_2006,H,effective single-population input-output function,hertz,source_verified,"Methods, equations (16)-(17); Appendix",2026-08-25
+wong_wang_2006,I_i,coherence-dependent stimulus input to population i,nanoampere,source_verified,"Results, unnumbered stimulus displays",2026-08-25
+wong_wang_2006,I_noise_i,Ornstein-Uhlenbeck filtered noise current into population i,nanoampere,source_verified,"Methods, Simulations unnumbered display",2026-08-25
+wong_wang_2006,eta_i,Gaussian white noise with zero mean and unit variance,dimensionless,source_verified,"Methods, Simulations text",2026-08-25
+wong_wang_2006,Delta_S,"displacement of S = (S_1, S_2) from the saddle steady state",dimensionless,source_verified,"Results, equation (22)",2026-08-25
+wong_wang_2006,v_1_v_2,eigenvectors of the saddle (tangents of the two manifolds),dimensionless,source_verified,"Results, equation (22)",2026-08-25
+wong_wang_2006,tau_stable_tau_unstable,positive inverse eigenvalue time constants of the saddle,millisecond,source_verified,"Results, equation (22)",2026-08-25
+wong_wang_2006,V_th_V_reset,spiking threshold and reset voltage of the LIF parent neuron,millivolt,source_verified,"Methods, equation (1)",2026-08-25
+wong_wang_2006,V_ss,steady-state membrane voltage V_L + I_syn/g_L,millivolt,source_verified,"Methods, text after equation (1)",2026-08-25
+wong_wang_2006,sigma_V,standard deviation of membrane-potential fluctuations,millivolt,source_verified,"Methods, text after equation (1)",2026-08-25
+wong_wang_2006,phi_I_syn,population firing-rate transfer function,hertz,source_verified,"Methods, equations (1)-(2)",2026-08-25
+wong_wang_2006,c_prime,motion coherence of the random-dot stimulus,percent,source_verified,"Results, stimulus displays",2026-08-25

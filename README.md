@@ -12,15 +12,15 @@ This repository is an equation-level knowledge base, not a paper mirror or a col
 ## Coverage summary
 
 - Canonical model records: **25**
-- Bibliography-only holding records: **16**
-- Equation-located or stronger records: **9**
-- Equation-transcribed records awaiting a second pass: **6**
+- Bibliography-only holding records: **15**
+- Equation-located or stronger records: **10**
+- Equation-transcribed records awaiting a second pass: **7**
 - Maintainer second-pass checked records: **3**
 - Independently checked records: **0**
-- Records with incomplete parameter registries: **11**
+- Records with incomplete parameter registries: **10**
 - Records explicitly marked full text unavailable: **0**
-- Records whose source full text is unavailable or not yet inspected: **16**
-- Records with unclear external-code licensing: **9**
+- Records whose source full text is unavailable or not yet inspected: **15**
+- Records with unclear external-code licensing: **8**
 - Screening inventory rows: **278** (20 promoted to the canonical catalogue)
 
 ## Model catalogue
@@ -36,7 +36,7 @@ This repository is an equation-level knowledge base, not a paper mirror or a col
 | `wilson_cowan_1972` | [Wilson-Cowan excitatory-inhibitory population model](equations/models/wilson_cowan_1972.md) | `neural_population` | `neural_population` / `firing_rate_network` | `population` | `equation_transcribed` | [DOI](https://doi.org/10.1016/s0006-3495(72)86068-5) | article p. 8, equations (7)-(8) | transcribed; review pending |
 | `potjans_diesmann_2014` | [Potjans-Diesmann cortical microcircuit model](equations/models/potjans_diesmann_2014_microcircuit.md) | `neural_population` | `neural_population` / `cortical_microcircuit` | `local_microcircuit` | `bibliography_verified` | [DOI](https://doi.org/10.1093/cercor/bhs358) | not verified | bibliography only |
 | `montbrio_pazo_roxin_2015` | [Montbrio-Pazo-Roxin exact neural-mass reduction](equations/models/montbrio_pazo_roxin_2015.md) | `neural_population` | `neural_population` / `neural_mass` | `neural_mass` | `equation_transcribed` | [DOI](https://doi.org/10.1103/physrevx.5.021028) | arXiv:1506.06581v1, Section II.B, equations (12a)-(12b) | transcribed; review pending |
-| `wong_wang_2006` | [Recurrent decision-network model](equations/models/wong_wang_2006_decision.md) | `neural_population` | `neural_population` / `attractor_network` | `population` | `bibliography_verified` | [DOI](https://doi.org/10.1523/jneurosci.3733-05.2006) | not verified | bibliography only |
+| `wong_wang_2006` | [Recurrent decision-network model](equations/models/wong_wang_2006_decision.md) | `neural_population` | `neural_population` / `attractor_network` | `population` | `equation_transcribed` | [DOI](https://doi.org/10.1523/jneurosci.3733-05.2006) | Materials and Methods equations (1)-(9) and Phase-plane reduction displays; Dynamical equations equations (10)-(21); Simulations noise display; Results stimulus displays and equation (22); Appendix system | transcribed; review pending |
 | `morris_lecar_1981` | [Morris-Lecar excitable-membrane model](equations/models/morris_lecar_1981.md) | `other_nervous_system_related` | `excitable_membrane` / `not_applicable` | `single_cell` | `bibliography_verified` | [DOI](https://doi.org/10.1016/s0006-3495(81)84782-0) | not_verified | bibliography only |
 | `brette_gerstner_2005_adex` | [Adaptive exponential integrate-and-fire model](equations/models/brette_gerstner_2005_adex.md) | `neuronal` | `neuron` / `not_applicable` | `single_cell` | `bibliography_verified` | [DOI](https://doi.org/10.1152/jn.00686.2005) | not_verified | bibliography only |
 | `tsodyks_markram_1998_stp` | [Tsodyks-Pawelzik-Markram dynamic-synapse model](equations/models/tsodyks_markram_1998_stp.md) | `synaptic` | `synapse` / `not_applicable` | `subcellular` | `bibliography_verified` | [DOI](https://doi.org/10.1162/089976698300017502) | not_verified | bibliography only |
@@ -154,4 +154,4 @@ Neuron-microglia models, explicit oligodendrocyte-myelin networks, Schwann-cell 
 - Third-party material is not relicensed; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 - This repository is a literature-navigation and educational resource; see [DISCLAIMER.md](DISCLAIMER.md).
 
-Last verified: 2026-08-24.
+Last verified: 2026-08-25.
