@@ -59,3 +59,16 @@ hopfield_1982,dE,energy change due to a single-neuron change dV_i,arbitrary unit
 hopfield_1982,N,number of neurons,dimensionless,source_verified,"p. 2555, equation [4] context",2026-08-24
 hopfield_1982,n,number of stored states,dimensionless,source_verified,"p. 2555, equation [2] context",2026-08-24
 hopfield_1982,W,mean attempt rate of asynchronous updates,1/time,source_verified,"p. 2555, model description",2026-08-24
+wang_buzsaki_1996_gamma,V,membrane potential,millivolt,source_verified,"Methods, equation (2.1)",2026-08-24
+wang_buzsaki_1996_gamma,I_Na,transient sodium current density,milliampere/cm^2,source_verified,"Methods, equation (2.1)",2026-08-24
+wang_buzsaki_1996_gamma,I_K,delayed-rectifier potassium current density,milliampere/cm^2,source_verified,"Methods, equation (2.1)",2026-08-24
+wang_buzsaki_1996_gamma,I_L,leak current density,milliampere/cm^2,source_verified,"Methods, equation (2.1)",2026-08-24
+wang_buzsaki_1996_gamma,I_syn,GABAergic synaptic current density,milliampere/cm^2,source_verified,"Methods, equation (2.4)",2026-08-24
+wang_buzsaki_1996_gamma,I_app,injected current density,milliampere/cm^2,source_verified,"Methods, equation (2.1)",2026-08-24
+wang_buzsaki_1996_gamma,m,sodium activation (instantaneous m_infty),dimensionless,source_verified,"Methods, sodium current paragraph",2026-08-24
+wang_buzsaki_1996_gamma,h,sodium inactivation gate,dimensionless,source_verified,"Methods, equation (2.2)",2026-08-24
+wang_buzsaki_1996_gamma,n,potassium activation gate,dimensionless,source_verified,"Methods, equation (2.3)",2026-08-24
+wang_buzsaki_1996_gamma,s,fraction of open synaptic channels,dimensionless,source_verified,"Methods, equation (2.4)",2026-08-24
+wang_buzsaki_1996_gamma,F,normalized transmitter-receptor complex concentration,dimensionless,source_verified,"Methods, equation (2.4)",2026-08-24
+wang_buzsaki_1996_gamma,V_pre,presynaptic membrane potential,millivolt,source_verified,"Methods, equation (2.4)",2026-08-24
+wang_buzsaki_1996_gamma,t,time,millisecond,source_verified,"Methods, equation (2.1)",2026-08-24

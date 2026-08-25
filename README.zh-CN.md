@@ -12,14 +12,14 @@
 ## 覆盖概况
 
 - 规范目录记录：**25**
-- 仅书目暂存记录：**17**
-- 方程已定位或更强状态的记录：**8**
-- 已转录、待第二遍复核的记录：**5**
+- 仅书目暂存记录：**16**
+- 方程已定位或更强状态的记录：**9**
+- 已转录、待第二遍复核的记录：**6**
 - 维护者已第二遍复核的记录：**3**
 - 已独立复核的记录：**0**
 - 参数注册表不完整的记录：**11**
 - 明确标注全文不可获取的记录：**0**
-- 来源全文不可获取或尚未查验的记录：**17**
+- 来源全文不可获取或尚未查验的记录：**16**
 - 外部代码许可状态不明的记录：**9**
 - 筛选清单行数：**278**（其中 20 条已晋升进入规范目录）
 
@@ -42,7 +42,7 @@
 | `tsodyks_markram_1998_stp` | [Tsodyks-Pawelzik-Markram dynamic-synapse model](equations/models/tsodyks_markram_1998_stp.md) | `synaptic` | `synapse` / `not_applicable` | `subcellular` | `bibliography_verified` | [DOI](https://doi.org/10.1162/089976698300017502) | not_verified | 仅书目 |
 | `brunel_2000_ei_network` | [Brunel sparse excitatory-inhibitory network](equations/models/brunel_2000_ei_network.md) | `neural_population` | `neural_population` / `spiking_network` | `large_scale_network` | `bibliography_verified` | [DOI](https://doi.org/10.1023/a:1008925309027) | not_verified | 仅书目 |
 | `hopfield_1982` | [Hopfield associative-memory network](equations/models/hopfield_1982.md) | `neural_population` | `neural_population` / `attractor_network` | `large_scale_network` | `equation_transcribed` | [DOI](https://doi.org/10.1073/pnas.79.8.2554) | pp. 2555-2556, bracketed equations [1]-[8] | 已转录；待复核 |
-| `wang_buzsaki_1996_gamma` | [Wang-Buzsaki inhibitory gamma network](equations/models/wang_buzsaki_1996_gamma.md) | `neural_population` | `neural_population` / `interneuron_network` | `local_microcircuit` | `bibliography_verified` | [DOI](https://doi.org/10.1523/jneurosci.16-20-06402.1996) | not_verified | 仅书目 |
+| `wang_buzsaki_1996_gamma` | [Wang-Buzsaki inhibitory gamma network](equations/models/wang_buzsaki_1996_gamma.md) | `neural_population` | `neural_population` / `interneuron_network` | `local_microcircuit` | `equation_transcribed` | [DOI](https://doi.org/10.1523/jneurosci.16-20-06402.1996) | Materials and Methods, equations (2.1)-(2.4) with rate expressions | 已转录；待复核 |
 | `li_rinzel_1994` | [Li-Rinzel reduced IP3-receptor calcium mechanism](equations/models/li_rinzel_1994.md) | `other_nervous_system_related` | `astrocyte_relevant_calcium_mechanism` / `not_applicable` | `subcellular` | `bibliography_verified` | [DOI](https://doi.org/10.1006/jtbi.1994.1041) | not_verified | 仅书目 |
 | `mrg_2002_myelinated_axon` | [McIntyre-Richardson-Grill myelinated-axon model](equations/models/mrg_2002_myelinated_axon.md) | `neuronal` | `myelinated_axon` / `not_applicable` | `multicompartment_cell` | `bibliography_verified` | [DOI](https://doi.org/10.1152/jn.00353.2001) | not_verified | 仅书目 |
 | `jirsa_2014_epileptor` | [Epileptor seizure-dynamics model](equations/models/jirsa_2014_epileptor.md) | `neural_population` | `neural_population` / `neural_mass` | `neural_mass` | `bibliography_verified` | [DOI](https://doi.org/10.1093/brain/awu133) | not_verified | 仅书目 |

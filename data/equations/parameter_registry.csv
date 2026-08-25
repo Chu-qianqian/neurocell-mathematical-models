@@ -43,3 +43,18 @@ polykretis_2018_neural_astrocytic_network,C_lif,LIF membrane capacitance,picofar
 hopfield_1982,U_i,neuron thresholds,dimensionless,0 unless otherwise stated,"p. 2555, after equation [1]",registered,2026-08-24
 hopfield_1982,T_ii,self-coupling constraint,dimensionless,0,"p. 2555, after equation [2]",registered,2026-08-24
 hopfield_1982,capacity,simultaneously remembered states before severe recall error,dimensionless,about 0.15 N (empirical),"p. 2556, simulation summary",registered,2026-08-24
+wang_buzsaki_1996_gamma,C_m,specific membrane capacitance,microfarad/cm^2,1,"Methods, equation (2.1)",registered,2026-08-24
+wang_buzsaki_1996_gamma,g_L,leak conductance,millisiemens/cm^2,0.1,"Methods, after equation (2.1)",registered,2026-08-24
+wang_buzsaki_1996_gamma,E_L,leak reversal potential,millivolt,-65,"Methods, after equation (2.1)",registered,2026-08-24
+wang_buzsaki_1996_gamma,g_Na,sodium conductance,millisiemens/cm^2,35,"Methods, after equation (2.2)",registered,2026-08-24
+wang_buzsaki_1996_gamma,E_Na,sodium reversal potential,millivolt,55,"Methods, after equation (2.2)",registered,2026-08-24
+wang_buzsaki_1996_gamma,phi,temperature factor for gating kinetics,dimensionless,5,"Methods, after equation (2.2)",registered,2026-08-24
+wang_buzsaki_1996_gamma,g_K,potassium conductance,millisiemens/cm^2,9,"Methods, after equation (2.3)",registered,2026-08-24
+wang_buzsaki_1996_gamma,E_K,potassium reversal potential,millivolt,-90,"Methods, after equation (2.3)",registered,2026-08-24
+wang_buzsaki_1996_gamma,g_syn,maximal synaptic conductance,millisiemens/cm^2,0.1 (typical),"Methods, Model synapse paragraph",registered,2026-08-24
+wang_buzsaki_1996_gamma,E_syn,synaptic reversal potential,millivolt,-75,"Methods, Model synapse paragraph",registered,2026-08-24
+wang_buzsaki_1996_gamma,alpha_syn,channel opening rate,1/millisecond,12,"Methods, page 6404",registered,2026-08-24
+wang_buzsaki_1996_gamma,beta_syn,channel closing rate (tau_syn = 1/beta),1/millisecond,0.1 (tau_syn = 10),"Methods, page 6404",registered,2026-08-24
+wang_buzsaki_1996_gamma,theta_syn,sigmoid threshold for transmitter release,millivolt,0,"Methods, Model synapse paragraph",registered,2026-08-24
+wang_buzsaki_1996_gamma,M_syn,average synaptic contacts per neuron,dimensionless,varied; about 60 needed for gamma band,"Methods, Random network connectivity; Discussion",registered,2026-08-24
+wang_buzsaki_1996_gamma,N_cells,number of cells in the network,dimensionless,varied (e.g. 30-100),"Methods, Random network connectivity",registered,2026-08-24
