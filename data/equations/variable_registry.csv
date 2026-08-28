@@ -273,3 +273,21 @@ mrg_2002_myelinated_axon,I_Lk,leakage current,mA/cm^2,source_verified,"Appendix,
 mrg_2002_myelinated_axon,E_Na,sodium reversal potential,mV,source_verified,Table 2,2026-08-28
 mrg_2002_myelinated_axon,E_K,potassium reversal potential,mV,source_verified,Table 2,2026-08-28
 mrg_2002_myelinated_axon,E_Lk,leakage reversal potential,mV,source_verified,Table 2,2026-08-28
+jirsa_2014_epileptor,x1,fast ensemble position variable,dimensionless,source_verified,"p. 2214, system display",2026-08-28
+jirsa_2014_epileptor,y1,fast ensemble velocity variable,dimensionless,source_verified,"p. 2214, system display",2026-08-28
+jirsa_2014_epileptor,z,slow permittivity variable,dimensionless,source_verified,"p. 2214, system display",2026-08-28
+jirsa_2014_epileptor,x2,spike-wave subsystem position variable,dimensionless,source_verified,"p. 2214, system display",2026-08-28
+jirsa_2014_epileptor,y2,spike-wave subsystem velocity variable,dimensionless,source_verified,"p. 2214, system display",2026-08-28
+jirsa_2014_epileptor,f1,piecewise nonlinearity of the fast subsystem,dimensionless,source_verified,"p. 2214, f1 display",2026-08-28
+jirsa_2014_epileptor,f2,piecewise nonlinearity of the spike-wave subsystem,dimensionless,source_verified,"p. 2214, f2 display",2026-08-28
+jirsa_2014_epileptor,g(x1),low-pass integral coupling function,dimensionless,source_verified,"p. 2214, g display",2026-08-28
+jirsa_2014_epileptor,tau,integration variable of g (reused symbol),dimensionless,source_verified,"p. 2214, g display",2026-08-28
+jirsa_2014_epileptor,u,dummy variable of the alternative formulation,dimensionless,source_verified,Supplementary Information 3,2026-08-28
+jirsa_2014_epileptor,I_rest1,resting input of ensemble 1,dimensionless,source_verified,"p. 2214, system display",2026-08-28
+jirsa_2014_epileptor,I_rest2,resting input of ensemble 2,dimensionless,source_verified,"p. 2214, system display",2026-08-28
+jirsa_2014_epileptor,x0,excitability parameter,dimensionless,source_verified,"p. 2214, parameter line",2026-08-28
+jirsa_2014_epileptor,y0,fast-subsystem nullcline parameter,dimensionless,source_verified,"p. 2214, parameter line",2026-08-28
+jirsa_2014_epileptor,tau0,permittivity time scale,dimensionless,source_verified,"p. 2214, parameter line",2026-08-28
+jirsa_2014_epileptor,tau1,"ensemble-1 time scale (equal to 1, omitted)",dimensionless,source_verified,"p. 2214, prose after parameter line",2026-08-28
+jirsa_2014_epileptor,tau2,ensemble-2 time scale,dimensionless,source_verified,"p. 2214, parameter line",2026-08-28
+jirsa_2014_epileptor,gamma,low-pass coupling decay rate,dimensionless,source_verified,"p. 2214, parameter line",2026-08-28

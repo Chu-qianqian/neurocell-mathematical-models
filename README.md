@@ -12,14 +12,14 @@ This repository is an equation-level knowledge base, not a paper mirror or a col
 ## Coverage summary
 
 - Canonical model records: **25**
-- Bibliography-only holding records: **9**
-- Equation-located or stronger records: **16**
-- Equation-transcribed records awaiting a second pass: **13**
+- Bibliography-only holding records: **8**
+- Equation-located or stronger records: **17**
+- Equation-transcribed records awaiting a second pass: **14**
 - Maintainer second-pass checked records: **3**
 - Independently checked records: **0**
 - Records with incomplete parameter registries: **9**
 - Records explicitly marked full text unavailable: **0**
-- Records whose source full text is unavailable or not yet inspected: **9**
+- Records whose source full text is unavailable or not yet inspected: **8**
 - Records with unclear external-code licensing: **8**
 - Screening inventory rows: **278** (20 promoted to the canonical catalogue)
 
@@ -45,7 +45,7 @@ This repository is an equation-level knowledge base, not a paper mirror or a col
 | `wang_buzsaki_1996_gamma` | [Wang-Buzsaki inhibitory gamma network](equations/models/wang_buzsaki_1996_gamma.md) | `neural_population` | `neural_population` / `interneuron_network` | `local_microcircuit` | `equation_transcribed` | [DOI](https://doi.org/10.1523/jneurosci.16-20-06402.1996) | Materials and Methods, equations (2.1)-(2.4) with rate expressions | transcribed; review pending |
 | `li_rinzel_1994` | [Li-Rinzel reduced IP3-receptor calcium mechanism](equations/models/li_rinzel_1994.md) | `other_nervous_system_related` | `astrocyte_relevant_calcium_mechanism` / `not_applicable` | `subcellular` | `bibliography_verified` | [DOI](https://doi.org/10.1006/jtbi.1994.1041) | not_verified | bibliography only |
 | `mrg_2002_myelinated_axon` | [McIntyre-Richardson-Grill myelinated-axon model](equations/models/mrg_2002_myelinated_axon.md) | `neuronal` | `myelinated_axon` / `not_applicable` | `multicompartment_cell` | `equation_transcribed` | [DOI](https://doi.org/10.1152/jn.00353.2001) | Appendix: general ionic current, gate kinetics, fast and persistent sodium, slow potassium, juxtaparanodal fast potassium (Fig. 9 only), and leakage currents; all displays unnumbered | transcribed; review pending |
-| `jirsa_2014_epileptor` | [Epileptor seizure-dynamics model](equations/models/jirsa_2014_epileptor.md) | `neural_population` | `neural_population` / `neural_mass` | `neural_mass` | `bibliography_verified` | [DOI](https://doi.org/10.1093/brain/awu133) | not_verified | bibliography only |
+| `jirsa_2014_epileptor` | [Epileptor seizure-dynamics model](equations/models/jirsa_2014_epileptor.md) | `neural_population` | `neural_population` / `neural_mass` | `neural_mass` | `equation_transcribed` | [DOI](https://doi.org/10.1093/brain/awu133) | The Epileptor, five-variable system with g, f1, f2 and the parameter-value line (all unnumbered); Supplementary Information 3 alternative six-variable formulation with dummy variable u | transcribed; review pending |
 | `polykretis_2018_neural_astrocytic_network` | [Polykretis neural-astrocytic network architecture](equations/models/polykretis_2018_neural_astrocytic_network.md) | `mixed_neuron_glia` | `mixed_neuron_astrocyte_system` / `neuron_astrocyte_network` | `local_microcircuit` | `equation_transcribed` | [DOI](https://doi.org/10.1145/3229884.3229890) | arXiv:1807.02514v1, Methods, equations (1)-(9) | transcribed; review pending |
 | `halnes_2013_electrodiffusive_astrocyte` | [Halnes astrocyte-extracellular electrodiffusive model](equations/models/halnes_2013_electrodiffusive_astrocyte.md) | `glial` | `astrocyte_extracellular_system` / `not_applicable` | `multicompartment_cell` | `equation_transcribed` | [DOI](https://doi.org/10.1371/journal.pcbi.1003386) | Model section, Electrodiffusive formalism, equations (1)-(6); arXiv numbering matches published PMC3868551 | transcribed; review pending |
 | `neuron_astrocyte_associative_memory_2025` | [Neuron-astrocyte associative-memory model](equations/models/neuron_astrocyte_associative_memory_2025.md) | `mixed_neuron_glia` | `mixed_neuron_astrocyte_system` / `neuron_astrocyte_network` | `large_scale_network` | `bibliography_verified` | [DOI](https://doi.org/10.1073/pnas.2417788122) | not_verified | bibliography only |

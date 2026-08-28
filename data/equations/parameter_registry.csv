@@ -213,3 +213,18 @@ mrg_2002_myelinated_axon,V_rest,resting potential,mV,-80.0,Table 2,registered,20
 mrg_2002_myelinated_axon,temperature,temperature of derived dynamics,degC,36,Appendix,registered,2026-08-28
 mrg_2002_myelinated_axon,extracellular_medium,anisotropic point-source medium resistivities,ohm-cm,longitudinal 300; transverse 1200,"Methods, Simulation procedure",registered,2026-08-28
 mrg_2002_myelinated_axon,integration,solver and time step,ms,NEURON v4.3 backward Euler; dt 0.001-0.005,Methods,registered,2026-08-28
+jirsa_2014_epileptor,x0,excitability parameter,dimensionless,-1.6,"p. 2214, parameter line",registered,2026-08-28
+jirsa_2014_epileptor,y0,fast-subsystem nullcline parameter,dimensionless,1,"p. 2214, parameter line",registered,2026-08-28
+jirsa_2014_epileptor,tau0,permittivity time scale,dimensionless,2857,"p. 2214, parameter line",registered,2026-08-28
+jirsa_2014_epileptor,tau1,ensemble-1 time scale,dimensionless,1,"p. 2214, parameter line and prose",registered,2026-08-28
+jirsa_2014_epileptor,tau2,ensemble-2 time scale,dimensionless,10,"p. 2214, parameter line",registered,2026-08-28
+jirsa_2014_epileptor,I_rest1,resting input to ensemble 1,dimensionless,3.1,"p. 2214, parameter line",registered,2026-08-28
+jirsa_2014_epileptor,I_rest2,resting input to ensemble 2,dimensionless,0.45,"p. 2214, parameter line",registered,2026-08-28
+jirsa_2014_epileptor,gamma,low-pass coupling decay rate,dimensionless,0.01 (1/gamma = 100),"p. 2214, parameter line; SI 3",registered,2026-08-28
+jirsa_2014_epileptor,noise_variance_subsystem1,"additive Gaussian white noise variance, first subsystem",dimensionless,0.025,"p. 2214, prose after parameter line",registered,2026-08-28
+jirsa_2014_epileptor,noise_variance_subsystem2,"additive Gaussian white noise variance, second subsystem",dimensionless,0.25,"p. 2214, prose after parameter line",registered,2026-08-28
+jirsa_2014_epileptor,f1_constants,constants of the fast-subsystem nonlinearity,dimensionless,5 (y-dynamics); 3 (cubic); 0.6 and 4 (slope modulation),"p. 2214, system and f1 displays",registered,2026-08-28
+jirsa_2014_epileptor,f2_constants,constants of the spike-wave nonlinearity,dimensionless,-0.25 threshold; 6 slope,"p. 2214, f2 display",registered,2026-08-28
+jirsa_2014_epileptor,integral_weight,weight of the filtered coupling in the x2 equation,dimensionless,0.002 (main text); 2u with u = low-pass state (SI 3),"p. 2214, system display; SI 3",registered,2026-08-28
+jirsa_2014_epileptor,z_coupling,permittivity coupling into the spike-wave subsystem,dimensionless,-0.3(z - 3.5),"p. 2214, system display",registered,2026-08-28
+jirsa_2014_epileptor,initial_conditions,initial state for simulation,dimensionless,x1 = 0; y1 = 5; z = 3; x2 = 0; y2 = 0,"p. 2214, prose",registered,2026-08-28
