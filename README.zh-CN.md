@@ -12,14 +12,14 @@
 ## 覆盖概况
 
 - 规范目录记录：**25**
-- 仅书目暂存记录：**10**
-- 方程已定位或更强状态的记录：**15**
-- 已转录、待第二遍复核的记录：**12**
+- 仅书目暂存记录：**9**
+- 方程已定位或更强状态的记录：**16**
+- 已转录、待第二遍复核的记录：**13**
 - 维护者已第二遍复核的记录：**3**
 - 已独立复核的记录：**0**
 - 参数注册表不完整的记录：**9**
 - 明确标注全文不可获取的记录：**0**
-- 来源全文不可获取或尚未查验的记录：**10**
+- 来源全文不可获取或尚未查验的记录：**9**
 - 外部代码许可状态不明的记录：**8**
 - 筛选清单行数：**278**（其中 20 条已晋升进入规范目录）
 
@@ -44,7 +44,7 @@
 | `hopfield_1982` | [Hopfield associative-memory network](equations/models/hopfield_1982.md) | `neural_population` | `neural_population` / `attractor_network` | `large_scale_network` | `equation_transcribed` | [DOI](https://doi.org/10.1073/pnas.79.8.2554) | pp. 2555-2556, bracketed equations [1]-[8] | 已转录；待复核 |
 | `wang_buzsaki_1996_gamma` | [Wang-Buzsaki inhibitory gamma network](equations/models/wang_buzsaki_1996_gamma.md) | `neural_population` | `neural_population` / `interneuron_network` | `local_microcircuit` | `equation_transcribed` | [DOI](https://doi.org/10.1523/jneurosci.16-20-06402.1996) | Materials and Methods, equations (2.1)-(2.4) with rate expressions | 已转录；待复核 |
 | `li_rinzel_1994` | [Li-Rinzel reduced IP3-receptor calcium mechanism](equations/models/li_rinzel_1994.md) | `other_nervous_system_related` | `astrocyte_relevant_calcium_mechanism` / `not_applicable` | `subcellular` | `bibliography_verified` | [DOI](https://doi.org/10.1006/jtbi.1994.1041) | not_verified | 仅书目 |
-| `mrg_2002_myelinated_axon` | [McIntyre-Richardson-Grill myelinated-axon model](equations/models/mrg_2002_myelinated_axon.md) | `neuronal` | `myelinated_axon` / `not_applicable` | `multicompartment_cell` | `bibliography_verified` | [DOI](https://doi.org/10.1152/jn.00353.2001) | not_verified | 仅书目 |
+| `mrg_2002_myelinated_axon` | [McIntyre-Richardson-Grill myelinated-axon model](equations/models/mrg_2002_myelinated_axon.md) | `neuronal` | `myelinated_axon` / `not_applicable` | `multicompartment_cell` | `equation_transcribed` | [DOI](https://doi.org/10.1152/jn.00353.2001) | Appendix: general ionic current, gate kinetics, fast and persistent sodium, slow potassium, juxtaparanodal fast potassium (Fig. 9 only), and leakage currents; all displays unnumbered | 已转录；待复核 |
 | `jirsa_2014_epileptor` | [Epileptor seizure-dynamics model](equations/models/jirsa_2014_epileptor.md) | `neural_population` | `neural_population` / `neural_mass` | `neural_mass` | `bibliography_verified` | [DOI](https://doi.org/10.1093/brain/awu133) | not_verified | 仅书目 |
 | `polykretis_2018_neural_astrocytic_network` | [Polykretis neural-astrocytic network architecture](equations/models/polykretis_2018_neural_astrocytic_network.md) | `mixed_neuron_glia` | `mixed_neuron_astrocyte_system` / `neuron_astrocyte_network` | `local_microcircuit` | `equation_transcribed` | [DOI](https://doi.org/10.1145/3229884.3229890) | arXiv:1807.02514v1, Methods, equations (1)-(9) | 已转录；待复核 |
 | `halnes_2013_electrodiffusive_astrocyte` | [Halnes astrocyte-extracellular electrodiffusive model](equations/models/halnes_2013_electrodiffusive_astrocyte.md) | `glial` | `astrocyte_extracellular_system` / `not_applicable` | `multicompartment_cell` | `equation_transcribed` | [DOI](https://doi.org/10.1371/journal.pcbi.1003386) | Model section, Electrodiffusive formalism, equations (1)-(6); arXiv numbering matches published PMC3868551 | 已转录；待复核 |

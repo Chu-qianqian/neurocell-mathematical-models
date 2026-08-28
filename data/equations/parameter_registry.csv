@@ -187,3 +187,29 @@ potjans_diesmann_2014,strength_override_L4_L23,L4e to L2/3e strength doubled,dim
 potjans_diesmann_2014,probability_overrides,L2/3i to L5e and L4i to L2/3i probabilities,dimensionless,0.2,Methods; Haeusler and Maass (2007),registered,2026-08-28
 potjans_diesmann_2014,step_size,computation step size for delay discretization,ms,not stated in the article,Methods,parameters_incomplete,2026-08-28
 potjans_diesmann_2014,simulation_size,reference network size,count,77169 cortical neurons plus 902 thalamic,Table 5 totals; Results,registered,2026-08-28
+mrg_2002_myelinated_axon,fiber_diameters,modeled fiber diameters,um,5.7 to 16.0 (nine models),Table 1,registered,2026-08-28
+mrg_2002_myelinated_axon,node_node_separation,internodal distances per diameter,um,500 to 1500,Table 1,registered,2026-08-28
+mrg_2002_myelinated_axon,myelin_lamellae,lamella counts per diameter,count,80 to 150,Table 1,registered,2026-08-28
+mrg_2002_myelinated_axon,node_geometry,node length and diameter,um,length 1; diameter 1.9-5.5,Table 1,registered,2026-08-28
+mrg_2002_myelinated_axon,mysa_geometry,"MYSA length, diameter, periaxonal space",um,length 3; diameter 1.9-5.5; space 0.002-0.004,Table 1,registered,2026-08-28
+mrg_2002_myelinated_axon,c_n,nodal membrane capacitance,uF/cm^2,2,Table 2,registered,2026-08-28
+mrg_2002_myelinated_axon,c_i,internodal axolemma capacitance,uF/cm^2,2,Table 2,registered,2026-08-28
+mrg_2002_myelinated_axon,c_m,myelin capacitance per lamella,uF/cm^2,0.1,Table 2,registered,2026-08-28
+mrg_2002_myelinated_axon,rho_a,axoplasmic resistivity,ohm-cm,70,Table 2,registered,2026-08-28
+mrg_2002_myelinated_axon,rho_p,periaxonal resistivity,ohm-cm,70,Table 2,registered,2026-08-28
+mrg_2002_myelinated_axon,g_m,myelin conductance,S/cm^2,0.001,Table 2,registered,2026-08-28
+mrg_2002_myelinated_axon,g_a,MYSA conductance,S/cm^2,0.001,Table 2,registered,2026-08-28
+mrg_2002_myelinated_axon,g_f,FLUT conductance,S/cm^2,0.0001,Table 2,registered,2026-08-28
+mrg_2002_myelinated_axon,g_i,STIN conductance,S/cm^2,0.0001,Table 2,registered,2026-08-28
+mrg_2002_myelinated_axon,g_Naf,maximum fast Na conductance,S/cm^2,3.0 (2000 channels/um^2 at 15 pS),Table 2; Appendix,registered,2026-08-28
+mrg_2002_myelinated_axon,g_Ks,maximum slow K conductance,S/cm^2,0.08 (100 channels/um^2 at 8 pS),Table 2; Appendix,registered,2026-08-28
+mrg_2002_myelinated_axon,g_Nap,maximum persistent Na conductance,S/cm^2,0.01,Table 2,registered,2026-08-28
+mrg_2002_myelinated_axon,g_Lk,nodal leakage conductance,S/cm^2,0.007,Table 2,registered,2026-08-28
+mrg_2002_myelinated_axon,g_Kf,juxtaparanodal fast K conductance for Fig. 9,S/cm^2,not stated in the article,Appendix,parameters_incomplete,2026-08-28
+mrg_2002_myelinated_axon,E_Na,sodium Nernst potential,mV,50.0,Table 2,registered,2026-08-28
+mrg_2002_myelinated_axon,E_K,potassium Nernst potential,mV,-90.0,Table 2,registered,2026-08-28
+mrg_2002_myelinated_axon,E_Lk,leakage reversal potential,mV,-90.0,Table 2,registered,2026-08-28
+mrg_2002_myelinated_axon,V_rest,resting potential,mV,-80.0,Table 2,registered,2026-08-28
+mrg_2002_myelinated_axon,temperature,temperature of derived dynamics,degC,36,Appendix,registered,2026-08-28
+mrg_2002_myelinated_axon,extracellular_medium,anisotropic point-source medium resistivities,ohm-cm,longitudinal 300; transverse 1200,"Methods, Simulation procedure",registered,2026-08-28
+mrg_2002_myelinated_axon,integration,solver and time step,ms,NEURON v4.3 backward Euler; dt 0.001-0.005,Methods,registered,2026-08-28

@@ -252,3 +252,24 @@ potjans_diesmann_2014,N_post_i,inhibitory target population size,count,source_ve
 potjans_diesmann_2014,V,membrane potential of the integrate-and-fire neuron,mV,source_verified,"Table 4, Subthreshold dynamics",2026-08-28
 potjans_diesmann_2014,t_star,time stamp of the last emitted spike,ms,source_verified,"Table 4, Spiking row",2026-08-28
 potjans_diesmann_2014,I_syn,exponential postsynaptic current,pA,source_verified,"Table 4, Synapse model",2026-08-28
+mrg_2002_myelinated_axon,V_m,transmembrane potential,mV,source_verified,"Appendix, p. 1005",2026-08-28
+mrg_2002_myelinated_axon,I_ion,ionic current in the general form,mA/cm^2,source_verified,"Appendix, p. 1005",2026-08-28
+mrg_2002_myelinated_axon,g_ion,maximum channel conductance density,S/cm^2,source_verified,"Appendix, p. 1005",2026-08-28
+mrg_2002_myelinated_axon,E_ion,ion reversal potential,mV,source_verified,"Appendix, p. 1005",2026-08-28
+mrg_2002_myelinated_axon,omega,generic gating variable,dimensionless,source_verified,"Appendix, p. 1005",2026-08-28
+mrg_2002_myelinated_axon,alpha_omega,forward rate constant,1/ms,source_verified,"Appendix, p. 1005",2026-08-28
+mrg_2002_myelinated_axon,beta_omega,backward rate constant,1/ms,source_verified,"Appendix, p. 1005",2026-08-28
+mrg_2002_myelinated_axon,tau_omega,gate time constant,ms,source_verified,"Appendix, p. 1005",2026-08-28
+mrg_2002_myelinated_axon,m,fast Na activation gate,dimensionless,source_verified,"Appendix, p. 1005",2026-08-28
+mrg_2002_myelinated_axon,h,fast Na inactivation gate,dimensionless,source_verified,"Appendix, p. 1005",2026-08-28
+mrg_2002_myelinated_axon,p,persistent Na activation gate,dimensionless,source_verified,"Appendix, p. 1005",2026-08-28
+mrg_2002_myelinated_axon,s,slow K activation gate,dimensionless,source_verified,"Appendix, p. 1005",2026-08-28
+mrg_2002_myelinated_axon,n,juxtaparanodal fast K activation gate,dimensionless,source_verified,"Appendix, p. 1005",2026-08-28
+mrg_2002_myelinated_axon,I_Naf,fast sodium current,mA/cm^2,source_verified,"Appendix, p. 1005",2026-08-28
+mrg_2002_myelinated_axon,I_Nap,persistent sodium current,mA/cm^2,source_verified,"Appendix, p. 1005",2026-08-28
+mrg_2002_myelinated_axon,I_Ks,slow potassium current,mA/cm^2,source_verified,"Appendix, p. 1005",2026-08-28
+mrg_2002_myelinated_axon,I_Kf,juxtaparanodal fast potassium current,mA/cm^2,source_verified,"Appendix, p. 1005",2026-08-28
+mrg_2002_myelinated_axon,I_Lk,leakage current,mA/cm^2,source_verified,"Appendix, p. 1005",2026-08-28
+mrg_2002_myelinated_axon,E_Na,sodium reversal potential,mV,source_verified,Table 2,2026-08-28
+mrg_2002_myelinated_axon,E_K,potassium reversal potential,mV,source_verified,Table 2,2026-08-28
+mrg_2002_myelinated_axon,E_Lk,leakage reversal potential,mV,source_verified,Table 2,2026-08-28
