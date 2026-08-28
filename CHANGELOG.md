@@ -2,6 +2,20 @@
 
 All notable changes to this repository are documented here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [0.2.3] - 2026-08-28
+
+### Added
+
+- Source-verified equation transcriptions for four records: Brunel 2000 sparsely connected excitatory-inhibitory network (equations (1)-(66) with the unnumbered displays of Sections 2-6 and Appendices A-B), Tsodyks, Pawelzik, and Markram 1998 dynamic-synapse model (equations (2.1)-(4.5) with the unnumbered steady-state display and appendix equations (A.1)-(A.4)), Potjans and Diesmann 2014 cortical microcircuit (equations (1)-(13) with unnumbered displays and the Table 4 neuron and synapse equations), and McIntyre, Richardson, and Grill 2002 myelinated axon (all eighteen appendix current and rate displays).
+- Variable and parameter registry entries covering the four newly transcribed systems, including the published parameter tables (Potjans-Diesmann Tables 3-5; McIntyre-Richardson-Grill Tables 1-2).
+- Equation audit rows covering every newly displayed equation block.
+
+### Changed
+
+- Brunel 2000, Tsodyks-Markram 1998, Potjans-Diesmann 2014, and McIntyre-Richardson-Grill 2002 advanced from bibliography-only holding to `equation_transcribed`.
+- The reference verification audit now records inspected equations for the four records.
+- Printed-source quirks are transcribed exactly and flagged on the equation pages: the Brunel 2000 boundary-condition loci and exponent slips after equations (40), (52), and (63) together with the model-B definition slips; the asymmetric printed indices of Tsodyks-Markram equation (4.1); the negative exponents denominators of the McIntyre-Richardson-Grill slow potassium rates; and the comparison operators missing from the PMC-rendered Potjans-Diesmann Table 4 equation images.
+
 ## [0.2.2] - 2026-08-25
 
 ### Added
