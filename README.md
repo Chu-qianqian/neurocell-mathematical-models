@@ -12,14 +12,14 @@ This repository is an equation-level knowledge base, not a paper mirror or a col
 ## Coverage summary
 
 - Canonical model records: **25**
-- Bibliography-only holding records: **11**
-- Equation-located or stronger records: **14**
-- Equation-transcribed records awaiting a second pass: **11**
+- Bibliography-only holding records: **10**
+- Equation-located or stronger records: **15**
+- Equation-transcribed records awaiting a second pass: **12**
 - Maintainer second-pass checked records: **3**
 - Independently checked records: **0**
-- Records with incomplete parameter registries: **10**
+- Records with incomplete parameter registries: **9**
 - Records explicitly marked full text unavailable: **0**
-- Records whose source full text is unavailable or not yet inspected: **11**
+- Records whose source full text is unavailable or not yet inspected: **10**
 - Records with unclear external-code licensing: **8**
 - Screening inventory rows: **278** (20 promoted to the canonical catalogue)
 
@@ -34,7 +34,7 @@ This repository is an equation-level knowledge base, not a paper mirror or a col
 | `amato_arnold_2025_microglia` | [Data-driven microglial ischemic-penumbra model](equations/models/amato_arnold_2025_microglia.md) | `glial` | `microglia` / `not_applicable` | `population` | `bibliography_verified` | [DOI](https://doi.org/10.1016/j.mbs.2025.109549) | not verified | bibliography only |
 | `nikolov_2022_oligodendrocyte` | [Oligodendrocyte differentiation dynamics model](equations/models/nikolov_2022_oligodendrocyte.md) | `glial` | `oligodendrocyte` / `not_applicable` | `population` | `bibliography_verified` | [DOI](https://doi.org/10.3390/math10162928) | not verified | bibliography only |
 | `wilson_cowan_1972` | [Wilson-Cowan excitatory-inhibitory population model](equations/models/wilson_cowan_1972.md) | `neural_population` | `neural_population` / `firing_rate_network` | `population` | `equation_transcribed` | [DOI](https://doi.org/10.1016/s0006-3495(72)86068-5) | article p. 8, equations (7)-(8) | transcribed; review pending |
-| `potjans_diesmann_2014` | [Potjans-Diesmann cortical microcircuit model](equations/models/potjans_diesmann_2014_microcircuit.md) | `neural_population` | `neural_population` / `cortical_microcircuit` | `local_microcircuit` | `bibliography_verified` | [DOI](https://doi.org/10.1093/cercor/bhs358) | not verified | bibliography only |
+| `potjans_diesmann_2014` | [Potjans-Diesmann cortical microcircuit model](equations/models/potjans_diesmann_2014_microcircuit.md) | `neural_population` | `neural_population` / `cortical_microcircuit` | `local_microcircuit` | `equation_transcribed` | [DOI](https://doi.org/10.1093/cercor/bhs358) | Methods equations (1)-(13) with unnumbered displays; Table 4 neuron and synapse rows (subthreshold dynamics, postsynaptic current, spiking condition) | transcribed; review pending |
 | `montbrio_pazo_roxin_2015` | [Montbrio-Pazo-Roxin exact neural-mass reduction](equations/models/montbrio_pazo_roxin_2015.md) | `neural_population` | `neural_population` / `neural_mass` | `neural_mass` | `equation_transcribed` | [DOI](https://doi.org/10.1103/physrevx.5.021028) | arXiv:1506.06581v1, Section II.B, equations (12a)-(12b) | transcribed; review pending |
 | `wong_wang_2006` | [Recurrent decision-network model](equations/models/wong_wang_2006_decision.md) | `neural_population` | `neural_population` / `attractor_network` | `population` | `equation_transcribed` | [DOI](https://doi.org/10.1523/jneurosci.3733-05.2006) | Materials and Methods equations (1)-(9) and Phase-plane reduction displays; Dynamical equations equations (10)-(21); Simulations noise display; Results stimulus displays and equation (22); Appendix system | transcribed; review pending |
 | `morris_lecar_1981` | [Morris-Lecar excitable-membrane model](equations/models/morris_lecar_1981.md) | `other_nervous_system_related` | `excitable_membrane` / `not_applicable` | `single_cell` | `equation_transcribed` | [DOI](https://doi.org/10.1016/s0006-3495(81)84782-0) | Methods, The Model, equations (1)-(2); Analysis, equations (3)-(7); Ca-accumulation perturbation, equation (8); Limit-cycle oscillations, reduced system and equations (9)-(17) | transcribed; review pending |

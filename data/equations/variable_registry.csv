@@ -227,3 +227,28 @@ tsodyks_markram_1998_stp,beta,slope of the linear-threshold gain,mV^-1 Hz,source
 tsodyks_markram_1998_stp,CV_x,coefficient of variation of x,dimensionless,source_verified,"p. 833, equation (A.2)",2026-08-28
 tsodyks_markram_1998_stp,CV_U,coefficient of variation of U1,dimensionless,source_verified,"p. 833, equation (A.2)",2026-08-28
 tsodyks_markram_1998_stp,V,postsynaptic potential of the passive target in Figure 1,mV,source_verified,"p. 825, Figure 1 caption",2026-08-28
+potjans_diesmann_2014,C_a,connection probability of the anatomical map,dimensionless,source_verified,"p. 787, equation (1)",2026-08-28
+potjans_diesmann_2014,C_p,connection probability of the physiological map,dimensionless,source_verified,"p. 787, equation (3)",2026-08-28
+potjans_diesmann_2014,K,number of synapses in a connection,count,source_verified,"p. 787, equation (1)",2026-08-28
+potjans_diesmann_2014,N_pre,presynaptic population size,count,source_verified,"p. 787, equation (1)",2026-08-28
+potjans_diesmann_2014,N_post,postsynaptic population size,count,source_verified,"p. 787, equation (1)",2026-08-28
+potjans_diesmann_2014,R_i,hit rate of experiment i,dimensionless,source_verified,"p. 787, equation (3)",2026-08-28
+potjans_diesmann_2014,Q_i,tested pairs in experiment i,count,source_verified,"p. 787, equation (3)",2026-08-28
+potjans_diesmann_2014,C(r),lateral connectivity profile,dimensionless,source_verified,"p. 788, equation (4)",2026-08-28
+potjans_diesmann_2014,C_0,peak of the lateral connectivity profile,dimensionless,source_verified,"p. 788, equations (4) and (8)",2026-08-28
+potjans_diesmann_2014,sigma,lateral spread of the lateral model,mm,source_verified,"p. 788, equation (7)",2026-08-28
+potjans_diesmann_2014,r_a,anatomical sampling radius,mm,source_verified,"p. 788, equation (5)",2026-08-28
+potjans_diesmann_2014,r_p,physiological sampling radius,mm,source_verified,"p. 788, equation (6)",2026-08-28
+potjans_diesmann_2014,C_a_tilde,global mean of the modified anatomical map,dimensionless,source_verified,"p. 788, equations (7)-(8)",2026-08-28
+potjans_diesmann_2014,C_p_bar,global mean of the physiological map,dimensionless,source_verified,"p. 789, equation (10)",2026-08-28
+potjans_diesmann_2014,C_a_bartilde,anatomical mean in the model-referenced form of equation (9),dimensionless,source_verified,"p. 789, equation (9)",2026-08-28
+potjans_diesmann_2014,r_m,radius of the simulated network,mm,source_verified,"p. 789, equation (9)",2026-08-28
+potjans_diesmann_2014,C_m_prob,mean connection probability of the model,dimensionless,source_verified,"p. 789, equation (9)",2026-08-28
+potjans_diesmann_2014,zeta,discrepancy index,dimensionless,source_verified,"p. 789, equation (10)",2026-08-28
+potjans_diesmann_2014,T,target specificity of a projection,dimensionless,source_verified,"p. 789, equation (11)",2026-08-28
+potjans_diesmann_2014,Delta,fraction of synapses targeting excitatory neurons,dimensionless,source_verified,"p. 790, equation (12)",2026-08-28
+potjans_diesmann_2014,N_post_e,excitatory target population size,count,source_verified,"p. 790, equation (12)",2026-08-28
+potjans_diesmann_2014,N_post_i,inhibitory target population size,count,source_verified,"p. 790, equation (12)",2026-08-28
+potjans_diesmann_2014,V,membrane potential of the integrate-and-fire neuron,mV,source_verified,"Table 4, Subthreshold dynamics",2026-08-28
+potjans_diesmann_2014,t_star,time stamp of the last emitted spike,ms,source_verified,"Table 4, Spiking row",2026-08-28
+potjans_diesmann_2014,I_syn,exponential postsynaptic current,pA,source_verified,"Table 4, Synapse model",2026-08-28

@@ -12,14 +12,14 @@
 ## 覆盖概况
 
 - 规范目录记录：**25**
-- 仅书目暂存记录：**11**
-- 方程已定位或更强状态的记录：**14**
-- 已转录、待第二遍复核的记录：**11**
+- 仅书目暂存记录：**10**
+- 方程已定位或更强状态的记录：**15**
+- 已转录、待第二遍复核的记录：**12**
 - 维护者已第二遍复核的记录：**3**
 - 已独立复核的记录：**0**
-- 参数注册表不完整的记录：**10**
+- 参数注册表不完整的记录：**9**
 - 明确标注全文不可获取的记录：**0**
-- 来源全文不可获取或尚未查验的记录：**11**
+- 来源全文不可获取或尚未查验的记录：**10**
 - 外部代码许可状态不明的记录：**8**
 - 筛选清单行数：**278**（其中 20 条已晋升进入规范目录）
 
@@ -34,7 +34,7 @@
 | `amato_arnold_2025_microglia` | [Data-driven microglial ischemic-penumbra model](equations/models/amato_arnold_2025_microglia.md) | `glial` | `microglia` / `not_applicable` | `population` | `bibliography_verified` | [DOI](https://doi.org/10.1016/j.mbs.2025.109549) | not verified | 仅书目 |
 | `nikolov_2022_oligodendrocyte` | [Oligodendrocyte differentiation dynamics model](equations/models/nikolov_2022_oligodendrocyte.md) | `glial` | `oligodendrocyte` / `not_applicable` | `population` | `bibliography_verified` | [DOI](https://doi.org/10.3390/math10162928) | not verified | 仅书目 |
 | `wilson_cowan_1972` | [Wilson-Cowan excitatory-inhibitory population model](equations/models/wilson_cowan_1972.md) | `neural_population` | `neural_population` / `firing_rate_network` | `population` | `equation_transcribed` | [DOI](https://doi.org/10.1016/s0006-3495(72)86068-5) | article p. 8, equations (7)-(8) | 已转录；待复核 |
-| `potjans_diesmann_2014` | [Potjans-Diesmann cortical microcircuit model](equations/models/potjans_diesmann_2014_microcircuit.md) | `neural_population` | `neural_population` / `cortical_microcircuit` | `local_microcircuit` | `bibliography_verified` | [DOI](https://doi.org/10.1093/cercor/bhs358) | not verified | 仅书目 |
+| `potjans_diesmann_2014` | [Potjans-Diesmann cortical microcircuit model](equations/models/potjans_diesmann_2014_microcircuit.md) | `neural_population` | `neural_population` / `cortical_microcircuit` | `local_microcircuit` | `equation_transcribed` | [DOI](https://doi.org/10.1093/cercor/bhs358) | Methods equations (1)-(13) with unnumbered displays; Table 4 neuron and synapse rows (subthreshold dynamics, postsynaptic current, spiking condition) | 已转录；待复核 |
 | `montbrio_pazo_roxin_2015` | [Montbrio-Pazo-Roxin exact neural-mass reduction](equations/models/montbrio_pazo_roxin_2015.md) | `neural_population` | `neural_population` / `neural_mass` | `neural_mass` | `equation_transcribed` | [DOI](https://doi.org/10.1103/physrevx.5.021028) | arXiv:1506.06581v1, Section II.B, equations (12a)-(12b) | 已转录；待复核 |
 | `wong_wang_2006` | [Recurrent decision-network model](equations/models/wong_wang_2006_decision.md) | `neural_population` | `neural_population` / `attractor_network` | `population` | `equation_transcribed` | [DOI](https://doi.org/10.1523/jneurosci.3733-05.2006) | Materials and Methods equations (1)-(9) and Phase-plane reduction displays; Dynamical equations equations (10)-(21); Simulations noise display; Results stimulus displays and equation (22); Appendix system | 已转录；待复核 |
 | `morris_lecar_1981` | [Morris-Lecar excitable-membrane model](equations/models/morris_lecar_1981.md) | `other_nervous_system_related` | `excitable_membrane` / `not_applicable` | `single_cell` | `equation_transcribed` | [DOI](https://doi.org/10.1016/s0006-3495(81)84782-0) | Methods, The Model, equations (1)-(2); Analysis, equations (3)-(7); Ca-accumulation perturbation, equation (8); Limit-cycle oscillations, reduced system and equations (9)-(17) | 已转录；待复核 |

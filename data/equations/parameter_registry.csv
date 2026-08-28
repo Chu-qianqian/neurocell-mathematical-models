@@ -165,3 +165,25 @@ tsodyks_markram_1998_stp,theta,linear-threshold gain threshold,mV,15,Figure 3 ca
 tsodyks_markram_1998_stp,I_ext_e,external input to excitatory population,mV,17,Figure 4 caption,registered,2026-08-28
 tsodyks_markram_1998_stp,I_ext_i,external input to inhibitory population,mV,15,Figure 4 caption,registered,2026-08-28
 tsodyks_markram_1998_stp,N_sim,simulated presynaptic population size,count,1000,Figure 2 caption,registered,2026-08-28
+potjans_diesmann_2014,population_sizes,neuron numbers of L2/3e L2/3i L4e L4i L5e L5i L6e L6i Th,count,20683; 5834; 21915; 5479; 4850; 1065; 14395; 2948; 902,Table 5,registered,2026-08-28
+potjans_diesmann_2014,k_ext_reference,"external inputs per neuron, layer-specific",count,1600; 1500; 2100; 1900; 2000; 1900; 2900; 2100,Table 5,registered,2026-08-28
+potjans_diesmann_2014,k_ext_layer_independent,uniform external input setting,count,2000; 1850; 2000; 1850; 2000; 1850; 2000; 1850,Table 5,registered,2026-08-28
+potjans_diesmann_2014,nu_bg,background rate per external synapse,Hz,8,Table 5,registered,2026-08-28
+potjans_diesmann_2014,external_inputs_table,thalamic / gray matter / white matter inputs per layer,count,L2/3 0/534/1072; L4 93/353/1665; L5 0/389/1609; L6 47/79/2790,Table 3,registered,2026-08-28
+potjans_diesmann_2014,connectivity_matrix,connection probabilities between all population pairs,dimensionless,8 x 9 matrix as printed in Table 5,Table 5,registered,2026-08-28
+potjans_diesmann_2014,w,excitatory synaptic strength,pA,87.8 plus or minus 8.8,Table 5,registered,2026-08-28
+potjans_diesmann_2014,g,relative inhibitory strength,dimensionless,-4,Table 5,registered,2026-08-28
+potjans_diesmann_2014,d_e,excitatory synaptic delay,ms,1.5 plus or minus 0.75,Table 5,registered,2026-08-28
+potjans_diesmann_2014,d_i,inhibitory synaptic delay,ms,0.8 plus or minus 0.4,Table 5,registered,2026-08-28
+potjans_diesmann_2014,tau_m,membrane time constant,ms,10,Table 5,registered,2026-08-28
+potjans_diesmann_2014,tau_ref,absolute refractory period,ms,2,Table 5,registered,2026-08-28
+potjans_diesmann_2014,tau_syn,postsynaptic current time constant,ms,0.5,Table 5,registered,2026-08-28
+potjans_diesmann_2014,C_m_cap,membrane capacitance,pF,250,Table 5,registered,2026-08-28
+potjans_diesmann_2014,V_reset,reset potential,mV,-65,Table 5,registered,2026-08-28
+potjans_diesmann_2014,theta,fixed firing threshold,mV,-50,Table 5,registered,2026-08-28
+potjans_diesmann_2014,nu_th,thalamic firing rate during input,Hz,15,Table 5,registered,2026-08-28
+potjans_diesmann_2014,epsp_calibration,"EPSP amplitude, rise time, width of excitatory synapses",mV; ms; ms,0.15; 1.6; 8.8,"Methods, synaptic parameter paragraph",registered,2026-08-28
+potjans_diesmann_2014,strength_override_L4_L23,L4e to L2/3e strength doubled,dimensionless,factor 2,Methods and Supplementary Fig. 7,registered,2026-08-28
+potjans_diesmann_2014,probability_overrides,L2/3i to L5e and L4i to L2/3i probabilities,dimensionless,0.2,Methods; Haeusler and Maass (2007),registered,2026-08-28
+potjans_diesmann_2014,step_size,computation step size for delay discretization,ms,not stated in the article,Methods,parameters_incomplete,2026-08-28
+potjans_diesmann_2014,simulation_size,reference network size,count,77169 cortical neurons plus 902 thalamic,Table 5 totals; Results,registered,2026-08-28
