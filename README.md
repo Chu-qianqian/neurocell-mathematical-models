@@ -12,14 +12,14 @@ This repository is an equation-level knowledge base, not a paper mirror or a col
 ## Coverage summary
 
 - Canonical model records: **25**
-- Bibliography-only holding records: **12**
-- Equation-located or stronger records: **13**
-- Equation-transcribed records awaiting a second pass: **10**
+- Bibliography-only holding records: **11**
+- Equation-located or stronger records: **14**
+- Equation-transcribed records awaiting a second pass: **11**
 - Maintainer second-pass checked records: **3**
 - Independently checked records: **0**
 - Records with incomplete parameter registries: **10**
 - Records explicitly marked full text unavailable: **0**
-- Records whose source full text is unavailable or not yet inspected: **12**
+- Records whose source full text is unavailable or not yet inspected: **11**
 - Records with unclear external-code licensing: **8**
 - Screening inventory rows: **278** (20 promoted to the canonical catalogue)
 
@@ -39,7 +39,7 @@ This repository is an equation-level knowledge base, not a paper mirror or a col
 | `wong_wang_2006` | [Recurrent decision-network model](equations/models/wong_wang_2006_decision.md) | `neural_population` | `neural_population` / `attractor_network` | `population` | `equation_transcribed` | [DOI](https://doi.org/10.1523/jneurosci.3733-05.2006) | Materials and Methods equations (1)-(9) and Phase-plane reduction displays; Dynamical equations equations (10)-(21); Simulations noise display; Results stimulus displays and equation (22); Appendix system | transcribed; review pending |
 | `morris_lecar_1981` | [Morris-Lecar excitable-membrane model](equations/models/morris_lecar_1981.md) | `other_nervous_system_related` | `excitable_membrane` / `not_applicable` | `single_cell` | `equation_transcribed` | [DOI](https://doi.org/10.1016/s0006-3495(81)84782-0) | Methods, The Model, equations (1)-(2); Analysis, equations (3)-(7); Ca-accumulation perturbation, equation (8); Limit-cycle oscillations, reduced system and equations (9)-(17) | transcribed; review pending |
 | `brette_gerstner_2005_adex` | [Adaptive exponential integrate-and-fire model](equations/models/brette_gerstner_2005_adex.md) | `neuronal` | `neuron` / `not_applicable` | `single_cell` | `equation_transcribed` | [DOI](https://doi.org/10.1152/jn.00686.2005) | Methods, Adapting the aEIF model, equations (1)-(3); Table 1 aEIF parameter box (conductance-based form and reset rule) | transcribed; review pending |
-| `tsodyks_markram_1998_stp` | [Tsodyks-Pawelzik-Markram dynamic-synapse model](equations/models/tsodyks_markram_1998_stp.md) | `synaptic` | `synapse` / `not_applicable` | `subcellular` | `bibliography_verified` | [DOI](https://doi.org/10.1162/089976698300017502) | not_verified | bibliography only |
+| `tsodyks_markram_1998_stp` | [Tsodyks-Pawelzik-Markram dynamic-synapse model](equations/models/tsodyks_markram_1998_stp.md) | `synaptic` | `synapse` / `not_applicable` | `subcellular` | `equation_transcribed` | [DOI](https://doi.org/10.1162/089976698300017502) | Section 2 equations (2.1)-(2.3) with unnumbered steady state; Section 3 equations (3.1)-(3.7); Section 4 equations (4.1)-(4.5); Appendix equations (A.1)-(A.4) | transcribed; review pending |
 | `brunel_2000_ei_network` | [Brunel sparse excitatory-inhibitory network](equations/models/brunel_2000_ei_network.md) | `neural_population` | `neural_population` / `spiking_network` | `large_scale_network` | `equation_transcribed` | [DOI](https://doi.org/10.1023/a:1008925309027) | Section 2 equations (1)-(2); Section 3 equations (3)-(12); Section 4 equations (13)-(27); Section 5 equations (28)-(31); Section 6 equations (32)-(33); Appendix A equations (34)-(56); Appendix B equations (57)-(66) with unnumbered displays | transcribed; review pending |
 | `hopfield_1982` | [Hopfield associative-memory network](equations/models/hopfield_1982.md) | `neural_population` | `neural_population` / `attractor_network` | `large_scale_network` | `equation_transcribed` | [DOI](https://doi.org/10.1073/pnas.79.8.2554) | pp. 2555-2556, bracketed equations [1]-[8] | transcribed; review pending |
 | `wang_buzsaki_1996_gamma` | [Wang-Buzsaki inhibitory gamma network](equations/models/wang_buzsaki_1996_gamma.md) | `neural_population` | `neural_population` / `interneuron_network` | `local_microcircuit` | `equation_transcribed` | [DOI](https://doi.org/10.1523/jneurosci.16-20-06402.1996) | Materials and Methods, equations (2.1)-(2.4) with rate expressions | transcribed; review pending |

@@ -199,3 +199,31 @@ brunel_2000_ei_network,W_ab_tilde,model-B reduced Wronskian combination,dimensio
 brunel_2000_ei_network,sigma_bar_a,square root of the normalized input variance,dimensionless,source_verified,"p. 207, unnumbered display",2026-08-28
 brunel_2000_ei_network,Delta_phi,phase lag between populations,rad,source_verified,"p. 207, unnumbered display",2026-08-28
 brunel_2000_ei_network,f,frequency of the global oscillation,Hz,source_verified,"p. 207, unnumbered display",2026-08-28
+tsodyks_markram_1998_stp,x,fraction of resources in the recovered state,dimensionless,source_verified,"p. 822, equation (2.1)",2026-08-28
+tsodyks_markram_1998_stp,y,fraction of resources in the active state,dimensionless,source_verified,"p. 822, equation (2.1)",2026-08-28
+tsodyks_markram_1998_stp,z,fraction of resources in the inactive state,dimensionless,source_verified,"p. 822, equation (2.1)",2026-08-28
+tsodyks_markram_1998_stp,t_sp,presynaptic spike arrival time,ms,source_verified,"p. 822, equation (2.1)",2026-08-28
+tsodyks_markram_1998_stp,I_s(t),postsynaptic current A_SE y(t),pA,source_verified,"p. 822, inline",2026-08-28
+tsodyks_markram_1998_stp,U_SE,utilization of synaptic efficacy per spike,dimensionless,source_verified,"p. 822, Section 2",2026-08-28
+tsodyks_markram_1998_stp,U1_SE,running facilitated utilization,dimensionless,source_verified,"p. 823, equation (2.2)",2026-08-28
+tsodyks_markram_1998_stp,Uminus_SE,average utilization immediately before a spike,dimensionless,source_verified,"p. 824, equation (3.1)",2026-08-28
+tsodyks_markram_1998_stp,x_avg,Poisson average of x,dimensionless,source_verified,"p. 824, equation (3.1)",2026-08-28
+tsodyks_markram_1998_stp,y_avg,Poisson average of y,dimensionless,source_verified,"p. 826, equation (3.2)",2026-08-28
+tsodyks_markram_1998_stp,U1_SE_avg,Poisson average of U1_SE,dimensionless,source_verified,"p. 824, equation (3.1)",2026-08-28
+tsodyks_markram_1998_stp,r(t),instantaneous presynaptic Poisson rate,Hz,source_verified,"p. 824, after equation (3.1)",2026-08-28
+tsodyks_markram_1998_stp,U1_SE_n,utilization after the n-th spike,dimensionless,source_verified,"p. 823, equation (2.3)",2026-08-28
+tsodyks_markram_1998_stp,delta_t,interval between successive spikes,ms,source_verified,"p. 823, after equation (2.3)",2026-08-28
+tsodyks_markram_1998_stp,lambda,limiting frequency 1/(U_SE tau_rec),Hz,source_verified,"p. 826, after equation (3.4)",2026-08-28
+tsodyks_markram_1998_stp,theta_peak,peak frequency of the facilitating tuning curve (equation 3.6),Hz,source_verified,"p. 828, equation (3.6)",2026-08-28
+tsodyks_markram_1998_stp,theta_threshold,threshold of the linear-threshold gain function (equation 4.4),mV,source_verified,"p. 830, equation (4.4)",2026-08-28
+tsodyks_markram_1998_stp,E_r,excitatory population rate at site r,Hz,source_verified,"p. 828-829, equation (4.1)",2026-08-28
+tsodyks_markram_1998_stp,I_r,inhibitory population rate at site r,Hz,source_verified,"p. 828-829, equation (4.1)",2026-08-28
+tsodyks_markram_1998_stp,y_ab,population-averaged active fraction per connection type ab,dimensionless,source_verified,"p. 828-829, equation (4.1)",2026-08-28
+tsodyks_markram_1998_stp,g,population response function,Hz,source_verified,"p. 829, after equation (4.1)",2026-08-28
+tsodyks_markram_1998_stp,E,one-population network rate,Hz,source_verified,"p. 829, equation (4.2)",2026-08-28
+tsodyks_markram_1998_stp,E_star,fixed-point rate,Hz,source_verified,"p. 830, equation (4.5)",2026-08-28
+tsodyks_markram_1998_stp,x_star,fixed-point recovered fraction,dimensionless,source_verified,"p. 830, equation (4.5)",2026-08-28
+tsodyks_markram_1998_stp,beta,slope of the linear-threshold gain,mV^-1 Hz,source_verified,"p. 830, after equation (4.5)",2026-08-28
+tsodyks_markram_1998_stp,CV_x,coefficient of variation of x,dimensionless,source_verified,"p. 833, equation (A.2)",2026-08-28
+tsodyks_markram_1998_stp,CV_U,coefficient of variation of U1,dimensionless,source_verified,"p. 833, equation (A.2)",2026-08-28
+tsodyks_markram_1998_stp,V,postsynaptic potential of the passive target in Figure 1,mV,source_verified,"p. 825, Figure 1 caption",2026-08-28

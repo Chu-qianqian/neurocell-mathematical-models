@@ -145,3 +145,23 @@ brunel_2000_ei_network,J_I,excitatory efficacy onto inhibitory cells (model B),m
 brunel_2000_ei_network,g_E,relative strength J_EI/J_E (model B),dimensionless,varied,Section 2,registered,2026-08-28
 brunel_2000_ei_network,g_I,relative strength J_II/J_I (model B),dimensionless,varied,Section 2,registered,2026-08-28
 brunel_2000_ei_network,simulation_points,g and nu_ext/nu_thr of simulated states A-D,dimensionless,"A (3,2); B (6,4); C (5,2); D (4.5,0.9)",Figs. 7-8,registered,2026-08-28
+tsodyks_markram_1998_stp,tau_rec,recovery time constant,ms,800 (depressing); 130 (facilitating); 600 (ie); 850 (ii),Figures 1 and 4,registered,2026-08-28
+tsodyks_markram_1998_stp,tau_in,inactivation time constant,ms,3 (depressing); 1.5 (facilitating),Section 2; Figure 1 caption (printed tau_inact),registered,2026-08-28
+tsodyks_markram_1998_stp,tau_facil,facilitation decay time constant,ms,530 (facilitating); 1000 (ie); 400 (ii),Figure 1; Figure 4,registered,2026-08-28
+tsodyks_markram_1998_stp,U_SE,utilization increment per spike,dimensionless,"0.5 (depressing, ee/ei); 0.05 (ie); 0.03 (facilitating, ii); 0.01-0.05 range",Section 2.1; Figures 1 and 4,registered,2026-08-28
+tsodyks_markram_1998_stp,A_SE,absolute synaptic strength,pA,"250 (depressing, Figure 2); 1540 (facilitating)",Section 2; Figure 1,registered,2026-08-28
+tsodyks_markram_1998_stp,tau_mem,passive target membrane time constant,ms,40 (pyramidal target); 60 (interneuron target),Figure 1 caption,registered,2026-08-28
+tsodyks_markram_1998_stp,R_in,passive target input resistance,ohm,100 Mohm (pyramidal); 1 Gohm (interneuron),Figure 1 caption,registered,2026-08-28
+tsodyks_markram_1998_stp,tau,one-population membrane/lumped time constant,ms,30,Figure 3 caption,registered,2026-08-28
+tsodyks_markram_1998_stp,tau_e,excitatory population time constant,ms,30,Figure 4 caption,registered,2026-08-28
+tsodyks_markram_1998_stp,tau_i,inhibitory population time constant,ms,40,Figure 4 caption,registered,2026-08-28
+tsodyks_markram_1998_stp,J,effective one-population synaptic strength (absorbs tau_in),mV/Hz,60,Figure 3 caption,registered,2026-08-28
+tsodyks_markram_1998_stp,J_ee,excitatory-to-excitatory strength,mV/Hz,50,Figure 4 caption,registered,2026-08-28
+tsodyks_markram_1998_stp,J_ei,inhibitory-to-excitatory strength,mV/Hz,40,Figure 4 caption,registered,2026-08-28
+tsodyks_markram_1998_stp,J_ie,excitatory-to-inhibitory strength,mV/Hz,70,Figure 4 caption,registered,2026-08-28
+tsodyks_markram_1998_stp,J_ii,inhibitory-to-inhibitory strength,mV/Hz,19.5 (Fig. 4A); 0 (Fig. 4B),Figure 4 caption,registered,2026-08-28
+tsodyks_markram_1998_stp,beta,linear-threshold gain slope,mV^-1 Hz,0.5,Figure 3 caption,registered,2026-08-28
+tsodyks_markram_1998_stp,theta,linear-threshold gain threshold,mV,15,Figure 3 caption,registered,2026-08-28
+tsodyks_markram_1998_stp,I_ext_e,external input to excitatory population,mV,17,Figure 4 caption,registered,2026-08-28
+tsodyks_markram_1998_stp,I_ext_i,external input to inhibitory population,mV,15,Figure 4 caption,registered,2026-08-28
+tsodyks_markram_1998_stp,N_sim,simulated presynaptic population size,count,1000,Figure 2 caption,registered,2026-08-28
