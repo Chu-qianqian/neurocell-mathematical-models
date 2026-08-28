@@ -12,14 +12,14 @@
 ## 覆盖概况
 
 - 规范目录记录：**25**
-- 仅书目暂存记录：**13**
-- 方程已定位或更强状态的记录：**12**
-- 已转录、待第二遍复核的记录：**9**
+- 仅书目暂存记录：**12**
+- 方程已定位或更强状态的记录：**13**
+- 已转录、待第二遍复核的记录：**10**
 - 维护者已第二遍复核的记录：**3**
 - 已独立复核的记录：**0**
 - 参数注册表不完整的记录：**10**
 - 明确标注全文不可获取的记录：**0**
-- 来源全文不可获取或尚未查验的记录：**13**
+- 来源全文不可获取或尚未查验的记录：**12**
 - 外部代码许可状态不明的记录：**8**
 - 筛选清单行数：**278**（其中 20 条已晋升进入规范目录）
 
@@ -40,7 +40,7 @@
 | `morris_lecar_1981` | [Morris-Lecar excitable-membrane model](equations/models/morris_lecar_1981.md) | `other_nervous_system_related` | `excitable_membrane` / `not_applicable` | `single_cell` | `equation_transcribed` | [DOI](https://doi.org/10.1016/s0006-3495(81)84782-0) | Methods, The Model, equations (1)-(2); Analysis, equations (3)-(7); Ca-accumulation perturbation, equation (8); Limit-cycle oscillations, reduced system and equations (9)-(17) | 已转录；待复核 |
 | `brette_gerstner_2005_adex` | [Adaptive exponential integrate-and-fire model](equations/models/brette_gerstner_2005_adex.md) | `neuronal` | `neuron` / `not_applicable` | `single_cell` | `equation_transcribed` | [DOI](https://doi.org/10.1152/jn.00686.2005) | Methods, Adapting the aEIF model, equations (1)-(3); Table 1 aEIF parameter box (conductance-based form and reset rule) | 已转录；待复核 |
 | `tsodyks_markram_1998_stp` | [Tsodyks-Pawelzik-Markram dynamic-synapse model](equations/models/tsodyks_markram_1998_stp.md) | `synaptic` | `synapse` / `not_applicable` | `subcellular` | `bibliography_verified` | [DOI](https://doi.org/10.1162/089976698300017502) | not_verified | 仅书目 |
-| `brunel_2000_ei_network` | [Brunel sparse excitatory-inhibitory network](equations/models/brunel_2000_ei_network.md) | `neural_population` | `neural_population` / `spiking_network` | `large_scale_network` | `bibliography_verified` | [DOI](https://doi.org/10.1023/a:1008925309027) | not_verified | 仅书目 |
+| `brunel_2000_ei_network` | [Brunel sparse excitatory-inhibitory network](equations/models/brunel_2000_ei_network.md) | `neural_population` | `neural_population` / `spiking_network` | `large_scale_network` | `equation_transcribed` | [DOI](https://doi.org/10.1023/a:1008925309027) | Section 2 equations (1)-(2); Section 3 equations (3)-(12); Section 4 equations (13)-(27); Section 5 equations (28)-(31); Section 6 equations (32)-(33); Appendix A equations (34)-(56); Appendix B equations (57)-(66) with unnumbered displays | 已转录；待复核 |
 | `hopfield_1982` | [Hopfield associative-memory network](equations/models/hopfield_1982.md) | `neural_population` | `neural_population` / `attractor_network` | `large_scale_network` | `equation_transcribed` | [DOI](https://doi.org/10.1073/pnas.79.8.2554) | pp. 2555-2556, bracketed equations [1]-[8] | 已转录；待复核 |
 | `wang_buzsaki_1996_gamma` | [Wang-Buzsaki inhibitory gamma network](equations/models/wang_buzsaki_1996_gamma.md) | `neural_population` | `neural_population` / `interneuron_network` | `local_microcircuit` | `equation_transcribed` | [DOI](https://doi.org/10.1523/jneurosci.16-20-06402.1996) | Materials and Methods, equations (2.1)-(2.4) with rate expressions | 已转录；待复核 |
 | `li_rinzel_1994` | [Li-Rinzel reduced IP3-receptor calcium mechanism](equations/models/li_rinzel_1994.md) | `other_nervous_system_related` | `astrocyte_relevant_calcium_mechanism` / `not_applicable` | `subcellular` | `bibliography_verified` | [DOI](https://doi.org/10.1006/jtbi.1994.1041) | not_verified | 仅书目 |
@@ -156,4 +156,4 @@
 - 第三方素材不重新授权，见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
 - 本仓库是文献导航与教育资源，见 [DISCLAIMER.md](DISCLAIMER.md)。
 
-最后核验：2026-08-25。
+最后核验：2026-08-28。

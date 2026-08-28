@@ -115,3 +115,33 @@ brette_gerstner_2005_adex,b,spike-triggered adaptation increment,nanoampere,0.08
 brette_gerstner_2005_adex,V_r,reset value of V after a spike,millivolt,-70.6 (E_L),Table 1 aEIF box; Methods text,registered,2026-08-25
 brette_gerstner_2005_adex,E_e,excitatory (AMPA) reversal potential,millivolt,0,"Methods, Detailed neuron model",registered,2026-08-25
 brette_gerstner_2005_adex,E_i,inhibitory (GABA_A) reversal potential,millivolt,-75,"Methods, Detailed neuron model",registered,2026-08-25
+brunel_2000_ei_network,N,total number of neurons,count,N_E = 0.8N; N_I = 0.2N,Section 2,registered,2026-08-28
+brunel_2000_ei_network,N_E,number of excitatory neurons,count,0.8N; simulations 10000,Section 2; Section 6,registered,2026-08-28
+brunel_2000_ei_network,N_I,number of inhibitory neurons,count,0.2N; simulations 2500,Section 2; Section 6,registered,2026-08-28
+brunel_2000_ei_network,C,connections received per neuron,count,C_E + C_I + C_ext,Section 2,registered,2026-08-28
+brunel_2000_ei_network,C_E,recurrent excitatory inputs per neuron,count,epsilon N_E; Fig. 1: 4000; simulations: 1000,Section 2; Fig. 1; Section 6,registered,2026-08-28
+brunel_2000_ei_network,C_I,recurrent inhibitory inputs per neuron,count,gamma C_E; simulations: 250,Section 2; Fig. 7 caption,registered,2026-08-28
+brunel_2000_ei_network,epsilon,connection probability C_E/N_E,dimensionless,<< 1; simulations 0.1,Section 2; Section 6,registered,2026-08-28
+brunel_2000_ei_network,C_ext,external connections per neuron,count,C_ext = C_E,Section 2,registered,2026-08-28
+brunel_2000_ei_network,gamma,ratio C_I/C_E,dimensionless,0.25,Section 2,registered,2026-08-28
+brunel_2000_ei_network,tau,membrane time constant (model A),ms,not stated,Section 2,parameters_incomplete,2026-08-28
+brunel_2000_ei_network,tau_E,excitatory membrane time constant,ms,20,Section 2,registered,2026-08-28
+brunel_2000_ei_network,tau_I,inhibitory membrane time constant,ms,not stated,Section 2,parameters_incomplete,2026-08-28
+brunel_2000_ei_network,R,membrane resistance,not stated,not stated,equation (1),parameters_incomplete,2026-08-28
+brunel_2000_ei_network,J,excitatory PSP amplitude (model A),mV,Fig. 1: 0.2; simulations: 0.1,Section 4.1; Section 6,registered,2026-08-28
+brunel_2000_ei_network,J_ij,synaptic efficacy from j to i,mV,J excitatory; -gJ inhibitory,Section 2,registered,2026-08-28
+brunel_2000_ei_network,g,relative inhibitory strength (model A),dimensionless,varied; balanced value 4,Section 2; Fig. 1,registered,2026-08-28
+brunel_2000_ei_network,theta,firing threshold,mV,20,Section 2,registered,2026-08-28
+brunel_2000_ei_network,V_r,reset potential,mV,10,Section 2,registered,2026-08-28
+brunel_2000_ei_network,tau_rp,refractory period,ms,2,Section 2,registered,2026-08-28
+brunel_2000_ei_network,D,transmission delay (model A),ms,1.5-3 (Figs. 2-4); simulations 1.5,Section 2; Figs. 2-4,registered,2026-08-28
+brunel_2000_ei_network,D_ab,delays between populations (model B),ms,"four delays; Fig. 6: uniform on [0, 4]",Section 2; Fig. 6,registered,2026-08-28
+brunel_2000_ei_network,nu_ext,external Poisson rate (model A),Hz,in units of nu_thr,Section 2,registered,2026-08-28
+brunel_2000_ei_network,nu_E_ext,external rate of the excitatory population (model B),Hz,not stated,Section 2,parameters_incomplete,2026-08-28
+brunel_2000_ei_network,nu_I_ext,external rate of the inhibitory population (model B),Hz,not stated,Section 2,parameters_incomplete,2026-08-28
+brunel_2000_ei_network,nu_thr,external rate needed without feedback,Hz,theta/(C_E J tau); 1.25 for Fig. 1 parameters,p. 185; p. 188,registered,2026-08-28
+brunel_2000_ei_network,J_E,excitatory efficacy onto excitatory cells (model B),mV,not stated,Section 2,parameters_incomplete,2026-08-28
+brunel_2000_ei_network,J_I,excitatory efficacy onto inhibitory cells (model B),mV,varied in Fig. 6,Section 2; Fig. 6,registered,2026-08-28
+brunel_2000_ei_network,g_E,relative strength J_EI/J_E (model B),dimensionless,varied,Section 2,registered,2026-08-28
+brunel_2000_ei_network,g_I,relative strength J_II/J_I (model B),dimensionless,varied,Section 2,registered,2026-08-28
+brunel_2000_ei_network,simulation_points,g and nu_ext/nu_thr of simulated states A-D,dimensionless,"A (3,2); B (6,4); C (5,2); D (4.5,0.9)",Figs. 7-8,registered,2026-08-28

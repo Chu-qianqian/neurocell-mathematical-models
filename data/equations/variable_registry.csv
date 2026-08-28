@@ -117,3 +117,85 @@ brette_gerstner_2005_adex,I,synaptic current,nanoampere,source_verified,"Methods
 brette_gerstner_2005_adex,f_V,passive-plus-spike function of the voltage equation,nanoampere,source_verified,"Methods, equation (2)",2026-08-25
 brette_gerstner_2005_adex,g_e_g_i,fluctuating excitatory and inhibitory synaptic conductances,nanosiemens,source_verified,Table 1 aEIF box,2026-08-25
 brette_gerstner_2005_adex,V_peak,voltage at which a spike is triggered,millivolt,source_verified,"Methods, after equation (1)",2026-08-25
+brunel_2000_ei_network,V_i(t),somatic membrane potential of neuron i,mV,source_verified,"p. 185, equation (1)",2026-08-28
+brunel_2000_ei_network,I_i(t),synaptic current arriving at the soma of neuron i,not stated (voltage after multiplication by R),source_verified,"p. 185, equation (1)",2026-08-28
+brunel_2000_ei_network,"P(V,t)",probability density of the depolarization,1/mV,source_verified,"p. 186, equation (6)",2026-08-28
+brunel_2000_ei_network,p_r(t),refractory probability,dimensionless,source_verified,"p. 187, equation (12)",2026-08-28
+brunel_2000_ei_network,"S(V,t)",probability current through V,not stated,source_verified,"p. 186, equation (8)",2026-08-28
+brunel_2000_ei_network,nu(t),instantaneous network firing rate,Hz,source_verified,"p. 186, after equation (8)",2026-08-28
+brunel_2000_ei_network,mu(t),average part of the synaptic input,mV,source_verified,"p. 186, equation (4)",2026-08-28
+brunel_2000_ei_network,sigma(t),fluctuation magnitude of the synaptic input,mV,source_verified,"p. 186, equation (5)",2026-08-28
+brunel_2000_ei_network,eta_i(t),Gaussian white noise of neuron i,not stated,source_verified,"p. 186, after equation (5)",2026-08-28
+brunel_2000_ei_network,mu_l(t),local part of the mean input,mV,source_verified,"p. 186, equation (4)",2026-08-28
+brunel_2000_ei_network,mu_ext,external part of the mean input,mV,source_verified,"p. 186, equation (4)",2026-08-28
+brunel_2000_ei_network,sigma_l(t),local fluctuation amplitude,mV,source_verified,"p. 186, equation (5)",2026-08-28
+brunel_2000_ei_network,sigma_ext,external fluctuation amplitude,mV,source_verified,"p. 186, equation (5)",2026-08-28
+brunel_2000_ei_network,"P_a(V,t)","depolarization density of population a = E, I",1/mV,source_verified,"p. 187, equation (15)",2026-08-28
+brunel_2000_ei_network,p_ra(t),refractory probability of population a,dimensionless,source_verified,"p. 187, before equation (15)",2026-08-28
+brunel_2000_ei_network,mu_a,mean input to population a,mV,source_verified,"p. 187, equation (13)",2026-08-28
+brunel_2000_ei_network,sigma_a,fluctuation magnitude of population a,mV,source_verified,"p. 187, equation (14)",2026-08-28
+brunel_2000_ei_network,nu_a(t),"firing rate of population a = E, I",Hz,source_verified,"p. 187, after equation (15)",2026-08-28
+brunel_2000_ei_network,P_0(V),stationary depolarization density (model A),1/mV,source_verified,"p. 188, equation (19)",2026-08-28
+brunel_2000_ei_network,p_r0,stationary refractory probability,dimensionless,source_verified,"p. 188, equation (19)",2026-08-28
+brunel_2000_ei_network,mu_0,stationary mean input,mV,source_verified,"p. 188, equation (20)",2026-08-28
+brunel_2000_ei_network,sigma_0,stationary fluctuation amplitude,mV,source_verified,"p. 188, equation (20)",2026-08-28
+brunel_2000_ei_network,nu_0,stationary firing rate (model A),Hz,source_verified,"p. 188, equation (21)",2026-08-28
+brunel_2000_ei_network,mu_0l,stationary local part of the mean input,mV,source_verified,"p. 190, equation (30)",2026-08-28
+brunel_2000_ei_network,sigma_0l,stationary local fluctuation amplitude,mV,source_verified,"p. 190, equation (30)",2026-08-28
+brunel_2000_ei_network,mu_a0,stationary mean input of population a,mV,source_verified,"p. 190, equation (26)",2026-08-28
+brunel_2000_ei_network,sigma_a0,stationary fluctuation amplitude of population a,mV,source_verified,"p. 190, equation (26)",2026-08-28
+brunel_2000_ei_network,nu_a0,stationary rate of population a,Hz,source_verified,"p. 190, equation (27)",2026-08-28
+brunel_2000_ei_network,Q,rescaled depolarization distribution,dimensionless,source_verified,"p. 190, equation (28)",2026-08-28
+brunel_2000_ei_network,y,rescaled membrane potential,dimensionless,source_verified,"p. 190, equation (28)",2026-08-28
+brunel_2000_ei_network,y_theta,rescaled threshold ordinate,dimensionless,source_verified,"p. 191, unnumbered display",2026-08-28
+brunel_2000_ei_network,y_r,rescaled reset ordinate,dimensionless,source_verified,"p. 191, unnumbered display",2026-08-28
+brunel_2000_ei_network,n(t),relative rate fluctuation,dimensionless,source_verified,"p. 190, equation (28)",2026-08-28
+brunel_2000_ei_network,G,ratio of mean local input to sigma_0,dimensionless,source_verified,"p. 190, equation (30)",2026-08-28
+brunel_2000_ei_network,H,ratio of local to total input variance,dimensionless,source_verified,"p. 190, equation (30)",2026-08-28
+brunel_2000_ei_network,Q_0(y),stationary solution of the rescaled equation,dimensionless,source_verified,"p. 202, equation (36)",2026-08-28
+brunel_2000_ei_network,Q_1,first-order perturbation of Q,dimensionless,source_verified,"p. 202, equation (37)",2026-08-28
+brunel_2000_ei_network,n_1,first-order perturbation of n,dimensionless,source_verified,"p. 202, equation (37)",2026-08-28
+brunel_2000_ei_network,Q_1_hat,eigenmode of the perturbation,dimensionless,source_verified,"p. 202, equation (40)",2026-08-28
+brunel_2000_ei_network,n_1_hat,rate amplitude of the eigenmode,dimensionless,source_verified,"p. 202, unnumbered displays",2026-08-28
+brunel_2000_ei_network,lambda,eigenvalue of the linear stability problem,1/ms,source_verified,"p. 202, unnumbered displays",2026-08-28
+brunel_2000_ei_network,phi_1,first homogeneous solution,dimensionless,source_verified,"p. 203, equation (43)",2026-08-28
+brunel_2000_ei_network,phi_2,second homogeneous solution,dimensionless,source_verified,"p. 203, equation (44)",2026-08-28
+brunel_2000_ei_network,Wr,Wronskian of phi_1 and phi_2,dimensionless,source_verified,"p. 203, equation (45)",2026-08-28
+brunel_2000_ei_network,phi_tilde,reduced eigenfunction phi_2/Wr,dimensionless,source_verified,"p. 203, unnumbered displays",2026-08-28
+brunel_2000_ei_network,W_tilde,reduced Wronskian combination at y_theta,dimensionless,source_verified,"p. 203, unnumbered displays",2026-08-28
+brunel_2000_ei_network,W,jump of the reduced Wronskian combination at y_r,dimensionless,source_verified,"p. 203, unnumbered displays",2026-08-28
+brunel_2000_ei_network,alpha_1,eigenmode coefficients above and below y_r,dimensionless,source_verified,"p. 202, equation (41)",2026-08-28
+brunel_2000_ei_network,beta_1,eigenmode coefficients above and below y_r,dimensionless,source_verified,"p. 202, equation (41)",2026-08-28
+brunel_2000_ei_network,Q_1p_hat,particular solution of the eigenmode equation,dimensionless,source_verified,"p. 202, equation (42)",2026-08-28
+brunel_2000_ei_network,psi,ratio of the homogeneous solutions,dimensionless,source_verified,"p. 203, unnumbered display",2026-08-28
+brunel_2000_ei_network,R_omega,auxiliary ratio of reduced eigenfunctions,dimensionless,source_verified,"p. 203, unnumbered display",2026-08-28
+brunel_2000_ei_network,S_y_omega,auxiliary forcing function of the Hopf condition,dimensionless,source_verified,"p. 203, unnumbered display",2026-08-28
+brunel_2000_ei_network,omega_c,angular frequency on a Hopf line,1/ms,source_verified,"p. 203, after equation (46)",2026-08-28
+brunel_2000_ei_network,K,rescaled delay D C_E nu_thr,dimensionless,source_verified,"p. 204, unnumbered display",2026-08-28
+brunel_2000_ei_network,mu_k,k-th interspike-interval moment,ms^k,source_verified,"p. 201, Appendix A.1",2026-08-28
+brunel_2000_ei_network,CV,coefficient of variation of the ISI,dimensionless,source_verified,"p. 201, Appendix A.1",2026-08-28
+brunel_2000_ei_network,rho_i(t),synaptic presence indicator onto neuron i,dimensionless,source_verified,"p. 198, Section 6.1",2026-08-28
+brunel_2000_ei_network,S_net(t),network spike-emission process,spikes/ms,source_verified,"p. 198, Section 6.1",2026-08-28
+brunel_2000_ei_network,xi(t),global finite-size Gaussian white noise,not stated,source_verified,"p. 198, Section 6.1",2026-08-28
+brunel_2000_ei_network,zeta(t),finite-size noise in the rescaled equation,not stated,source_verified,"p. 198, equation (32)",2026-08-28
+brunel_2000_ei_network,zeta_hat(omega),Fourier transform of the finite-size noise,not stated,source_verified,"p. 204, equation (52)",2026-08-28
+brunel_2000_ei_network,Z(omega),linear-response term,dimensionless,source_verified,"p. 204, unnumbered displays",2026-08-28
+brunel_2000_ei_network,P(omega),power spectrum of the global activity,dimensionless,source_verified,"p. 205, equation (55)",2026-08-28
+brunel_2000_ei_network,n_a(t),relative rate fluctuation of population a,dimensionless,source_verified,"p. 205, Appendix B",2026-08-28
+brunel_2000_ei_network,n_a1(t),first-order rate fluctuation of population a,dimensionless,source_verified,"p. 205, equation (60)",2026-08-28
+brunel_2000_ei_network,G_ab,model-B recurrent-coupling measure for link a<-b,dimensionless,source_verified,"p. 205, Appendix B",2026-08-28
+brunel_2000_ei_network,H_ab,model-B variance-share measure for link a<-b,dimensionless,source_verified,"p. 205, Appendix B",2026-08-28
+brunel_2000_ei_network,y_a,rescaled potential of population a,dimensionless,source_verified,"p. 205, Appendix B",2026-08-28
+brunel_2000_ei_network,y_a_theta,rescaled threshold ordinate of population a,dimensionless,source_verified,"p. 205, Appendix B",2026-08-28
+brunel_2000_ei_network,y_a_r,rescaled reset ordinate of population a,dimensionless,source_verified,"p. 205, Appendix B",2026-08-28
+brunel_2000_ei_network,s_a,"population sign: s_E = -1, s_I = 1",dimensionless,source_verified,"p. 205, before equation (57)",2026-08-28
+brunel_2000_ei_network,Q_a,rescaled distribution of population a,dimensionless,source_verified,"p. 205, Appendix B",2026-08-28
+brunel_2000_ei_network,Q_a1,first-order perturbation of Q_a,dimensionless,source_verified,"p. 205, equation (60)",2026-08-28
+brunel_2000_ei_network,Q_a_hat,model-B eigenmode,dimensionless,source_verified,"p. 206, equation (63)",2026-08-28
+brunel_2000_ei_network,n_a_hat,model-B rate amplitude,dimensionless,source_verified,"p. 206, unnumbered displays",2026-08-28
+brunel_2000_ei_network,Q_abp_hat,per-link particular solution,dimensionless,source_verified,"p. 206, unnumbered displays",2026-08-28
+brunel_2000_ei_network,A_ab,entries of the model-B eigenvalue matrix,dimensionless,source_verified,"p. 206, unnumbered displays",2026-08-28
+brunel_2000_ei_network,W_ab_tilde,model-B reduced Wronskian combination,dimensionless,source_verified,"p. 206, unnumbered displays",2026-08-28
+brunel_2000_ei_network,sigma_bar_a,square root of the normalized input variance,dimensionless,source_verified,"p. 207, unnumbered display",2026-08-28
+brunel_2000_ei_network,Delta_phi,phase lag between populations,rad,source_verified,"p. 207, unnumbered display",2026-08-28
+brunel_2000_ei_network,f,frequency of the global oscillation,Hz,source_verified,"p. 207, unnumbered display",2026-08-28
