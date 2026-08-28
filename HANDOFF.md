@@ -8,16 +8,16 @@
 **许可证**：CC-BY-4.0（内容）+ MIT（代码）
 **目标**：为神经系统细胞的数学/计算模型建立可溯源的方程转录、变量/参数注册和审计链
 
-## 二、当前进度（截至 v0.2.2）
+## 二、当前进度（截至 v0.2.3 + jirsa_2014）
 
 | 状态 | 数量 | 说明 |
 |---|---|---|
-| `equation_transcribed` | 9 | 已完成精确源转录并注册变量/参数 |
+| `equation_transcribed` | 14 | 已完成精确源转录并注册变量/参数 |
 | `second_pass_checked` | 3 | 已完成转录 + 二次校对 |
-| `bibliography_verified` | 13 | 仅有文献引用，方程待转录 |
+| `bibliography_verified` | 8 | 仅有文献引用，方程待转录 |
 | **总计** | **25** | |
 
-### 已完成转录的模型（9 条）
+### 已完成转录的模型（14 条）
 
 | model_id | 提交 | 方程块数 | 变量数 | 参数数 | 来源 |
 |---|---|---|---|---|---|
@@ -30,17 +30,17 @@
 | hodgkin_huxley_1952 | — | 23 | 8 | 20 | 经典论文 |
 | izhikevich_2003 | — | 2 | 10 | 6 | 经典论文 |
 | de_pitta_2009_gchi | — | 17 | 22 | 23 | PMC 全文 |
+| brunel_2000_ei_network | `dc2a72e` | 115 | 82 | 30 | Springer 开放档案 PDF（JCN 免费） |
+| tsodyks_markram_1998_stp | `acba0c9` | 25 | 28 | 20 | github.io 课程镜像 PDF |
+| potjans_diesmann_2014 | `b185f3a` | 18 | 25 | 22 | Europe PMC XML + PMC CDN 公式图 |
+| mrg_2002_myelinated_axon | `1b06b51` | 18 | 21 | 26 | APS 开放存档（浏览器过 Cloudflare 下载） |
+| jirsa_2014_epileptor | `ca850ef` | 6 | 18 | 15 | HAL 作者副本 PDF（浏览器过反爬 + cookie） |
 
-### 待转录的模型（13 条 bibliography_verified）
+### 待转录的模型（8 条 bibliography_verified）
 
 | model_id | 模型名 | 细胞类型 | DOI | 全文状态 | 数学形式 |
 |---|---|---|---|---|---|
-| brunel_2000_ei_network | Brunel 稀疏 E/I 网络 | neural_population | 10.1023/A:1008925309027 | source_identified | hybrid |
-| tsodyks_markram_1998_stp | Tsodyks-Markram 短时程突触可塑性 | synapse | 10.1162/089976698300017502 | source_identified | hybrid |
-| li_rinzel_1994 | Li-Rinzel 简化 IP3R 钙机制 | astrocyte_relevant_calcium_mechanism | 10.1006/jtbi.1994.1041 | source_identified | ODE |
-| potjans_diesmann_2014 | Potjans-Diesmann 皮层微回路 | neural_population | 10.1093/cercor/bhs358 | source_identified | hybrid |
-| mrg_2002_myelinated_axon | McIntyre-Richardson-Grill 有髓轴突 | myelinated_axon | 10.1152/jn.00353.2001 | source_identified | ODE |
-| jirsa_2014_epileptor | Epileptor 癫痫动力学 | neural_population | 10.1093/brain/awu133 | source_identified | hybrid |
+| li_rinzel_1994 | Li-Rinzel 简化 IP3R 钙机制 | astrocyte_relevant_calcium_mechanism | 10.1006/jtbi.1994.1041 | 全文不可达（ScienceDirect 验证码、无 OA 副本） | ODE |
 | postnov_2009_neuron_astrocyte | Postnov 神经元-星形胶质体模型 | mixed_neuron_astrocyte_system | 10.1007/s10867-009-9156-x | source_identified | ODE |
 | amato_arnold_2025_microglia | Amato 小胶质细胞缺血半暗带模型 | microglia | 10.1016/j.mbs.2025.109549 | not_verified | ODE |
 | nikolov_2022_oligodendrocyte | Nikolov 少突胶质细胞分化动力学 | oligodendrocyte | 10.3390/math10162928 | not_verified | ODE |
@@ -48,6 +48,13 @@
 | astrocyte_place_cell_formation_2022 | 星形胶质体位置细胞形成 | mixed_neuron_astrocyte_system | 10.1007/s10827-022-00828-6 | source_identified | hybrid |
 | polykretis_astrocytic_microdomain | Polykretis 星形胶质体微域模型 | mixed_neuron_astrocyte_system | 10.1007/978-3-030-05587-5_15 | source_identified | hybrid |
 | sequence_learning_neuronal_astrocytic_network | 神经元-星形胶质体序列学习 | mixed_neuron_astrocyte_system | 10.1007/978-3-030-59277-6_32 | source_identified | ODE |
+| astrocyte_place_cell_formation_2022 | 星形胶质体位置细胞形成 | mixed_neuron_astrocyte_system | 10.1007/s10827-022-00828-6 | source_identified | hybrid |
+| polykretis_astrocytic_microdomain | Polykretis 星形胶质体微域模型 | mixed_neuron_astrocyte_system | 10.1007/978-3-030-05587-5_15 | source_identified | hybrid |
+
+### 已发版
+
+- v0.2.3（2026-08-28，tag 已推送）：brunel_2000、tsodyks_markram_1998_stp、potjans_diesmann_2014、mrg_2002_myelinated_axon。用户还需在网页创建 GitHub Release（选 tag v0.2.3）并 Publish Zenodo，然后把新 DOI 交给助手写入 CITATION.cff 与 README 徽章。
+- jirsa_2014_epileptor（`ca850ef`）已提交推送，是 v0.2.4 批次的第一条。
 
 ## 三、核心架构规则
 
