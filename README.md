@@ -21,7 +21,7 @@ This repository is an equation-level knowledge base, not a paper mirror or a col
 - Records explicitly marked full text unavailable: **0**
 - Records whose source full text is unavailable or not yet inspected: **5**
 - Records with unclear external-code licensing: **8**
-- Screening inventory rows: **278** (20 promoted to the canonical catalogue)
+- Screening inventory rows: **278** (23 promoted to the canonical catalogue)
 
 ## Model catalogue
 
@@ -91,10 +91,10 @@ Compatibility is a feasibility classification, not execution evidence. A passing
 
 ## Screening inventory
 
-- `bibliography_verified`: **5**
+- `bibliography_verified`: **2**
 - `candidate`: **252**
 - `excluded`: **1**
-- `promoted`: **20**
+- `promoted`: **23**
 
 Every requested inventory row has exactly one current screening outcome. A `candidate` row has passed title-level scope screening but still lacks source-specific evidence.
 
