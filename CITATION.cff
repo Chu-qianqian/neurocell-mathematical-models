@@ -3,10 +3,10 @@ message: "If you use this atlas, cite this repository version and the relevant o
 title: "Neurocell Mathematical Models"
 abstract: "A traceable, copyright-compliant atlas of mathematical and computational models for nervous-system cells."
 type: software
-license: CC-BY-4.0
+license: Apache-2.0
 identifiers:
-  - description: Zenodo archive of version 0.2.1
-    identifier: https://doi.org/10.5281/zenodo.22078787
+  - description: Zenodo archive of version 0.2.1; not a DOI for version 0.2.3
+    value: 10.5281/zenodo.22078787
     type: doi
 repository-code: "https://github.com/Chu-qianqian/neurocell-mathematical-models"
 url: "https://github.com/Chu-qianqian/neurocell-mathematical-models"

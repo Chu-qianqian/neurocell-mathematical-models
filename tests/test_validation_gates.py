@@ -19,6 +19,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 import validate_catalogue
 import validate_equations
+import validate_language
 import validate_references
 
 
@@ -122,6 +123,46 @@ class ValidationGateTests(unittest.TestCase):
             write_rows(variables, fields, rows)
             with patch.object(validate_equations, "VARIABLES", variables):
                 self.assertEqual(self.run_quietly(validate_equations.main), 1)
+
+    def test_language_validator_rejects_root_chinese_text(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "README.md").write_text("Repository note: \u4e2d\u6587\n", encoding="utf-8")
+            with patch.object(validate_language, "ROOT", root):
+                self.assertEqual(self.run_quietly(validate_language.main), 1)
+
+    def test_language_validator_rejects_tool_branding_anywhere(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            docs = root / "docs"
+            docs.mkdir()
+            branded_text = "Written by " + "Open" + "AI.\n"
+            (docs / "note.md").write_text(branded_text, encoding="utf-8")
+            with patch.object(validate_language, "ROOT", root):
+                self.assertEqual(self.run_quietly(validate_language.main), 1)
+
+    def test_language_validator_allows_mirrors_and_switcher_links(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            scripts = root / "scripts"
+            scripts.mkdir()
+            (root / "README.md").write_text(
+                "English | [\u7b80\u4f53\u4e2d\u6587](README.zh-CN.md)\n", encoding="utf-8"
+            )
+            (root / "README.zh-CN.md").write_text("\u4e2d\u6587\u955c\u50cf\n", encoding="utf-8")
+            (scripts / "i18n_zh.py").write_text("LABEL = '\u4e2d\u6587'\n", encoding="utf-8")
+            with patch.object(validate_language, "ROOT", root):
+                self.assertEqual(self.run_quietly(validate_language.main), 0)
+
+    def test_language_validator_excludes_cache_directories(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            cache = root / ".pytest_cache"
+            cache.mkdir()
+            (cache / "cached.md").write_text("\u4e2d\u6587\n", encoding="utf-8")
+            (root / "README.md").write_text("English only.\n", encoding="utf-8")
+            with patch.object(validate_language, "ROOT", root):
+                self.assertEqual(self.run_quietly(validate_language.main), 0)
 
 
 if __name__ == "__main__":
