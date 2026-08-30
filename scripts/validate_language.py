@@ -8,21 +8,25 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-TARGETS = (ROOT / "README.md", ROOT / "PROJECT_PLAN.md", ROOT / "CITATION.cff", ROOT / "CODE_OF_CONDUCT.md")
-DIRECTORIES = (
-    ROOT / "docs",
-    ROOT / "equations",
-    ROOT / "references",
-    ROOT / "models",
-    ROOT / "data",
-    ROOT / "scripts",
-    ROOT / "implementations",
-    ROOT / "tests",
-    ROOT / ".github",
-)
 HAN_RE = re.compile(r"[\u4e00-\u9fff]")
-ZH_LINK_RE = re.compile(r"\]\([^)]*\.zh-CN\.md\)")
+ZH_LINK_RE = re.compile(r"\[[\u4e00-\u9fff]+\]\([^)]*\.zh-CN\.md(?:#[^)]*)?\)")
 HAN_ALLOWED_FILES = {"scripts/i18n_zh.py"}
+EXCLUDED_DIRECTORY_NAMES = {
+    ".git",
+    ".mypy_cache",
+    ".pytest_cache",
+    ".ruff_cache",
+    ".tox",
+    ".venv",
+    "__pycache__",
+    "build",
+    "dist",
+    "env",
+    "htmlcov",
+    "node_modules",
+    "site",
+    "venv",
+}
 BRAND_TERMS = (
     "co" + "dex",
     "chat" + "gpt",
@@ -40,25 +44,49 @@ BRAND_RE = re.compile(
 )
 
 
-def files_to_check() -> list[Path]:
-    files = [path for path in TARGETS if path.exists()]
-    for directory in DIRECTORIES:
-        if directory.exists():
-            files.extend(path for path in directory.rglob("*") if path.is_file())
-    return files
+def is_excluded(path: Path) -> bool:
+    return any(part in EXCLUDED_DIRECTORY_NAMES for part in path.parts)
+
+
+def is_utf8_text(path: Path) -> bool:
+    """Accept repository-authored UTF-8 text and ignore binary artifacts."""
+    try:
+        sample = path.read_bytes()[:8192]
+        if b"\x00" in sample:
+            return False
+        sample.decode("utf-8")
+    except (OSError, UnicodeDecodeError):
+        return False
+    return True
+
+
+def files_to_check(root: Path | None = None) -> list[Path]:
+    root = ROOT if root is None else root
+    return sorted(
+        path
+        for path in root.rglob("*")
+        if path.is_file() and not is_excluded(path.relative_to(root)) and is_utf8_text(path)
+    )
+
+
+def is_allowed_language_switcher(line: str) -> bool:
+    """Allow Chinese only when every Han character is part of a mirror link."""
+    return not HAN_RE.search(ZH_LINK_RE.sub("", line))
 
 
 def main() -> int:
     errors: list[str] = []
     for path in files_to_check():
-        if path.suffix.lower() not in {".md", ".csv", ".json", ".yaml", ".yml", ".py", ".bib", ".cff"}:
-            continue
         allow_han = (
             ".zh-CN." in path.name
             or path.relative_to(ROOT).as_posix() in HAN_ALLOWED_FILES
         )
         for line_no, line in enumerate(path.read_text(encoding="utf-8").splitlines(), start=1):
-            if HAN_RE.search(line) and not allow_han and not ZH_LINK_RE.search(line):
+            if (
+                HAN_RE.search(line)
+                and not allow_han
+                and not is_allowed_language_switcher(line)
+            ):
                 errors.append(f"{path.relative_to(ROOT)}:{line_no}")
             if BRAND_RE.search(line):
                 errors.append(
