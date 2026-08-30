@@ -1,6 +1,12 @@
 model_id,parameter,meaning,units,value_or_range,provenance,status,last_verified
 hodgkin_huxley_1952,C_M,membrane capacitance per area,microfarad per square centimetre,parameters_incomplete,p. 518 equation (26) and Table 3,parameters_incomplete,2026-07-22
 hodgkin_huxley_1952,gbar_K,maximal potassium conductance density,millimho per square centimetre,parameters_incomplete,p. 518 equation (26) and Table 3,parameters_incomplete,2026-07-22
+amato_arnold_2025_microglia,theta_1,constant term in the M1 ODE,source count per source time,32.9650,"arXiv:2404.10915v1, equation (4)",source_verified,2026-08-30
+amato_arnold_2025_microglia,theta_2,M1 coefficient in the M1 ODE,inverse source time,-0.1377,"arXiv:2404.10915v1, equation (4)",source_verified,2026-08-30
+amato_arnold_2025_microglia,theta_3,M2 coefficient in the M1 ODE,inverse source time,0.3157,"arXiv:2404.10915v1, equation (4)",source_verified,2026-08-30
+amato_arnold_2025_microglia,theta_4,constant term in the M2 ODE,source count per source time,70.3415,"arXiv:2404.10915v1, equation (5)",source_verified,2026-08-30
+amato_arnold_2025_microglia,theta_5,M1 coefficient in the M2 ODE,inverse source time,-0.1569,"arXiv:2404.10915v1, equation (5)",source_verified,2026-08-30
+amato_arnold_2025_microglia,theta_6,M2 coefficient in the M2 ODE,inverse source time,0.0217,"arXiv:2404.10915v1, equation (5)",source_verified,2026-08-30
 hodgkin_huxley_1952,gbar_Na,maximal sodium conductance density,millimho per square centimetre,parameters_incomplete,p. 518 equation (26) and Table 3,parameters_incomplete,2026-07-22
 hodgkin_huxley_1952,g_l,leak conductance density,millimho per square centimetre,parameters_incomplete,p. 518 equation (26) and Table 3,parameters_incomplete,2026-07-22
 izhikevich_2003,a,recovery time-scale parameter,dimensionless in source convention,0.02 typical,p. 1569,source_verified,2026-07-22

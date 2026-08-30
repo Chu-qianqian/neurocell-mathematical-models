@@ -2,11 +2,11 @@
 
 ## Verification status
 
-- Bibliography: verified against Crossref on 2026-07-22.
-- Equation source inspected: no equation-level transcription completed in this pass.
-- Source locator: not verified.
+- Bibliography: verified against Crossref and PMC on 2026-08-30.
+- Equation source inspected: PMC full text; no equation-level transcription completed in this pass.
+- Source locator: PMC2750744, Local neuron-glia interactions, equations (1)-(16), including the spatial extension in equations (13)-(16).
 - Independent transcription check: not verified.
-- Full-text access status: accessible full text was identified, but exact equation locators require a dedicated audit.
+- Full-text access status: lawful PMC full text inspected on 2026-08-30.
 
 ## Scope
 
@@ -19,7 +19,7 @@
 
 ## Source citation
 
-Postnov, D. E., Koreshkov, R. N., Brazhe, N. A., Brazhe, A. R. and Sosnovtseva, O. V. Dynamical patterns of calcium signaling in a functional model of neuron-astrocyte networks. *Journal of Biological Physics* **35**, 425-445 (2009). [DOI](https://doi.org/10.1007/s10867-009-9156-x). [Persistent source](https://doi.org/10.1007/s10867-009-9156-x).
+Postnov, D. E., Koreshkov, R. N., Brazhe, N. A., Brazhe, A. R. and Sosnovtseva, O. V. Dynamical patterns of calcium signaling in a functional model of neuron-astrocyte networks. *Journal of Biological Physics* **35**, 425-445 (2009). [DOI](https://doi.org/10.1007/s10867-009-9156-x). [PMC full text](https://pmc.ncbi.nlm.nih.gov/articles/PMC2750744/).
 
 ## Variables
 
@@ -31,7 +31,7 @@ Parameters are `parameters_incomplete`.
 
 ## Equations
 
-No equation is displayed. This model-specific page is a bibliography-verified holding record, not a conceptual schematic.
+No equation is displayed. The lawful primary source and its equation range have been located, but its image-rendered displays have not yet been independently transcribed into this repository.
 
 ## Term-by-term interpretation
 

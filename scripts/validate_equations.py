@@ -17,6 +17,9 @@ PARAMETERS = ROOT / "data" / "equations" / "parameter_registry.csv"
 INDEPENDENT_TEMPLATE = (
     ROOT / "data" / "equations" / "independent_review_template.csv"
 )
+INDEPENDENT_MANIFEST = (
+    ROOT / "data" / "equations" / "independent_review_manifest.csv"
+)
 LOCATED = {
     "equation_located",
     "equation_transcribed",
@@ -83,6 +86,26 @@ INDEPENDENT_TEMPLATE_FIELDS = [
     "discrepancy_resolution",
     "resolution_date",
 ]
+INDEPENDENT_MANIFEST_FIELDS = [
+    "model_id",
+    "equation_scope",
+    "source_identifier",
+    "source_version",
+    "source_access_date",
+    "target_commit",
+    "review_method",
+    "difference_template",
+    "resolution_rule",
+    "current_status",
+]
+MANIFEST_REQUIRED_MODELS = {
+    "hodgkin_huxley_1952",
+    "izhikevich_2003",
+    "de_pitta_2009_gchi",
+    "morris_lecar_1981",
+    "brette_gerstner_2005_adex",
+    "amato_arnold_2025_microglia",
+}
 
 
 def read_csv(path: Path) -> list[dict[str, str]]:
@@ -105,6 +128,31 @@ def main() -> int:
         template_fields = csv.DictReader(handle).fieldnames or []
     if template_fields != INDEPENDENT_TEMPLATE_FIELDS:
         errors.append("independent review template has unexpected fields")
+    with INDEPENDENT_MANIFEST.open(encoding="utf-8", newline="") as handle:
+        manifest_reader = csv.DictReader(handle)
+        manifest_fields = manifest_reader.fieldnames or []
+        manifest = list(manifest_reader)
+    if manifest_fields != INDEPENDENT_MANIFEST_FIELDS:
+        errors.append("independent review manifest has unexpected fields")
+    manifest_ids = [row.get("model_id", "") for row in manifest]
+    if len(manifest_ids) != len(set(manifest_ids)):
+        errors.append("independent review manifest has duplicate model_id")
+    missing_manifest = MANIFEST_REQUIRED_MODELS - set(manifest_ids)
+    if missing_manifest:
+        errors.append(
+            "independent review manifest is missing required models: "
+            + ", ".join(sorted(missing_manifest))
+        )
+    for line, row in enumerate(manifest, start=2):
+        for field in INDEPENDENT_MANIFEST_FIELDS:
+            if not row.get(field, "").strip():
+                errors.append(f"independent manifest:{line}: missing {field}")
+        if not re.fullmatch(r"[0-9a-f]{40}", row.get("target_commit", "")):
+            errors.append(f"independent manifest:{line}: invalid target_commit")
+        if row.get("current_status") == "independently_checked":
+            errors.append(
+                f"independent manifest:{line}: package alone cannot claim independently_checked"
+            )
 
     if audit and not AUDIT_FIELDS.issubset(audit[0]):
         errors.append("audit: missing strict provenance or independent-check columns")

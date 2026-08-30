@@ -12,27 +12,27 @@ This repository is an equation-level knowledge base, not a paper mirror or a col
 ## Coverage summary
 
 - Canonical model records: **25**
-- Bibliography-only holding records: **8**
-- Equation-located or stronger records: **17**
-- Equation-transcribed records awaiting a second pass: **14**
-- Maintainer second-pass checked records: **3**
+- Bibliography-only holding records: **5**
+- Equation-located or stronger records: **20**
+- Equation-transcribed records awaiting a second pass: **18**
+- Maintainer second-pass checked records: **0**
 - Independently checked records: **0**
-- Records with incomplete parameter registries: **9**
+- Records with incomplete parameter registries: **8**
 - Records explicitly marked full text unavailable: **0**
-- Records whose source full text is unavailable or not yet inspected: **8**
+- Records whose source full text is unavailable or not yet inspected: **5**
 - Records with unclear external-code licensing: **8**
-- Screening inventory rows: **278** (20 promoted to the canonical catalogue)
+- Screening inventory rows: **278** (23 promoted to the canonical catalogue)
 
 ## Model catalogue
 
 | Model ID | Model | Biological scope | Cell or network type | Scale | Equation status | Primary source | Equation locator | Review scope |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| `hodgkin_huxley_1952` | [Hodgkin-Huxley conductance model](equations/models/hodgkin_huxley_1952.md) | `neuronal` | `neuron` / `not_applicable` | `single_cell` | `second_pass_checked` | [DOI](https://doi.org/10.1113/jphysiol.1952.sp004764) | pp. 505 and 518-519 equations (1)-(7) (15)-(16) and (26) | maintainer second pass |
-| `izhikevich_2003` | [Izhikevich simple spiking-neuron model](equations/models/izhikevich_2003.md) | `neuronal` | `neuron` / `not_applicable` | `single_cell` | `second_pass_checked` | [DOI](https://doi.org/10.1109/tnn.2003.820440) | p. 1569 Section II equations (1)-(3) | maintainer second pass |
-| `de_pitta_2009_gchi` | [G-ChI astrocyte calcium and IP3 model](equations/models/de_pitta_2009_gchi.md) | `glial` | `astrocyte` / `not_applicable` | `single_cell` | `second_pass_checked` | [DOI](https://doi.org/10.1007/s10867-009-9155-y) | author preprint pp. 8 and 18 equations (5) (6) and (20) | maintainer second pass |
-| `postnov_2009_neuron_astrocyte` | [Functional neuron-astrocyte calcium-network model](equations/models/postnov_2009_neuron_astrocyte.md) | `mixed_neuron_glia` | `mixed_neuron_astrocyte_system` / `neuron_astrocyte_network` | `large_scale_network` | `bibliography_verified` | [DOI](https://doi.org/10.1007/s10867-009-9156-x) | not verified | bibliography only |
-| `amato_arnold_2025_microglia` | [Data-driven microglial ischemic-penumbra model](equations/models/amato_arnold_2025_microglia.md) | `glial` | `microglia` / `not_applicable` | `population` | `bibliography_verified` | [DOI](https://doi.org/10.1016/j.mbs.2025.109549) | not verified | bibliography only |
-| `nikolov_2022_oligodendrocyte` | [Oligodendrocyte differentiation dynamics model](equations/models/nikolov_2022_oligodendrocyte.md) | `glial` | `oligodendrocyte` / `not_applicable` | `population` | `bibliography_verified` | [DOI](https://doi.org/10.3390/math10162928) | not verified | bibliography only |
+| `hodgkin_huxley_1952` | [Hodgkin-Huxley conductance model](equations/models/hodgkin_huxley_1952.md) | `neuronal` | `neuron` / `not_applicable` | `single_cell` | `equation_transcribed` | [DOI](https://doi.org/10.1113/jphysiol.1952.sp004764) | pp. 505 and 518-519 equations (1)-(7) (15)-(16) and (26) | transcribed; review pending |
+| `izhikevich_2003` | [Izhikevich simple spiking-neuron model](equations/models/izhikevich_2003.md) | `neuronal` | `neuron` / `not_applicable` | `single_cell` | `equation_transcribed` | [DOI](https://doi.org/10.1109/tnn.2003.820440) | p. 1569 Section II equations (1)-(3) | transcribed; review pending |
+| `de_pitta_2009_gchi` | [G-ChI astrocyte calcium and IP3 model](equations/models/de_pitta_2009_gchi.md) | `glial` | `astrocyte` / `not_applicable` | `single_cell` | `equation_transcribed` | [DOI](https://doi.org/10.1007/s10867-009-9155-y) | author preprint pp. 8 and 18 equations (5) (6) and (20) | transcribed; review pending |
+| `postnov_2009_neuron_astrocyte` | [Functional neuron-astrocyte calcium-network model](equations/models/postnov_2009_neuron_astrocyte.md) | `mixed_neuron_glia` | `mixed_neuron_astrocyte_system` / `neuron_astrocyte_network` | `large_scale_network` | `equation_located` | [DOI](https://doi.org/10.1007/s10867-009-9156-x) | PMC2750744, Local neuron-glia interactions, equations (1)-(16) | source located; transcription pending |
+| `amato_arnold_2025_microglia` | [Data-driven microglial ischemic-penumbra model](equations/models/amato_arnold_2025_microglia.md) | `glial` | `microglia` / `not_applicable` | `population` | `equation_transcribed` | [DOI](https://doi.org/10.1016/j.mbs.2025.109549) | arXiv:2404.10915v1, Results and Conclusions, equations (4)-(5) | transcribed; review pending |
+| `nikolov_2022_oligodendrocyte` | [Oligodendrocyte differentiation dynamics model](equations/models/nikolov_2022_oligodendrocyte.md) | `glial` | `oligodendrocyte` / `not_applicable` | `population` | `equation_located` | [DOI](https://doi.org/10.3390/math10162928) | FAU Open Research repository PDF pp. 3-4, Section 2, system (1) | source located; transcription pending |
 | `wilson_cowan_1972` | [Wilson-Cowan excitatory-inhibitory population model](equations/models/wilson_cowan_1972.md) | `neural_population` | `neural_population` / `firing_rate_network` | `population` | `equation_transcribed` | [DOI](https://doi.org/10.1016/s0006-3495(72)86068-5) | article p. 8, equations (7)-(8) | transcribed; review pending |
 | `potjans_diesmann_2014` | [Potjans-Diesmann cortical microcircuit model](equations/models/potjans_diesmann_2014_microcircuit.md) | `neural_population` | `neural_population` / `cortical_microcircuit` | `local_microcircuit` | `equation_transcribed` | [DOI](https://doi.org/10.1093/cercor/bhs358) | Methods equations (1)-(13) with unnumbered displays; Table 4 neuron and synapse rows (subthreshold dynamics, postsynaptic current, spiking condition) | transcribed; review pending |
 | `montbrio_pazo_roxin_2015` | [Montbrio-Pazo-Roxin exact neural-mass reduction](equations/models/montbrio_pazo_roxin_2015.md) | `neural_population` | `neural_population` / `neural_mass` | `neural_mass` | `equation_transcribed` | [DOI](https://doi.org/10.1103/physrevx.5.021028) | arXiv:1506.06581v1, Section II.B, equations (12a)-(12b) | transcribed; review pending |
@@ -65,7 +65,7 @@ The unified table above preserves each row-level equation state. `second_pass_ch
 | Izhikevich simple spiking-neuron model | `native` | `smoke_tested` | `passed` | `not_assessed` | `implementation_only` |
 | G-ChI astrocyte calcium and IP3 model | `possible_custom_ode` | `not_implemented` | `not_run` | `not_assessed` | `not_attempted` |
 | Functional neuron-astrocyte calcium-network model | `not_assessed` | `not_implemented` | `not_run` | `not_assessed` | `not_attempted` |
-| Data-driven microglial ischemic-penumbra model | `not_assessed` | `not_implemented` | `not_run` | `not_assessed` | `not_attempted` |
+| Data-driven microglial ischemic-penumbra model | `possible_custom_ode` | `not_implemented` | `not_run` | `not_assessed` | `not_attempted` |
 | Oligodendrocyte differentiation dynamics model | `not_assessed` | `not_implemented` | `not_run` | `not_assessed` | `not_attempted` |
 | Wilson-Cowan excitatory-inhibitory population model | `possible_custom_ode` | `not_implemented` | `not_run` | `not_assessed` | `not_attempted` |
 | Potjans-Diesmann cortical microcircuit model | `not_assessed` | `not_implemented` | `not_run` | `not_assessed` | `not_attempted` |
@@ -91,10 +91,10 @@ Compatibility is a feasibility classification, not execution evidence. A passing
 
 ## Screening inventory
 
-- `bibliography_verified`: **5**
+- `bibliography_verified`: **2**
 - `candidate`: **252**
 - `excluded`: **1**
-- `promoted`: **20**
+- `promoted`: **23**
 
 Every requested inventory row has exactly one current screening outcome. A `candidate` row has passed title-level scope screening but still lacks source-specific evidence.
 
@@ -156,4 +156,4 @@ Neuron-microglia models, explicit oligodendrocyte-myelin networks, Schwann-cell 
 - Third-party material is not relicensed; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 - This repository is a literature-navigation and educational resource; see [DISCLAIMER.md](DISCLAIMER.md).
 
-Last verified: 2026-08-28.
+Last verified: 2026-08-30.

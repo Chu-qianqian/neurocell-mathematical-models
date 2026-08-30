@@ -16,12 +16,12 @@ Original code is licensed Apache-2.0. Original documentation and curator-created
 These counts are generated from `models/model_catalog.csv` and `references/model_screening_master.csv`; do not maintain a second statistics table by hand.
 
 - Canonical model records: **25**
-- Records with equation evidence at `equation_located` or stronger: **17**
-- Equation transcriptions awaiting a maintainer second pass: **14**
-- Maintainer second-pass checked records: **3**
+- Records with equation evidence at `equation_located` or stronger: **20**
+- Equation transcriptions awaiting a maintainer second pass: **18**
+- Maintainer second-pass checked records: **0**
 - Independently checked records: **0**
 - Original Brian2 implementation-only records with smoke tests: **5**
-- Bibliography-only holding records: **8**
+- Bibliography-only holding records: **5**
 - Screening inventory rows: **278**
 
 ## Work phases
@@ -32,7 +32,7 @@ These counts are generated from `models/model_catalog.csv` and `references/model
 | 1 | Search protocol, data schema, and baseline validator | Complete |
 | 2 | Bibliographically verified seed records | Complete |
 | 3 | English navigation, classification, candidate queue, and gap analysis | Complete |
-| 4 | Equation locations, transcription, variable/parameter extraction, and independent checking | In progress: equation evidence exists for 17 records; independent checking remains at 0. |
+| 4 | Equation locations, transcription, variable/parameter extraction, and independent checking | In progress: equation evidence exists for 20 records; independent checking remains at 0. |
 | 5 | Original minimal implementations from clearly licensed sources | In progress: 5 records are smoke-tested implementation-only examples; paper-result reproduction remains separate. |
 | 6 | Multi-database systematic search and broad cell-type expansion | In progress: the screening master has 278 rows; underrepresented cell types remain evidence-gated. |
 

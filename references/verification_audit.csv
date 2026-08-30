@@ -2,9 +2,9 @@ model_id,checked_on,metadata_source,doi_title_match,authors_venue_year_checked,e
 hodgkin_huxley_1952,2026-07-23,Crossref; PubMed; PMC,yes,yes,yes,no,Source locators and transcription received a maintainer second pass; no independent checker is documented.
 izhikevich_2003,2026-07-23,Crossref; author publication page,yes,yes,yes,no,Source locators and transcription received a maintainer second pass; author demonstration license remains unclear.
 de_pitta_2009_gchi,2026-07-23,Crossref; arXiv,yes,yes,yes,no,Source locators and transcription received a maintainer second pass; no independent checker is documented.
-postnov_2009_neuron_astrocyte,2026-07-23,Crossref,yes,yes,no,no,Recorded as mixed neuron-glia; equation audit remains pending.
-amato_arnold_2025_microglia,2026-07-23,Crossref,yes,yes,no,no,Full-text equation audit remains pending.
-nikolov_2022_oligodendrocyte,2026-07-23,Crossref,yes,yes,no,no,Differentiation model is not represented as a complete myelination model.
+postnov_2009_neuron_astrocyte,2026-08-30,Crossref; PMC,yes,yes,yes,no,"PMC2750744 full text was inspected; equations (1)-(16) were located but not transcribed because the displays are images."
+amato_arnold_2025_microglia,2026-08-30,Crossref; PubMed; arXiv,yes,yes,yes,no,"Author-submitted arXiv:2404.10915v1 equations (4)-(5) were transcribed; review and license audits remain pending."
+nikolov_2022_oligodendrocyte,2026-08-30,Crossref; FAU Open Research,yes,yes,yes,no,"CC BY repository PDF was inspected; Section 2 system (1) was located but not transcribed. The record is not a complete myelination model."
 wilson_cowan_1972,2026-07-23,PubMed; PMC; publisher DOI record,yes,yes,yes,no,Primary article p. 8 equations (7)-(8) were transcribed; a second pass remains pending.
 potjans_diesmann_2014,2026-08-28,Crossref; PubMed; PMC open-access record,yes,yes,yes,no,Equations (1)-(13) with unnumbered displays and the Table 4 neuron/synapse equations transcribed from the PMC open-access full text; missing comparison operators in the PMC-rendered Table 4 images flagged.
 montbrio_pazo_roxin_2015,2026-07-23,arXiv; publisher DOI record,yes,yes,yes,no,ArXiv v1 Section II.B equations (12a)-(12b) were transcribed; a second pass remains pending.

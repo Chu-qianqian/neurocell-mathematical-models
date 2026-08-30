@@ -12,27 +12,27 @@
 ## 覆盖概况
 
 - 规范目录记录：**25**
-- 仅书目暂存记录：**8**
-- 方程已定位或更强状态的记录：**17**
-- 已转录、待第二遍复核的记录：**14**
-- 维护者已第二遍复核的记录：**3**
+- 仅书目暂存记录：**5**
+- 方程已定位或更强状态的记录：**20**
+- 已转录、待第二遍复核的记录：**18**
+- 维护者已第二遍复核的记录：**0**
 - 已独立复核的记录：**0**
-- 参数注册表不完整的记录：**9**
+- 参数注册表不完整的记录：**8**
 - 明确标注全文不可获取的记录：**0**
-- 来源全文不可获取或尚未查验的记录：**8**
+- 来源全文不可获取或尚未查验的记录：**5**
 - 外部代码许可状态不明的记录：**8**
-- 筛选清单行数：**278**（其中 20 条已晋升进入规范目录）
+- 筛选清单行数：**278**（其中 23 条已晋升进入规范目录）
 
 ## 模型目录
 
 | 模型 ID | 模型 | 生物学范围 | 细胞或网络类型 | 尺度 | 方程状态 | 一手文献 | 方程定位器 | 复核范围 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| `hodgkin_huxley_1952` | [Hodgkin-Huxley conductance model](equations/models/hodgkin_huxley_1952.md) | `neuronal` | `neuron` / `not_applicable` | `single_cell` | `second_pass_checked` | [DOI](https://doi.org/10.1113/jphysiol.1952.sp004764) | pp. 505 and 518-519 equations (1)-(7) (15)-(16) and (26) | 维护者第二遍复核 |
-| `izhikevich_2003` | [Izhikevich simple spiking-neuron model](equations/models/izhikevich_2003.md) | `neuronal` | `neuron` / `not_applicable` | `single_cell` | `second_pass_checked` | [DOI](https://doi.org/10.1109/tnn.2003.820440) | p. 1569 Section II equations (1)-(3) | 维护者第二遍复核 |
-| `de_pitta_2009_gchi` | [G-ChI astrocyte calcium and IP3 model](equations/models/de_pitta_2009_gchi.md) | `glial` | `astrocyte` / `not_applicable` | `single_cell` | `second_pass_checked` | [DOI](https://doi.org/10.1007/s10867-009-9155-y) | author preprint pp. 8 and 18 equations (5) (6) and (20) | 维护者第二遍复核 |
-| `postnov_2009_neuron_astrocyte` | [Functional neuron-astrocyte calcium-network model](equations/models/postnov_2009_neuron_astrocyte.md) | `mixed_neuron_glia` | `mixed_neuron_astrocyte_system` / `neuron_astrocyte_network` | `large_scale_network` | `bibliography_verified` | [DOI](https://doi.org/10.1007/s10867-009-9156-x) | not verified | 仅书目 |
-| `amato_arnold_2025_microglia` | [Data-driven microglial ischemic-penumbra model](equations/models/amato_arnold_2025_microglia.md) | `glial` | `microglia` / `not_applicable` | `population` | `bibliography_verified` | [DOI](https://doi.org/10.1016/j.mbs.2025.109549) | not verified | 仅书目 |
-| `nikolov_2022_oligodendrocyte` | [Oligodendrocyte differentiation dynamics model](equations/models/nikolov_2022_oligodendrocyte.md) | `glial` | `oligodendrocyte` / `not_applicable` | `population` | `bibliography_verified` | [DOI](https://doi.org/10.3390/math10162928) | not verified | 仅书目 |
+| `hodgkin_huxley_1952` | [Hodgkin-Huxley conductance model](equations/models/hodgkin_huxley_1952.md) | `neuronal` | `neuron` / `not_applicable` | `single_cell` | `equation_transcribed` | [DOI](https://doi.org/10.1113/jphysiol.1952.sp004764) | pp. 505 and 518-519 equations (1)-(7) (15)-(16) and (26) | 已转录；待复核 |
+| `izhikevich_2003` | [Izhikevich simple spiking-neuron model](equations/models/izhikevich_2003.md) | `neuronal` | `neuron` / `not_applicable` | `single_cell` | `equation_transcribed` | [DOI](https://doi.org/10.1109/tnn.2003.820440) | p. 1569 Section II equations (1)-(3) | 已转录；待复核 |
+| `de_pitta_2009_gchi` | [G-ChI astrocyte calcium and IP3 model](equations/models/de_pitta_2009_gchi.md) | `glial` | `astrocyte` / `not_applicable` | `single_cell` | `equation_transcribed` | [DOI](https://doi.org/10.1007/s10867-009-9155-y) | author preprint pp. 8 and 18 equations (5) (6) and (20) | 已转录；待复核 |
+| `postnov_2009_neuron_astrocyte` | [Functional neuron-astrocyte calcium-network model](equations/models/postnov_2009_neuron_astrocyte.md) | `mixed_neuron_glia` | `mixed_neuron_astrocyte_system` / `neuron_astrocyte_network` | `large_scale_network` | `equation_located` | [DOI](https://doi.org/10.1007/s10867-009-9156-x) | PMC2750744, Local neuron-glia interactions, equations (1)-(16) | 已定位来源；待转录 |
+| `amato_arnold_2025_microglia` | [Data-driven microglial ischemic-penumbra model](equations/models/amato_arnold_2025_microglia.md) | `glial` | `microglia` / `not_applicable` | `population` | `equation_transcribed` | [DOI](https://doi.org/10.1016/j.mbs.2025.109549) | arXiv:2404.10915v1, Results and Conclusions, equations (4)-(5) | 已转录；待复核 |
+| `nikolov_2022_oligodendrocyte` | [Oligodendrocyte differentiation dynamics model](equations/models/nikolov_2022_oligodendrocyte.md) | `glial` | `oligodendrocyte` / `not_applicable` | `population` | `equation_located` | [DOI](https://doi.org/10.3390/math10162928) | FAU Open Research repository PDF pp. 3-4, Section 2, system (1) | 已定位来源；待转录 |
 | `wilson_cowan_1972` | [Wilson-Cowan excitatory-inhibitory population model](equations/models/wilson_cowan_1972.md) | `neural_population` | `neural_population` / `firing_rate_network` | `population` | `equation_transcribed` | [DOI](https://doi.org/10.1016/s0006-3495(72)86068-5) | article p. 8, equations (7)-(8) | 已转录；待复核 |
 | `potjans_diesmann_2014` | [Potjans-Diesmann cortical microcircuit model](equations/models/potjans_diesmann_2014_microcircuit.md) | `neural_population` | `neural_population` / `cortical_microcircuit` | `local_microcircuit` | `equation_transcribed` | [DOI](https://doi.org/10.1093/cercor/bhs358) | Methods equations (1)-(13) with unnumbered displays; Table 4 neuron and synapse rows (subthreshold dynamics, postsynaptic current, spiking condition) | 已转录；待复核 |
 | `montbrio_pazo_roxin_2015` | [Montbrio-Pazo-Roxin exact neural-mass reduction](equations/models/montbrio_pazo_roxin_2015.md) | `neural_population` | `neural_population` / `neural_mass` | `neural_mass` | `equation_transcribed` | [DOI](https://doi.org/10.1103/physrevx.5.021028) | arXiv:1506.06581v1, Section II.B, equations (12a)-(12b) | 已转录；待复核 |
@@ -65,7 +65,7 @@
 | Izhikevich simple spiking-neuron model | `native` | `smoke_tested` | `passed` | `not_assessed` | `implementation_only` |
 | G-ChI astrocyte calcium and IP3 model | `possible_custom_ode` | `not_implemented` | `not_run` | `not_assessed` | `not_attempted` |
 | Functional neuron-astrocyte calcium-network model | `not_assessed` | `not_implemented` | `not_run` | `not_assessed` | `not_attempted` |
-| Data-driven microglial ischemic-penumbra model | `not_assessed` | `not_implemented` | `not_run` | `not_assessed` | `not_attempted` |
+| Data-driven microglial ischemic-penumbra model | `possible_custom_ode` | `not_implemented` | `not_run` | `not_assessed` | `not_attempted` |
 | Oligodendrocyte differentiation dynamics model | `not_assessed` | `not_implemented` | `not_run` | `not_assessed` | `not_attempted` |
 | Wilson-Cowan excitatory-inhibitory population model | `possible_custom_ode` | `not_implemented` | `not_run` | `not_assessed` | `not_attempted` |
 | Potjans-Diesmann cortical microcircuit model | `not_assessed` | `not_implemented` | `not_run` | `not_assessed` | `not_attempted` |
@@ -91,10 +91,10 @@
 
 ## 筛选清单
 
-- `bibliography_verified`: **5**
+- `bibliography_verified`: **2**
 - `candidate`: **252**
 - `excluded`: **1**
-- `promoted`: **20**
+- `promoted`: **23**
 
 清单中每个请求行都有且仅有一个当前筛选结论。`candidate` 表示该行已通过标题级范围筛选，但仍缺少来源级证据。
 
@@ -158,4 +158,4 @@
 - 第三方素材不重新授权，见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
 - 本仓库是文献导航与教育资源，见 [DISCLAIMER.md](DISCLAIMER.md)。
 
-最后核验：2026-08-28。
+最后核验：2026-08-30。
