@@ -124,6 +124,8 @@ Equation pages require a lawful source, a precise locator, a transcription type,
 - [Evidence-status migration](docs/evidence_status_migration.md)
 - [Independent-review protocol](docs/independent_review_protocol.md)
 - [Equation notation policy](docs/equation_notation_policy.md)
+- [Project plan](PROJECT_PLAN.md)
+- [Maintainer workflow](docs/maintainer_workflow.md)
 - [Model scope taxonomy](docs/model_scope_taxonomy.md) ([中文](docs/model_scope_taxonomy.zh-CN.md))
 - [Cell-type pages](docs/cell_types/README.md)
 - [Research gaps](docs/research_gaps.md) ([中文](docs/research_gaps.zh-CN.md))

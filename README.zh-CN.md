@@ -124,6 +124,8 @@
 - [证据状态迁移](docs/evidence_status_migration.md)
 - [独立复核协议](docs/independent_review_protocol.md)
 - [方程记法政策](docs/equation_notation_policy.md)
+- [项目计划](PROJECT_PLAN.md)
+- [维护者工作流](docs/maintainer_workflow.md)
 - [模型范围分类学](docs/model_scope_taxonomy.zh-CN.md)
 - [细胞类型页面](docs/cell_types/README.md)
 - [研究空白与下一步证据目标](docs/research_gaps.zh-CN.md)

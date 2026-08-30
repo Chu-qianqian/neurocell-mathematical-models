@@ -13,6 +13,7 @@ from build_tables import (
     build_readme,
     equation_index,
     json_view,
+    project_plan,
     reference_csv,
     yaml_view,
 )
@@ -25,6 +26,7 @@ YAML_VIEW = ROOT / "models" / "model_catalog.yaml"
 README_VIEW = ROOT / "README.md"
 README_ZH_VIEW = ROOT / "README.zh-CN.md"
 EQUATION_INDEX = ROOT / "equations" / "README.md"
+PROJECT_PLAN = ROOT / "PROJECT_PLAN.md"
 REFERENCES = ROOT / "references" / "references.csv"
 SCREENING = ROOT / "references" / "model_screening_master.csv"
 SCREENING_INVENTORY = ROOT / "references" / "model_screening_inventory.csv"
@@ -147,6 +149,8 @@ def main() -> int:
         )
     if EQUATION_INDEX.read_text(encoding="utf-8") != equation_index(models):
         errors.append("equations/README.md is stale; run python scripts/build_tables.py")
+    if PROJECT_PLAN.read_text(encoding="utf-8") != project_plan(models, screening):
+        errors.append("PROJECT_PLAN.md is stale; run python scripts/build_tables.py")
     if REFERENCES.read_text(encoding="utf-8") != reference_csv(models):
         errors.append("references.csv is stale; run python scripts/build_tables.py")
     if BIB.read_text(encoding="utf-8") != bib_view(models):

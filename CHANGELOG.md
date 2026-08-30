@@ -2,6 +2,12 @@
 
 All notable changes to this repository are documented here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [Unreleased]
+
+### Changed
+
+- Repaired governance guidance, repository-wide language validation, generated project-status reporting, and release metadata without assigning unreleased work to v0.2.3.
+
 ## [0.2.3] - 2026-08-28
 
 ### Added

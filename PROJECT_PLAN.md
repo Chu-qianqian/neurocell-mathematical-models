@@ -1,54 +1,44 @@
+<!-- Generated from models/model_catalog.csv; do not edit by hand. -->
 # Project plan and completion status
 
 ## Research objective
 
-Build a maintainable atlas of mathematical models for nervous-system cells. Each model record keeps bibliography, equation evidence, implementation status, license status, and biological interpretation distinct. The project delivers a small, reliable core release before expanding coverage.
+Build a maintainable atlas of mathematical models for nervous-system cells. Each model record keeps bibliography, equation evidence, implementation status, license status, and biological interpretation distinct. The project delivers a small, reliable core before expanding coverage.
 
-## Scope
+## Scope and evidence boundary
 
-Neurons, astrocytes, microglia, oligodendrocytes, OPC/NG2 glia, Schwann cells, ependymal cells, radial glia, neural stem cells, pericytes, brain endothelial cells, and explicitly modelled mixed-cell systems.
+The catalogue covers neurons, glia, associated nervous-system cell types, and explicitly modelled mixed-cell systems. An included record needs a traceable stable source and an explicit mathematical or computational model. Experimental papers that merely mention a cell, secondary claims without a source, copied code with unclear licensing, and paper full text are excluded. Candidate and canonical records remain separate.
 
-## Inclusion and exclusion
+Original code is licensed Apache-2.0. Original documentation and curator-created tables are licensed CC BY 4.0. External material retains its original terms.
 
-An included model needs a traceable stable source and an explicit mathematical or computational model. Experimental papers that merely mention a cell, secondary claims without a source, copied code with unclear licensing, and paper full text are excluded. Candidate and core records are stored separately.
+## Current catalogue snapshot
 
-## Literature and equation verification
+These counts are generated from `models/model_catalog.csv` and `references/model_screening_master.csv`; do not maintain a second statistics table by hand.
 
-- Bibliography verification: DOI, title, authors, year, and venue are checked against Crossref, PubMed, or a publisher page.
-- Equation verification: a source location, variables, units, initial/boundary conditions, assumptions, and an independent consistency check are required before a record becomes `extracted`.
-- Implementation verification: external code must have a clear source and license; otherwise only its link and status may be recorded.
-
-## Copyright compliance
-
-No paper PDF, original figure, full table, supplement, or third-party code with unclear licensing is included. Original code is Apache-2.0; original documentation and curator-created tables are CC BY 4.0; external materials retain their original terms.
+- Canonical model records: **25**
+- Records with equation evidence at `equation_located` or stronger: **17**
+- Equation transcriptions awaiting a maintainer second pass: **14**
+- Maintainer second-pass checked records: **3**
+- Independently checked records: **0**
+- Original Brian2 implementation-only records with smoke tests: **5**
+- Bibliography-only holding records: **8**
+- Screening inventory rows: **278**
 
 ## Work phases
 
 | Phase | Deliverable | Status |
 | --- | --- | --- |
-| 0 | Governance files, dual licenses, disclaimer, `main` initialisation | Complete |
-| 1 | Search protocol, data schema, baseline validator | Complete |
-| 2 | Six bibliographically verified seed records | Complete |
+| 0 | Governance files, dual licenses, disclaimer, and repository initialization | Complete |
+| 1 | Search protocol, data schema, and baseline validator | Complete |
+| 2 | Bibliographically verified seed records | Complete |
 | 3 | English navigation, classification, candidate queue, and gap analysis | Complete |
-| 4 | Equation locations, variable/parameter extraction, and independent checking | Planned |
-| 5 | Original minimal implementations from clearly licensed sources | Planned |
-| 6 | Multi-database systematic search and broad cell-type expansion | Planned |
+| 4 | Equation locations, transcription, variable/parameter extraction, and independent checking | In progress: equation evidence exists for 17 records; independent checking remains at 0. |
+| 5 | Original minimal implementations from clearly licensed sources | In progress: 5 records are smoke-tested implementation-only examples; paper-result reproduction remains separate. |
+| 6 | Multi-database systematic search and broad cell-type expansion | In progress: the screening master has 278 rows; underrepresented cell types remain evidence-gated. |
 
-## Intended structure
+## Remaining work
 
-- `data/models/`: minimal, strictly validated core records;
-- `models/`: expanded CSV/JSON/YAML catalogue contract;
-- `references/`: search strings, candidate queue, BibTeX, and verification audit;
-- `docs/` and `equations/`: original English explanations, classification, and research gaps, with `*.zh-CN.md` Chinese mirrors for the core documents;
-- `scripts/`: offline validation; `.github/`: validation on pull requests.
-
-## Completion checklist
-
-- [x] Governance, dual-license policy, and disclaimer
-- [x] Reproducible search strategy and baseline data schema
-- [x] Bibliographically verified seed catalogue
-- [x] English core navigation and evidence-state conventions
-- [ ] Equation-level source locations and independent checking
-- [ ] Systematic all-cell-type search and complete screening counts
-- [ ] Original minimal implementations from clearly licensed sources
-- [ ] Record-level auditing of public code and experimental validation
+- Complete maintainer and independently documented checks without promoting a record beyond its recorded evidence.
+- Expand source-specific coverage for underrepresented cell types, including Schwann, ependymal, radial glial, neural stem, pericyte, and endothelial systems.
+- Add implementations only where source evidence and licensing permit; distinguish numerical tests, reference behavior, and paper-result reproduction.
+- Keep generated views synchronized by running `python scripts/build_tables.py` before review.

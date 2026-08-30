@@ -24,6 +24,7 @@ YAML_OUT = ROOT / "models" / "model_catalog.yaml"
 README_OUT = ROOT / "README.md"
 README_ZH_OUT = ROOT / "README.zh-CN.md"
 EQUATION_INDEX_OUT = ROOT / "equations" / "README.md"
+PROJECT_PLAN_OUT = ROOT / "PROJECT_PLAN.md"
 SCREENING = ROOT / "references" / "model_screening_master.csv"
 REFERENCES_OUT = ROOT / "references" / "references.csv"
 BIB_OUT = ROOT / "references" / "references.bib"
@@ -208,6 +209,61 @@ This index is generated from the canonical catalogue. Evidence states remain sep
 """
 
 
+def project_plan(records: list[dict[str, str]], screening: list[dict[str, str]]) -> str:
+    """Render a status plan whose quantitative claims come from the catalogue."""
+    s = compute_stats(records, screening)
+    statuses = s["statuses"]
+    smoke_tested = sum(
+        record["brian2_implementation_status"] == "smoke_tested"
+        for record in records
+    )
+    return f"""<!-- {GENERATED_NOTICE} -->
+# Project plan and completion status
+
+## Research objective
+
+Build a maintainable atlas of mathematical models for nervous-system cells. Each model record keeps bibliography, equation evidence, implementation status, license status, and biological interpretation distinct. The project delivers a small, reliable core before expanding coverage.
+
+## Scope and evidence boundary
+
+The catalogue covers neurons, glia, associated nervous-system cell types, and explicitly modelled mixed-cell systems. An included record needs a traceable stable source and an explicit mathematical or computational model. Experimental papers that merely mention a cell, secondary claims without a source, copied code with unclear licensing, and paper full text are excluded. Candidate and canonical records remain separate.
+
+Original code is licensed Apache-2.0. Original documentation and curator-created tables are licensed CC BY 4.0. External material retains its original terms.
+
+## Current catalogue snapshot
+
+These counts are generated from `models/model_catalog.csv` and `references/model_screening_master.csv`; do not maintain a second statistics table by hand.
+
+- Canonical model records: **{len(records)}**
+- Records with equation evidence at `equation_located` or stronger: **{s["equation_located_or_beyond"]}**
+- Equation transcriptions awaiting a maintainer second pass: **{statuses["equation_transcribed"]}**
+- Maintainer second-pass checked records: **{statuses["second_pass_checked"]}**
+- Independently checked records: **{statuses["independently_checked"]}**
+- Original Brian2 implementation-only records with smoke tests: **{smoke_tested}**
+- Bibliography-only holding records: **{statuses["bibliography_verified"]}**
+- Screening inventory rows: **{len(screening)}**
+
+## Work phases
+
+| Phase | Deliverable | Status |
+| --- | --- | --- |
+| 0 | Governance files, dual licenses, disclaimer, and repository initialization | Complete |
+| 1 | Search protocol, data schema, and baseline validator | Complete |
+| 2 | Bibliographically verified seed records | Complete |
+| 3 | English navigation, classification, candidate queue, and gap analysis | Complete |
+| 4 | Equation locations, transcription, variable/parameter extraction, and independent checking | In progress: equation evidence exists for {s["equation_located_or_beyond"]} records; independent checking remains at {statuses["independently_checked"]}. |
+| 5 | Original minimal implementations from clearly licensed sources | In progress: {smoke_tested} records are smoke-tested implementation-only examples; paper-result reproduction remains separate. |
+| 6 | Multi-database systematic search and broad cell-type expansion | In progress: the screening master has {len(screening)} rows; underrepresented cell types remain evidence-gated. |
+
+## Remaining work
+
+- Complete maintainer and independently documented checks without promoting a record beyond its recorded evidence.
+- Expand source-specific coverage for underrepresented cell types, including Schwann, ependymal, radial glial, neural stem, pericyte, and endothelial systems.
+- Add implementations only where source evidence and licensing permit; distinguish numerical tests, reference behavior, and paper-result reproduction.
+- Keep generated views synchronized by running `python scripts/build_tables.py` before review.
+"""
+
+
 def compute_stats(
     records: list[dict[str, str]], screening: list[dict[str, str]]
 ) -> dict:
@@ -382,6 +438,8 @@ Equation pages require a lawful source, a precise locator, a transcription type,
 - [Evidence-status migration](docs/evidence_status_migration.md)
 - [Independent-review protocol](docs/independent_review_protocol.md)
 - [Equation notation policy](docs/equation_notation_policy.md)
+- [Project plan](PROJECT_PLAN.md)
+- [Maintainer workflow](docs/maintainer_workflow.md)
 - [Model scope taxonomy](docs/model_scope_taxonomy.md) {nav_taxonomy}
 - [Cell-type pages](docs/cell_types/README.md)
 - [Research gaps](docs/research_gaps.md) {nav_gaps}
@@ -428,6 +486,7 @@ def main() -> int:
         build_readme(records, screening, "zh"), encoding="utf-8"
     )
     EQUATION_INDEX_OUT.write_text(equation_index(records), encoding="utf-8")
+    PROJECT_PLAN_OUT.write_text(project_plan(records, screening), encoding="utf-8")
     REFERENCES_OUT.write_text(reference_csv(records), encoding="utf-8")
     BIB_OUT.write_text(bib_view(records), encoding="utf-8")
     print(f"Built {len(records)} records")
