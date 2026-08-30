@@ -5,7 +5,7 @@
 - Bibliography: verified against Crossref on 2026-07-22.
 - Equation source inspected: author-posted arXiv preprint corresponding to the journal article.
 - Source locator: De Pittà et al. (2009) preprint, pp. 8, 18, equations (5), (6), and (20); equation (19) defines the glutamate-dependent production term.
-- Maintainer second-pass check: completed against the inspected preprint.
+- Maintainer second-pass check: not demonstrated by a reviewer, date, and method in the repository audit; P1 conservatively retains `equation_transcribed`.
 - Independent transcription check: not documented; no independent checker evidence is recorded.
 - Full-text access status: lawful author-posted preprint inspected; journal metadata verified separately.
 
@@ -41,7 +41,7 @@ De Pittà, M., Goldberg, M., Volman, V., Berry, H. and Ben-Jacob, E. Glutamate r
 
 ## Equations
 
-The following is an equivalent notation with a documented mapping and a maintainer second-pass check against source equations (5), (6), and (20). $J_{\mathrm{chan}}$, $J_{\mathrm{leak}}$, and $J_{\mathrm{pump}}$ denote the source flux expressions in equations (1)-(5); $v_{\mathrm{glu}}$ is source equation (19).
+The following is an equivalent notation with a documented mapping to source equations (5), (6), and (20). $J_{\mathrm{chan}}$, $J_{\mathrm{leak}}$, and $J_{\mathrm{pump}}$ denote the source flux expressions in equations (1)-(5); $v_{\mathrm{glu}}$ is source equation (19). A documented second pass remains pending.
 
 $$
 \frac{dC}{dt}=J_{\mathrm{chan}}(C,h,I)+J_{\mathrm{leak}}(C)-J_{\mathrm{pump}}(C),

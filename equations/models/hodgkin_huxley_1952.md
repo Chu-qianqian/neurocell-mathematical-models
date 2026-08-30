@@ -5,7 +5,7 @@
 - Bibliography: verified against Crossref on 2026-07-22.
 - Equation source inspected: publisher-accessible article and Physiome model record.
 - Source locator: Hodgkin and Huxley (1952), pp. 505 and 518-519, equations (1)-(7), (15)-(16), and (26); Physiome record 0155 identifies the rate-law page.
-- Maintainer second-pass check: completed against the cited article's summary of equations.
+- Maintainer second-pass check: not demonstrated by a reviewer, date, and method in the repository audit; P1 conservatively retains `equation_transcribed`.
 - Independent transcription check: not documented; no independent checker evidence is recorded.
 - Full-text access status: lawful publisher-accessible source inspected.
 
@@ -40,13 +40,13 @@ Hodgkin, A. L. and Huxley, A. F. A quantitative description of membrane current 
 
 ## Equations
 
-The following is an exact source transcription with a maintainer second-pass check:
+The following is an exact source transcription; a documented second pass remains pending:
 
 $$
 I=C_M\frac{dV}{dt}+\bar g_K n^4(V-V_K)+\bar g_{Na}m^3h(V-V_{Na})+g_l(V-V_l).
 $$
 
-The gating equations are exact source transcriptions with a maintainer second-pass check; $x$ is $n$, $m$, or $h$ with its respective source rates:
+The gating equations are exact source transcriptions; $x$ is $n$, $m$, or $h$ with its respective source rates:
 
 $$
 \frac{dx}{dt}=\alpha_x(V)(1-x)-\beta_x(V)x.
